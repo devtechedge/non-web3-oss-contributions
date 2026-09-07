@@ -15,7 +15,7 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 
 ## Status
 
-**13 external items** as of 8 Sep 2026: **3 open PRs**, **0 closed**, **0 merged**, **10 pipeline / skip**.
+**14 external items** as of 8 Sep 2026: **3 open PRs**, **0 closed**, **0 merged**, **11 pipeline / skip**.
 
 > **This README is the product.** There is no separate app or Vercel alias. Counts are a snapshot, not a live API. No upstream merges yet.
 
@@ -53,6 +53,7 @@ _None yet._
 | Repo | Target | Why waiting |
 | --- | --- | --- |
 | [vitest-dev/vitest](https://github.com/vitest-dev/vitest) | [#11164](https://github.com/vitest-dev/vitest/issues/11164) | **Next.** Browser-mode `define` double-stringifies (`JSON.stringify("BAR")` becomes `""BAR""` in Vitest 5). Zero comments, zero PRs, repro exists. Not opened yet. |
+| [langchain-ai/langgraphjs](https://github.com/langchain-ai/langgraphjs) | [#2721](https://github.com/langchain-ai/langgraphjs/issues/2721) | JS port of CVE-2026-71433. `search(["tenant","acme"])` leaks `acme-corp`. Reproduced on `@langchain/langgraph-checkpoint@1.1.5` and `main` (`memory.ts:254`). Author offered a PR 20 Aug; @thankywal pinged 31 Aug. **Comment first, do not file yet.** Naive `startsWith(prefix + ":")` breaks `search([])` (2→0). Wait ~48h after the courtesy comment. |
 | [TanStack/router](https://github.com/TanStack/router) | [#8280](https://github.com/TanStack/router/issues/8280) | Non-OK `application/json` server-fn responses resolve `undefined` on the client. Exact one-branch fix, but [#8283](https://github.com/TanStack/router/pull/8283) claimed it the same day. Do not compete. |
 | [TanStack/router](https://github.com/TanStack/router) | [#8237](https://github.com/TanStack/router/issues/8237) Shape 1 | Missing `x-tsr-serverFn` header returns unhandled 500. Already owned by [#8220](https://github.com/TanStack/router/pull/8220). This ledger's #8285 only covers Shape 2 (malformed JSON). |
 | [TanStack/query](https://github.com/TanStack/query) | [#11320](https://github.com/TanStack/query/issues/11320) | Server-side `gcTime` schedules a GC timer that pins the SSR async context. Already owned by [#11321](https://github.com/TanStack/query/pull/11321). Skip. |
@@ -85,7 +86,7 @@ _None yet._ This section is for merges into **other people's** repos only (not `
 | Layer | What |
 | --- | --- |
 | Surface | This GitHub README |
-| Scope | TypeScript framework / library bugs outside Web3 (TanStack Start, Router, Query, Form, Virtual, Vitest, Vite, Zod, better-auth, drizzle-kit) |
+| Scope | TypeScript framework / library bugs outside Web3 (TanStack Start, Router, Query, Form, Virtual, Vitest, Vite, Zod, better-auth, drizzle-kit, langgraphjs) |
 | Process | Search open PRs first. Skip if claimed. Fork + PR when the issue is free. |
 | Sibling | [web3-oss-contributions](https://github.com/devtechedge/web3-oss-contributions) |
 
