@@ -4,7 +4,7 @@ Public ledger of **upstream** non-Web3 pull requests by [@devtechedge](https://g
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-library%20fixes-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![Open PRs](https://img.shields.io/badge/open%20PRs-1-black)](https://github.com/TanStack/router/pull/8285)
+[![Open PRs](https://img.shields.io/badge/open%20PRs-2-black)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Aopen)
 [![PRs](https://img.shields.io/github/issues-pr/devtechedge/non-web3-oss-contributions?label=tracker%20PRs)](https://github.com/devtechedge/non-web3-oss-contributions)
 
 Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge)
@@ -15,7 +15,7 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 
 ## Status
 
-**11 external items** as of 8 Sep 2026: **1 open PR**, **0 closed**, **0 merged**, **10 pipeline / skip**.
+**12 external items** as of 8 Sep 2026: **2 open PRs**, **0 closed**, **0 merged**, **10 pipeline / skip**.
 
 > **This README is the product.** There is no separate app or Vercel alias. Counts are a snapshot, not a live API. No upstream merges yet.
 
@@ -36,9 +36,10 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 
 | Repo | PR | What | Status | Opened |
 | --- | --- | --- | --- | --- |
+| [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#11208](https://github.com/better-auth/better-auth/pull/11208) | Regression test: `/phone-number/verify` OpenAPI `requestBody` stays present after the `.and(z.record())` intersection (closes #8122). Generator already fixed on `main`; this locks the reported endpoint. +58/−0, 1 file (`open-api.test.ts`). No changeset (tests only). | Open; title + `devtools` label ok; CI/E2E/changeset workflows waiting first-time-contributor approval; review requested from Bekacru | 8 Sep 2026 |
 | [TanStack/router](https://github.com/TanStack/router) | [#8285](https://github.com/TanStack/router/pull/8285) | `handleServerAction` returns **400** for malformed JSON on GET `?payload=` and JSON POST bodies (`SyntaxError`), instead of an unhandled 500. Action is not invoked. Patch changeset for `@tanstack/start-server-core`. Unit tests for both shapes. +114/−4, 3 files. Covers Shape 2 of #8237 (Shape 1 is already in #8220). | Open; CodeRabbit clean; first-time-contributor CI waiting on maintainer | 7 Sep 2026 |
 
-Files: `packages/start-server-core/src/server-functions-handler.ts`, `packages/start-server-core/tests/server-functions-handler-invalid-json.test.ts`, `.changeset/clear-json-payload-400.md`.
+Files for #8285: `packages/start-server-core/src/server-functions-handler.ts`, `packages/start-server-core/tests/server-functions-handler-invalid-json.test.ts`, `.changeset/clear-json-payload-400.md`.
 
 ## Closed (not merged)
 
@@ -81,7 +82,7 @@ _None yet._ This section is for merges into **other people's** repos only (not `
 | Layer | What |
 | --- | --- |
 | Surface | This GitHub README |
-| Scope | TypeScript framework / library bugs outside Web3 (TanStack Start, Router, Query, Form, Virtual, Vitest, Vite, Zod) |
+| Scope | TypeScript framework / library bugs outside Web3 (TanStack Start, Router, Query, Form, Virtual, Vitest, Vite, Zod, better-auth) |
 | Process | Search open PRs first. Skip if claimed. Fork + PR when the issue is free. |
 | Sibling | [web3-oss-contributions](https://github.com/devtechedge/web3-oss-contributions) |
 
