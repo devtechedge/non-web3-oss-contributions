@@ -15,7 +15,7 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 
 ## Status
 
-**15 external items** as of 8 Sep 2026: **5 open PRs**, **0 closed**, **0 merged**, **10 pipeline / skip**.
+**15 external items** as of 8 Sep 2026: **5 open PRs**, **1 closed**, **0 merged**, **9 pipeline / skip**.
 
 > **This README is the product.** There is no separate app or Vercel alias. Counts are a snapshot, not a live API. No upstream merges yet.
 
@@ -52,13 +52,16 @@ Files for #8285: `packages/start-server-core/src/server-functions-handler.ts`, `
 
 ## Closed (not merged)
 
-_None yet._
+| Repo | PR | What | Status | Opened |
+| --- | --- | --- | --- | --- |
+| [vitest-dev/vitest](https://github.com/vitest-dev/vitest) | [#11174](https://github.com/vitest-dev/vitest/pull/11174) | Browser-mode `define` double-stringify. Parse via `deleteDefineConfig` clone so `FOO: JSON.stringify("BAR")` is `'BAR'` not `'"BAR"'`. Vite `config.define` left intact. Closes #11164. +17/−3, 4 files. | Closed ~28s after open by github-actions. AgentScan `bot` label; account flagged as likely LLM/agent. **Not merged.** Issue #11164 still open. Do not refile from this account. Do not reply to the auto-close comment from an agent. | 8 Sep 2026 |
+
+Files for #11174: `packages/vitest/src/node/plugins/testConfig.ts`, `test/e2e/fixtures/config/browser-define/basic.test.ts`, `test/e2e/fixtures/config/browser-define/vitest.config.ts`, `test/e2e/test/config/browser-configs.test.ts`.
 
 ## Pipeline / not opened yet
 
 | Repo | Target | Why waiting |
 | --- | --- | --- |
-| [vitest-dev/vitest](https://github.com/vitest-dev/vitest) | [#11164](https://github.com/vitest-dev/vitest/issues/11164) | **Next.** Browser-mode `define` double-stringifies (`JSON.stringify("BAR")` becomes `""BAR""` in Vitest 5). Zero comments, zero PRs, repro exists. Not opened yet. |
 | [TanStack/router](https://github.com/TanStack/router) | [#8280](https://github.com/TanStack/router/issues/8280) | Non-OK `application/json` server-fn responses resolve `undefined` on the client. Exact one-branch fix, but [#8283](https://github.com/TanStack/router/pull/8283) claimed it the same day. Do not compete. |
 | [TanStack/router](https://github.com/TanStack/router) | [#8237](https://github.com/TanStack/router/issues/8237) Shape 1 | Missing `x-tsr-serverFn` header returns unhandled 500. Already owned by [#8220](https://github.com/TanStack/router/pull/8220). This ledger's #8285 only covers Shape 2 (malformed JSON). |
 | [TanStack/query](https://github.com/TanStack/query) | [#11320](https://github.com/TanStack/query/issues/11320) | Server-side `gcTime` schedules a GC timer that pins the SSR async context. Already owned by [#11321](https://github.com/TanStack/query/pull/11321). Skip. |
