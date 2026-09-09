@@ -1,0 +1,838 @@
+https://www.linkedin.com/in/dev-ma/
+
+Headline:
+Full Stack & Forward Deployed AI Engineer | Autonomous Multi-Agent Systems, LangGraph, MCP & RLVR | Upstream OSS Contributor (LangGraph, Biome, Drizzle, TanStack) | Python, Next.js 16, TypeScript, Postgres
+
+About:
+I am a Full Stack & Forward Deployed AI Engineer building autonomous multi-agent systems, deterministic state machines, and verifiable RL evaluation environments.
+
+Certified across frontier agent architectures (Anthropic MCP Advanced, Anthropic 4D, OpenAI Agents & Workflows, LangChain Deep & Ambient Agents) and Six Sigma Green Belt, I bridge frontier agent research with production enterprise infrastructure.
+
+I contribute upstream to tier-1 developer toolchains—including patching multi-tenant namespace leaks in LangGraph.js (CVE-2026-71433 port), porting AST linter rules in Biome (Rust), fixing relational schema generation in Drizzle ORM, locking OpenAPI specs in Better Auth, and hardening TanStack Router error boundaries.
+
+⚡ WHAT I BUILD & ARCHITECT
+• Autonomous Multi-Agent Systems: LangGraph supervisor routing, hierarchical swarms, cyclic reflection (Reflexion), and Human-in-the-Loop (HITL) interrupt/resume safety gates.
+• Protocols (MCP / WebMCP): Model Context Protocol (MCP) integrations using Stdio & SSE StreamableHTTP transports, client-side sampling, and OpenAI WebMCP Challenge implementations.
+• Verifiable Evals & RLVR: Custom RL environments for Prime Intellect (calendar-math, meeting-slot, unit-fix) with deterministic gold solvers and AST-sandboxed execution graders.
+• Telemetry & Full-Stack Platforms: Replayable OTel-shaped traces, LangSmith eval pipelines, and high-throughput platforms built with Next.js 16, React 19, TanStack Start, FastAPI, Drizzle, and PostgreSQL (pgvector).
+
+🚀 FLAGSHIP ARCHITECTURES
+• AEGIS: Enterprise AI ops cortex with a LangGraph supervisor routing 6 specialists, 7 agentic loops, Hybrid RAG, and an SSE live dashboard.
+• Synthesis: Multi-agent research platform with cyclic Reflexion loops (Plan → Research → Synthesize → Critique) & StateGraph execution.
+• AAROP: Inspectable agentic reasoning engine (Perceive → Plan → Act → Observe → Reflect → Adapt) with 99% test coverage & trace replay.
+• Cadence: Pure-Python vertical healthcare agents with multi-layer clinical memory and consent-scoped clinician briefs.
+• RegTrace-AI: HITL Web3 compliance copilot mapping project packs to MiCA/VARA with source-traced citations & hallucination flags.
+
+🎯 PHILOSOPHY: Bounded autonomy over prompt chaining, determinism over LLM drift, verifiable execution over fuzzy heuristics, and Six Sigma rigor over black-box AI.
+
+📫 GitHub: https://github.com/devtechedge | Open for Forward Deployed AI Engineering & AI Systems Engineering roles.
+
+Top skills:
+Python (Programming Language)
+Multi-agent Systems
+TypeScript
+Model Context Protocol (MCP)
+LangGraph
+
+Featured:
+AAROP - Autonomous Agentic Reasoning & Orchestration Platform:
+Multi-agent reasoning engine built on explicit state machine principles rather than prompt chaining. Features cost-aware model routing, schema-validated tools, dynamic circuit breakers, RAG memory, and replayable trace logs.
+
+Chaos Simulator — Real-Time Chaos Engineering & Telemetry Platform:
+Real-time chaos engineering dashboard with self-healing microservices, animated SVG topology, and automated fault injection. Features multi-step scenario builders (Black Friday, Cascading Failure), live WebSocket telemetry, and sub-second latency analytics.
+
+Synthesis - Autonomous Multi-Agent Research Platform:
+Autonomous research engine executing cyclic multi-agent workflows (Plan → Research → Synthesize → Critique → Finalize). Features a real-time StateGraph executor, Human-in-the-Loop (HITL) approval gates, Reflexion loops, Hybrid RAG, and live streaming SSE telemetry.
+
+AEGIS - Autonomous Enterprise Graph Intelligence System:
+Self-hosted, auditable AI operations cortex (combining Devin + Glean + PagerDuty capabilities). Powered by a LangGraph supervisor routing 6 specialist agents, 7 agentic loops, Hybrid RAG, Human-in-the-Loop gates, and a live SSE dashboard.
+
+Prime Intellect RLVR Verification Suite:
+Multi-environment reinforcement learning suite for the Prime Intellect Environments Hub (calendar-math, meeting-slot, unit-fix). Evaluates LLM reasoning via deterministic UTC sweep-line algorithms and AST-sandboxed Python execution graders.
+
+Cadence — Deep-Memory Healthcare Agents:
+Pure-Python clinical agent architecture implementing multi-layer patient memory (session, episodic, semantic, knowledge, insights) and consent-scoped clinician summaries using Ollama and SQLite without third-party framework overhead.
+
+Experience:
+1. Full Stack Engineer
+Lattice AI Labs
+Jan 2016 - present
+APAC
+Remote
+
+Description:
+Architected, implemented, and open-sourced 50 repositories (30+ original production-grade architectures) spanning autonomous multi-agent systems, RLVR environments, real-time observability, and high-throughput web apps using Python, TypeScript, LangGraph, Next.js 16, React 19, and PostgreSQL. Grounded in Six Sigma DMAIC rigor and 23 technical certifications:
+
+• Autonomous Multi-Agent Cortexes & Protocols: Architected AEGIS (LangGraph supervisor managing 6 specialists across 7 loops with LangSmith eval gates), Synthesis (StateGraph research engine with cyclic Reflexion and SSE streaming), and AAROP (explicit 6-phase state machine with 99% Python test coverage). Implemented Anthropic MCP (Stdio/SSE) and HoldSlot for the OpenAI WebMCP Challenge 2026.
+
+• Verifiable RL & Evaluation Environments: Authored 3 official RLVR environments on Prime Intellect (unit-fix, meeting-slot, calendar-math) featuring AST-sandboxed execution graders, sweep-line timezone solvers, and deterministic verifiers without LLM-as-judge variance.
+
+• Vertical AI & Deep-Memory Systems: Engineered Cadence, a framework-less healthcare agent with a 5-layer clinical memory architecture (session, episodic, semantic, knowledge, insights) via Ollama and SQLite, alongside Argus and RegTrace for automated smart-contract and MiCA/VARA compliance audits.
+
+• Real-Time Observability & Chaos Engineering: Built Chaos Simulator featuring self-healing microservices, animated SVG topologies, and sub-second WebSocket telemetry, plus CollabSpace multiplayer whiteboards using Supabase Realtime.
+
+• High-Throughput Full-Stack & Web3 Platforms: Delivered Jobrow & Lattice (indexing 5,000+ tech and crypto roles from Greenhouse, Ashby, and Lever APIs via TanStack Start & Neon Postgres), Smart Waitlist (viral referral loops + Stripe), AstraMart, and Pulsar (Base L2 GPU marketplace with Foundry contracts).
+
+Skills:
+Python (Programming Language)
+TypeScript
+Multi-agent Systems
+LangGraph
+Model Context Protocol (MCP)
+Next.js 16
+React 19
+PostgreSQL
+FastAPI
+Drizzle ORM
+Supabase
+Framer Motion
+Git
+Vite
+Software Quality Assurance
+Project Management
+Data Analytics
+
+2. Open-Source Software Contributor
+Lattice AI Labs
+August 2026 - present
+APAC
+Remote
+
+Description:
+Independent upstream contributor to non-Web3 developer toolchains: linters, agent runtimes, ORMs, auth, and routers. Public ledger: github.com/devtechedge/non-web3-oss-contributions.
+
+6 PRs on other orgs: 2 merged, 3 open, 1 closed unmerged.
+
+MERGED
+• better-auth/better-auth #11208 — merged by @bytaesu, 9 Sep 2026 (874752f on main). Regression test: /phone-number/verify OpenAPI requestBody stays present after Zod .and(z.record()). Generator already fixed on main; this locks the endpoint. Closes #8122. +53/0, 1 file. Tests only, no changeset.
+
+• biomejs/biome #11667 — merged by @dyc3, 8 Sep 2026 (e997900 on main). Nursery port of unicorn/better-dom-traversing in Rust. Prefer .firstChild / .firstElementChild / .closest() / merged .querySelector() over positional DOM walks. props.children ignored; fixes unsafe; :scope on element merges. Closes #11641. +1972/0, 17 files, 7 commits. Patch changeset, 13 packages.
+
+OPEN
+• langchain-ai/langgraphjs #2803 — JS port of CVE-2026-71433. InMemoryStore + Postgres: search(["tenant","acme"]) no longer leaks sibling acme-corp. Exact-or-descendant match; empty prefix still returns everything. Closes #2721. +337/-62, 8 files.
+
+• drizzle-team/drizzle-orm #6258 — drizzle-kit pull no longer treats two-FK domain tables as M2M junctions. Junction only if every column is an FK column. SQLite/Cockroach pass columns into SchemaForPull. Closes #6253. +212/-6, 7 files.
+
+• TanStack/router #8285 — handleServerAction returns 400 for malformed JSON (GET ?payload= and JSON POST) instead of an unhandled 500. Action not invoked. Shape 2 of #8237. +114/-4, 3 files.
+
+CLOSED, NOT MERGED
+• vitest-dev/vitest #11174 — browser-mode define double-stringify. Closed by repo automation before review. +17/-3, 4 files. Not refiled.
+
+Process: search existing PRs first, skip claimed issues, ship tests + changeset, wait on the maintainer.
+
+Stack: TypeScript, Rust, Biome, LangGraph.js, Drizzle ORM, TanStack Start/Router, Better Auth, Vitest, Changesets, Git.
+
+Skills:
+TypeScript
+Rust
+LangGraph.js
+Drizzle ORM
+TanStack Router
+React 19
+Vite
+Vitest
+Software Quality Assurance
+Git
+Analytical Skills
+Changesets
+
+3. Web3 Open Source Software Contributor
+Lattice AI Labs
+August 2026 - present
+APAC
+Remote
+
+Description:
+Independent Web3 Open Source contributor.
+github.com/devtechedge/web3-oss-contributions.
+
+Claim first, then PR when the issue is free: 17 items - 2 merged, 9 open, 2 closed not merged, 4 Drips claims.
+
+MERGED
+• Anza Kit #2032: docs — getPatternMatchCodec predicates use number again after #1809 (#1810). Merged by @lorisleiva, 9 Sep 2026. Docs-only, no changeset.
+
+• thirdweb js #8938: useTokenQuery rethrows 401/429/timeout instead of Token Not Supported in CheckoutWidget (#8937). Tests + changeset. Merged by @0xFirekeeper, 7 Sep 2026.
+
+OPEN
+• Safe Protocol Kit #1426: keep nonce=0 in createTxOptions / createLegacyTxOptions (truthiness dropped 0). Tests, changeset, CLA.
+
+• AppKit #5767: createNamespaces uses caipNetworkId so Stellar/Neo3/Solana are not advertised as WC chain ids (#5552).
+
+• AppKit #5766: Meld on-ramp URL gets countryCode/source so it does not land on Binance Connect with a fake amount (#5752).
+
+• AppKit #5763: accessible names on modal card and header icon buttons.
+
+• wagmi #5240: reconnect() no longer strands on reconnecting when isAuthorized() rejects (#5233).
+
+• RainbowKit #2701: account modal aria-labelledby via titleId (#2700).
+
+• RainbowKit #2703: mobile connecting screen shows GET/store link if the wallet app may be missing (#2574).
+
+• ethers.js #5186: Signature._yParity for non-canonical EIP-7702 auth-list values; raw yParity serialize (#5091).
+
+• Stellar SDK #1715: coerce RPC timestamps to number; reject NaN/null/blank (#1644).
+
+CLOSED
+
+• viem #5065: TestClient.revert on evm_revert=false. Closed by author.
+
+• solana-web3.js #3882: ALT Freeze/Deactivate decoder discriminators. Closed; v1.x maintenance-only.
+
+DRIPS CLAIMS
+
+• #1845 Drip List URL swapped for account ID, then validatedValue fails.
+
+• #1509 timeline titles should follow tx status.
+
+• #1576 hide step index on single-tx flows.
+
+• #1500 DripListBadge still mounts .name when name/owner hidden.
+
+Stack: TypeScript, Safe, AppKit, thirdweb, wagmi, RainbowKit, ethers.js, Stellar, Anza Kit, viem, changesets
+
+Skills:
+TypeScript
+Open-Source Software
+Web3
+Blockchain
+Safe Core SDK
+Wagmi
+Ethers.js
+Viem
+React 18
+Software Quality Assurance
+Vite
+Git
+
+4. Quantitative Crypto Trader & Derivatives Strategist
+Spectral Quantitative Trading
+September 2016 - present
+APAC
+Remote
+
+Description:
+Active digital asset trader managing diversified proprietary capital across tier-1 centralized exchanges (Binance, Coinbase, Bitget, MEXC, HTX/Huobi, Pionex) and decentralized trading protocols (Hyperliquid, Uniswap, Aave, GMX).
+
+Executed systematic, algorithmic, and discretionary trading strategies across spot, derivatives, and structured yield products.
+
+Key Trading Strategies & Platform Execution:
+• Derivatives & Margin Trading: Traded USDT/USDC-margined & coin-margined perpetual swaps and delivery futures on Binance, Bitget, and Hyperliquid. Managed isolated and cross-margin positions with strict leverage controls, dynamic liquidation price buffers, and multi-tier trailing stop-loss/take-profit laddering.
+
+• Algorithmic & Grid Systems: Built and deployed automated trading bots, specializing in spot grid, futures grid, infinity grid, DCA, and Martingale strategies (Pionex, Binance) to capture bid-ask spread and harvest volatility in ranging markets. Optimized lead-trader strategies on Bitget copy-trading frameworks.
+
+• Delta-Neutral Arbitrage: Executed cash-and-carry basis trading and funding rate arbitrage across CEXs and on-chain order books. Captured positive funding yields by pairing spot holdings with equivalent short perpetual contracts while eliminating directional market risk.
+
+• On-Chain Derivatives & DeFi: Traded on Hyperliquid L1 leveraging fully on-chain central limit order books (CLOB). Executed concentrated liquidity provisioning (Uniswap v3), collateralized lending/borrowing loops (Aave), and restaking/yield aggregation strategies.
+
+• Structured Products & Yield Generation: Deployed capital into Dual Investment, Shark Fin, Range-Bound products, and native PoS staking to generate alpha on idle reserves.
+
+• Risk & Execution Management: Utilized TWAP/VWAP execution on Coinbase Advanced and MEXC to minimize slippage on illiquid pairs. Enforced rigorous Value-at-Risk (VaR), drawdown caps, and Sharpe-ratio portfolio optimization.
+
+Skills:
+Cryptocurrency
+Derivatives
+Algorithmic Trading
+Decentralized Finance
+Hedging
+Arbitrage
+
+Licenses & certifications:
+1. Deloitte Australia - Technology Consulting Internship
+Forage
+June 2020
+QQhPbsKpYAm5qZFQi
+https://www.theforage.com/simulations/deloitte-au/technology-consulting-virtual-internship-5972
+
+Skills:
+Cloud Computing
+Reproducible Research
+Exploratory Data Analysis
+Cloud Storage
+Project Management
+
+Description:
+Completed Deloitte Australia's Technology Consulting job simulation via Forage, focusing on tech strategy, software development, and data analytics.
+
+Key Modules Completed:
+• Telemetry Data Unification & IoT Integration
+• Data Analysis & Visualization via Tableau
+• Enterprise Software Architecture & Proposal Development
+• Cybersecurity Incident Response & Log Analysis
+• Forensic Technology & Data Governance
+
+Gained hands-on experience solving enterprise IT challenges.
+
+2. Ambient Agents with LangGraph
+LangChain
+June 2026
+yue6ezwlpq
+https://academy.langchain.com/courses/ambient-agents
+
+Skills
+LangGraph
+LangChain
+Python (Programming Language)
+
+Description:
+Completed course from LangChain Academy covering ambient AI agents, background execution, email automation, and performance evaluation using LangGraph and LangSmith.
+
+Key Modules Completed:
+• LangGraph Fundamentals & Architecture
+• Building Ambient Email AI Agents
+• Agent State Management & Workflows
+• Agent Evaluation & Debugging with LangSmith
+
+Gained practical experience developing autonomous ambient agents to automate real-world workflows and evaluating performance.
+
+3. Deep Agents
+LangChain
+June 2026
+oxhmpbxntm
+https://academy.langchain.com/courses/deep-agents-with-langgraph
+
+Skills:
+LangGraph
+LangChain
+Python (Programming Language)
+
+Description:
+Completed course from LangChain Academy covering deep agent architectures, stateful execution, multi-agent orchestration, and context management using LangGraph.
+
+Key Modules Completed:
+• Building a Deep Agent & Execution Environment
+• Context Management & State Control
+• Sub-Agent Delegation & Multi-Agent Systems
+• Evaluation & Debugging with LangSmith
+
+Gained practical experience architecting long-running, autonomous AI agents for complex workflows.
+
+4. Virtual Reality
+University of London
+July 2020
+4XR3YMZUXHE4
+https://www.coursera.org/account/accomplishments/specialization/4XR3YMZUXHE4
+
+Skills:
+Virtual Reality (VR)
+3D Modeling
+Interaction Design
+
+Description:
+Completed 5-course Specialization from University of London covering VR principles, 3D interaction design, and environment development using Unity.
+
+Key Modules Completed:
+• Introduction to Virtual Reality & 3D Models
+• 3D Interaction Design in VR
+• Building Interactive 3D Characters & Social VR
+• Making Your First Virtual Reality Game
+
+Gained practical experience developing VR environments and building a full 3D VR game in Unity.
+
+5. Blockchain
+UC Irvine
+July 2020
+HT9CWLVYLDH9
+https://www.coursera.org/account/accomplishments/specialization/HT9CWLVYLDH9
+
+Skills:
+Blockchain
+Cryptocurrency
+Cryptography
+Bitcoin
+Ethereum
+Distributed Ledger Technology (DLT)
+Password Hashing
+Smart Contracts
+
+Description:
+Completed 4-course Specialization from UC Irvine covering blockchain architecture, cryptographic hashing, Merkle trees, and decentralized peer-to-peer transaction processing.
+
+Key Modules Completed:
+• The Blockchain
+• Cryptography and Hashing Overview
+• The Merkle Tree and Cryptocurrencies
+• The Blockchain System
+
+Gained practical understanding of blockchain mechanics, cryptofinance, and decentralized consensus systems.
+
+6. Introduction to Data Science
+IBM
+July 2020
+DN47EG8AZ6L2
+https://www.coursera.org/account/accomplishments/specialization/DN47EG8AZ6L2
+
+Skills:
+Data Science
+Python (Programming Language)
+SQL
+Data Analysis
+Jupyter
+Databases
+Open-Source Software
+
+Description:
+Completed 4-course Specialization from IBM covering core data science methodologies, open-source tools, relational databases, and SQL querying with Python.
+
+Key Modules Completed:
+• What is Data Science?
+• Tools for Data Science
+• Data Science Methodology
+• Databases and SQL for Data Science with Python
+
+Gained practical experience using Jupyter Notebooks, applying data science problem-solving frameworks, and executing SQL queries for data analysis.
+
+7. IBM Data Science Professional Certificate
+IBM
+July 2020
+DRBARHHVEX6F
+https://www.coursera.org/account/accomplishments/specialization/DRBARHHVEX6F
+
+Skills:
+Data Science
+Python (Programming Language)
+SQL
+Machine Learning
+Data Visualization
+Pandas (Software)
+Jupyter
+Data Analysis
+
+Description:
+Completed 9-course Professional Certificate from IBM covering data science methodologies, Python, SQL, data analysis, visualization, and machine learning models.
+
+Key Modules Completed:
+• Data Science Methodology & Tools
+• Python for Data Science, AI & Development
+• Databases & SQL with Python
+• Data Analysis, Visualization & Machine Learning
+• Applied Data Science Capstone
+
+Gained practical experience through hands-on cloud labs and a comprehensive capstone project.
+
+8. Six Sigma Green Belt
+Kennesaw State University
+July 2020
+VDGA9TV9GG3V
+https://www.coursera.org/account/accomplishments/specialization/VDGA9TV9GG3V
+
+Skills:
+Six Sigma
+Lean Six Sigma
+Manufacturing Process Improvement
+DMAIC
+Statistical Process Control (SPC)
+Quality Management
+Root Cause Analysis
+Project Management
+
+Description:
+Completed 4-course Specialization from Kennesaw State University covering advanced Six Sigma and Lean methodologies for business process improvement and quality assurance.
+
+Key Modules Completed:
+• Six Sigma & Organization (Advanced)
+• Advanced Define & Measure Phases
+• Advanced Analyze Phase
+• Advanced Improve & Control Phases
+
+Gained practical expertise in DMAIC framework tools, workflow optimization, defect reduction, and Lean process management principles.
+
+9. Self-Driving Cars
+University of Toronto
+August 2020
+LHYPGGJVV75V
+https://www.coursera.org/account/accomplishments/specialization/LHYPGGJVV75V
+
+Skills:
+Autonomous Vehicles
+Computer Vision
+Motion Planning
+Localization
+Sensor Fusion
+Python (Programming Language)
+Robotics
+Deep Learning
+
+Description:
+Completed 4-course Specialization from University of Toronto covering autonomous vehicle engineering, state estimation, visual perception, and motion planning.
+
+Key Modules Completed:
+• Introduction to Self-Driving Cars
+• State Estimation and Localization
+• Visual Perception for Self-Driving Cars
+• Motion Planning for Self-Driving Cars
+
+Gained practical experience implementing AV localization, object detection, and vehicle control using the CARLA simulator and real datasets.
+
+10. Data Science: Statistics and Machine Learning
+The Johns Hopkins University
+August 2020
+WUTRNV3D9VN3
+https://www.coursera.org/account/accomplishments/specialization/WUTRNV3D9VN3
+
+Skills:
+Machine Learning
+Statistical Inference
+Regression Analysis
+Data Visualization
+R (Programming Language)
+Predictive Modeling
+Data Products
+Statistics
+
+Description:
+Completed 5-course Specialization from Johns Hopkins University covering the full data science pipeline, statistical inference, regression modeling, and machine learning.
+
+Key Modules Completed:
+• Statistical Inference
+• Regression Models
+• Practical Machine Learning
+• Developing Data Products
+• Data Science Capstone
+
+Gained practical experience applying statistical principles, building ML algorithms, publishing reproducible analyses, and developing data products.
+
+11. Data Science: Foundations using R
+The Johns Hopkins University
+August 2020
+XZJJ2823YZJJ
+https://www.coursera.org/account/accomplishments/specialization/XZJJ2823YZJJ
+
+Skills:
+R (Programming Language)
+Data Science
+Data Cleaning
+Exploratory Data Analysis
+Reproducible Research
+Git
+Statistical Analysis
+Data Visualization
+
+Description:
+Completed 5-course Specialization from Johns Hopkins University covering foundational data science tools, R programming, data wrangling, exploratory analysis, and reproducible research.
+
+Key Modules Completed:
+• The Data Scientist's Toolbox & R Programming
+• Getting & Cleaning Data
+• Exploratory Data Analysis
+• Reproducible Research
+
+Gained practical experience managing datasets, creating data visualizations, and publishing reproducible statistical analyses using R.
+
+12. Data Science Specialization
+The Johns Hopkins University
+August 2020
+9WXW969VYD5S
+https://www.coursera.org/account/accomplishments/specialization/9WXW969VYD5S
+
+Skills:
+Data Science
+R (Programming Language)
+Statistical Inference
+Machine Learning
+Data Visualization
+Regression Analysis
+Exploratory Data Analysis
+Git
+
+Description:
+Completed 10-course Specialization from Johns Hopkins University covering the end-to-end data science pipeline using R.
+
+Key Modules Completed:
+• R Programming & Data Cleaning
+• Exploratory Data Analysis & Statistics
+• Regression & Practical Machine Learning
+• Developing Data Products & Capstone
+
+Gained expertise in managing large datasets, statistical inference, building ML algorithms, publishing reproducible research, and deploying data products.
+
+13. DeepLearning.AI TensorFlow Developer Professional Certificate
+DeepLearning.AI
+August 2020
+MB53RUAWEP96
+https://www.coursera.org/account/accomplishments/specialization/MB53RUAWEP96
+
+Skills:
+TensorFlow
+Deep Learning
+Convolutional Neural Networks (CNN)
+Natural Language Processing (NLP)
+Time Series Analysis
+Python (Programming Language)
+Neural Networks
+Machine Learning
+
+Description:
+Completed 4-course Professional Certificate from DeepLearning.AI covering practical deep learning model development using TensorFlow.
+
+Key Modules Completed:
+• Intro to TensorFlow for AI, ML & Deep Learning
+• Convolutional Neural Networks in TensorFlow
+• Natural Language Processing in TensorFlow
+• Sequences, Time Series & Prediction
+
+Gained expertise in building neural networks, image classification with CNNs, NLP systems, and time-series forecasting models.
+
+14. Google IT Support Professional Certificate
+Google
+August 2020
+GAKZPEN65GKS
+
+Skills:
+Technical Support
+Computer Networking
+Operating Systems
+System Administration
+Information Security
+Troubleshooting
+Linux
+Customer Service
+
+Description:
+Completed 5-course Professional Certificate from Google covering IT support, networking, operating systems, system administration, and security.
+
+Key Modules Completed:
+• Technical Support Fundamentals & Networking
+• Operating Systems & Power User Skills
+• System Administration & IT Infrastructure
+• IT Security: Defense Against Digital Dark Arts
+
+Gained practical experience in IT troubleshooting, network administration, system configuration, and cybersecurity.
+
+15. Google IT Automation with Python Professional Certificate
+Google
+Sept 2020
+JAAMZGPCF42X
+https://www.coursera.org/account/accomplishments/specialization/JAAMZGPCF42X
+
+Skills:
+Python (Programming Language)
+Git
+Linux
+Bash
+Automation
+Configuration Management
+Cloud Computing
+Troubleshooting
+
+Description:
+Completed 6-course Professional Certificate from Google covering Python programming, system administration, and IT automation.
+
+Key Modules Completed:
+• Python & OS Interaction
+• Git & GitHub Version Control
+• Troubleshooting & Debugging Techniques
+• Configuration Management & Cloud Automation
+
+Gained practical experience writing Python scripts to automate real-world IT tasks, manage systems at scale, and debug complex problems.
+
+16. Deep Learning Specialization
+DeepLearning.AI
+July 2020
+X6UWWBABR5XA
+https://www.coursera.org/account/accomplishments/specialization/X6UWWBABR5XA
+
+Skills:
+Deep Learning
+Convolutional Neural Networks (CNN)
+Recurrent Neural Networks (RNN)
+Python (Programming Language)
+Neural Networks
+Machine Learning
+Keras
+Hyperparameter Tuning
+
+Description:
+Completed 5-course Specialization from DeepLearning.AI covering foundational deep learning, model optimization, computer vision, and sequence models.
+
+Key Modules Completed:
+• Neural Networks & Deep Learning
+• Improving Deep Neural Networks (Tuning & Regularization)
+• Structuring Machine Learning Projects
+• Convolutional Neural Networks
+• Sequence Models
+
+Gained practical experience building CNNs, RNNs, LSTMs, and Transformers using Python and TensorFlow with advanced optimization techniques.
+
+17. AWS Fundamentals Specialization
+Amazon Web Services (AWS)
+July 2020
+8W8Q9UJSFR7R
+https://www.coursera.org/account/accomplishments/specialization/8W8Q9UJSFR7R
+
+Skills:
+Amazon Web Services (AWS)
+Amazon S3
+Amazon CloudWatch
+Identity and Access Management (IAM)
+Cloud Computing
+Amazon EC2
+Solution Architecture
+Cloud Storage
+
+Description:
+Completed 4-course Coursera Specialization covering core AWS infrastructure, security, migration strategies, and serverless architectures through hands-on labs.
+
+Key Modules Completed:
+• AWS Fundamentals: Going Cloud-Native
+• AWS Fundamentals: Addressing Security Risk
+• AWS Fundamentals: Migrating to the Cloud
+• AWS Fundamentals: Building Serverless Applications
+
+Gained proficiency in core AWS services, cloud security concepts, workload migration planning, and deploying serverless applications.
+
+18. Microsoft Certified: Azure Fundamentals
+Microsoft
+August 2020
+3841D21B0E5E588F
+https://learn.microsoft.com/api/credentials/share/en-us/DevayanMandal-5513/3841D21B0E5E588F?sharingId
+
+Skills:
+Identity and Access Management (IAM)
+Cloud Computing
+Solution Architecture
+Cloud Storage
+
+Description:
+Demonstrates foundational knowledge of cloud concepts, core Azure architectural components, and primary cloud services across compute, storage, networking, and databases.
+
+**Core Competencies Verified:**
+• Cloud Concepts (IaaS, PaaS, SaaS, Hybrid Deployments)
+• Azure Architecture, Governance & Management Tools
+• Cloud Security, Identity, Privacy & Compliance
+• Cost Management, SLAs & Resource Lifecycles
+
+Provides a grounded baseline for enterprise cloud infrastructure.
+
+19. J.P. Morgan - Software Engineering Job Simulation
+Forage
+June 2020
+wqhQvsGsakxLXMvCR
+https://www.theforage.com/simulations/jpmorgan/software-engineering-btjx
+
+Skills:
+Data Analysis
+Python (Programming Language)
+TypeScript
+Open-Source Software
+Exploratory Data Analysis
+
+Description:
+* Set up a local dev environment by downloading the necessary files, tools and dependencies.
+
+* Fixed broken files in the repository to make web application output correctly.
+
+* Used JPMorgan Chase’s open source library called Perspective to generate a live graph that displays a data feed in a clear and visually appealing way for traders to monitor.
+
+20. Model Context Protocol: Advanced Topics
+Anthropic
+September 2026
+g9szj3w428ix
+https://verify.skilljar.com/c/g9szj3w428ix
+
+Skills:
+Multi-agent Systems
+TypeScript
+Solution Architecture
+Prompt Engineering
+Python (Programming Language)
+
+Description:
+Advanced certification from Anthropic covering Model Context Protocol (MCP) architecture and production engineering.
+
+Specialized in client-side sampling execution (shifting LLM compute/costs), real-time progress/logging telemetry, and roots-based security boundaries.
+
+Mastered JSON-RPC message specifications, Stdio transport handshakes, StreamableHTTP via Server-Sent Events (SSE), session management, and stateful vs. stateless transport selection for horizontally scalable deployment.
+
+21. AI Fluency for Builders
+Anthropic
+September 2026
+bxe2dhq82w6c
+https://verify.skilljar.com/c/bxe2dhq82w6c
+
+Skills:
+Solution Architecture
+Multi-Agent Orchestration
+Prompt Engineering
+Software Quality Assurance
+Generative AI
+
+Description
+Earned the AI Fluency for Builders certification issued by Anthropic in partnership with CodePath.
+
+Mastered practical AI collaboration using the 4D Framework (Delegation, Description, Discernment, Diligence) across the engineering lifecycle.
+
+Skilled in prompt description chains, system decomposition, writing upfront acceptance criteria, evaluating AI code/UX across 5 core lenses (correctness, fit, experience, responsibility, quality), and owning the full arc from problem to shipped code.
+
+22. Agents and Workflows
+OpenAI
+September 2026
+cv4gh56iyc
+https://academy.openai.com/public/certificate/cv4gh56iyc
+
+Skills:
+Multi-agent Systems
+Solution Architecture
+Prompt Engineering
+Multi-Agent Orchestration
+
+Description:
+Completed OpenAI Academy's Agents and Workflows course, focusing on directing, reviewing, and optimizing AI agents for structured tasks.
+
+Mastered key practices including providing effective context, defining target outputs, setting operational boundaries, and establishing human-in-the-loop review.
+
+Practiced transforming scattered project context into structured project briefs and converting working agent workflows into reusable workspace skills to boost execution and process repeatability.
+
+23. Microsoft Certified: Azure AI Fundamentals
+Microsoft
+August 2020
+3841D21B0E5E588F
+https://learn.microsoft.com/api/credentials/share/en-us/DevayanMandal-5513/3841D21B0E5E588F?sharingId
+
+Skills:
+Cloud Computing
+Cloud Storage
+Identity and Access Management (IAM)
+Solution Architecture
+
+Description:
+Demonstrates foundational knowledge of cloud concepts, core Azure architectural components, and primary cloud services across compute, storage, networking, and databases.
+
+**Core Competencies Verified:**
+• Cloud Concepts (IaaS, PaaS, SaaS, Hybrid Deployments)
+• Azure Architecture, Governance & Management Tools
+• Cloud Security, Identity, Privacy & Compliance
+• Cost Management, SLAs & Resource Lifecycles
+
+Provides a grounded baseline for enterprise cloud infrastructure.
+
+Education:
+University of Mumbai
+Bachelor of Engineering
+Chemical Engineering
+Grade: First Class
+
+Activities and societies: Indian Institute of Chemical Engineers (IIChE) Student Chapter (Core Committee Member);
+Chemical Engineering Students Association (ChESA); College Technical Fest Committee (Organized annual inter-college symposium & coding tracks);
+Computer Society & Coding Club (Participated in C++/Java programming workshops & campus hackathons);
+Rotaract Club / National Service Scheme (NSS - Community outreach & youth initiatives);
+Technical Paper Presentation (TPP);
+Chemical Process Simulation Competitions
+ 
+Description:
+Completed a rigorous B.E. in Chemical Engineering from the University of Mumbai, combining engineering sciences, transport phenomena, mathematical modeling, and process optimization.
+
+Core Engineering Curriculum:
+• Fluid Flow Operations, Heat & Mass Transfer Operations (HTO/MTO I & II)
+• Chemical Engineering Thermodynamics (CET) & Chemical Reaction Engineering (CRE I & II)
+• Process Dynamics & Control (PDC), Plant Design & Economics, and Equipment Design (CEED)
+• Material & Energy Balance Calculations, Transport Phenomena, and Chemical Technology
+
+Computational & IT Transition:
+Alongside core engineering coursework, completed foundational academic training in Object-Oriented Programming (C++), Java, and Numerical Methods / Computational Analysis (differential systems and algorithms). Applying code to simulate thermodynamic systems sparked my passion for software engineering, establishing the strong analytical and algorithmic foundation that drove my successful career pivot into tech.
+
+Skills:
+Analytical Skills
+Mathematical Modeling
+Project Management
+Configuration Management
+Solution Architecture
