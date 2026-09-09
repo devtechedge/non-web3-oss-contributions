@@ -4,7 +4,7 @@ Public ledger of **upstream** non-Web3 pull requests by [@devtechedge](https://g
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-library%20fixes-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![Open PRs](https://img.shields.io/badge/open%20PRs-8-black)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Aopen)
+[![Open PRs](https://img.shields.io/badge/open%20PRs-9-black)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Aopen)
 [![Merged](https://img.shields.io/badge/merged-2-brightgreen)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Amerged)
 [![PRs](https://img.shields.io/github/issues-pr/devtechedge/non-web3-oss-contributions?label=tracker%20PRs)](https://github.com/devtechedge/non-web3-oss-contributions)
 
@@ -16,11 +16,11 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 
 ## Status
 
-**16 external items** as of 10 Sep 2026: **8 open PRs**, **1 closed**, **2 merged**, **9 pipeline / skip**.
+**16 external items** as of 10 Sep 2026: **9 open PRs**, **1 closed**, **2 merged**, **9 pipeline / skip**.
 
 > **This README is the product.** There is no separate app or Vercel alias. Counts are a snapshot, not a live API.
 
-crewAIInc/crewAI#7361 opened for #7351. Snapshot now **8 open / 2 merged / 1 closed / 9 pipeline**.
+crewAIInc/crewAI#7361 opened for #7351. Snapshot now **9 open / 2 merged / 1 closed / 9 pipeline**.
 
 - First merge: [biomejs/biome#11667](https://github.com/biomejs/biome/pull/11667), [@dyc3](https://github.com/dyc3), 8 Sep 2026
 - Latest open: [crewAIInc/crewAI#7361](https://github.com/crewAIInc/crewAI/pull/7361), 10 Sep 2026
@@ -43,6 +43,7 @@ crewAIInc/crewAI#7361 opened for #7351. Snapshot now **8 open / 2 merged / 1 clo
 | Repo | PR | What | Status | Opened |
 | --- | --- | --- | --- | --- |
 | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | [#7361](https://github.com/crewAIInc/crewAI/pull/7361) | Async `CancelledError` in `_aexecute_core()` now emits `TaskFailedEvent` before re-raise so `EventListener.execution_spans` is popped and retained Task/Agent/Crew graphs can GC. Closes #7351. +132/−1, 2 files. Regression tests for span cleanup + event emission. Asked maintainers to apply required `llm-generated` label (no self-label permission). | Open; `require-issue` green; CodeRabbit pending; label request posted | 10 Sep 2026 |
+| [pnpm/pnpm](https://github.com/pnpm/pnpm) | [#14756](https://github.com/pnpm/pnpm/pull/14756) | `pnpm update pkg@x.y.z` keeps prior `^`/`~` (Rust `calc_specifier` prefers `prev_specifier`, matching TS). Unit tests + changeset. Closes #14745. | Open; just filed | 10 Sep 2026 |
 | [pnpm/pnpm](https://github.com/pnpm/pnpm) | [#14754](https://github.com/pnpm/pnpm/pull/14754) | Non-recursive `pnpm run "/pattern/" --no-bail` no longer kills sibling scripts on first failure (honor no_bail like recursive path). Rust v12 + regression + changeset. Closes #14718. | Open; just filed | 10 Sep 2026 |
 | [pnpm/pnpm](https://github.com/pnpm/pnpm) | [#14753](https://github.com/pnpm/pnpm/pull/14753) | Honor `lockfile: false` when `devEngines.packageManager.onFail: download` (skip project env-lockfile sync; keep download/switch). Rust v12 + TS v11 + tests + changeset. Closes #14728. | Open; just filed | 10 Sep 2026 |
 | [TanStack/router](https://github.com/TanStack/router) | [#8314](https://github.com/TanStack/router/pull/8314) | Fix retain-then-strip search middleware so Link/`buildLocation` without `search` omits stripped defaults (active matching vs empty URL). Closes #8309. Regression tests + changeset. | Open; just filed | 10 Sep 2026 |
