@@ -5,7 +5,7 @@ Public ledger of **upstream** non-Web3 pull requests by [@devtechedge](https://g
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-library%20fixes-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Open PRs](https://img.shields.io/badge/open%20PRs-3-black)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Aopen)
-[![Merged](https://img.shields.io/badge/merged-2-brightgreen)](https://github.com/better-auth/better-auth/pull/11208)
+[![Merged](https://img.shields.io/badge/merged-2-brightgreen)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Amerged)
 [![PRs](https://img.shields.io/github/issues-pr/devtechedge/non-web3-oss-contributions?label=tracker%20PRs)](https://github.com/devtechedge/non-web3-oss-contributions)
 
 Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge)
@@ -20,7 +20,10 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 
 > **This README is the product.** There is no separate app or Vercel alias. Counts are a snapshot, not a live API.
 
-First upstream merge: [biomejs/biome#11667](https://github.com/biomejs/biome/pull/11667), merged by [@dyc3](https://github.com/dyc3) on 8 Sep 2026. Latest: [better-auth/better-auth#11208](https://github.com/better-auth/better-auth/pull/11208), merged by [@bytaesu](https://github.com/bytaesu) on 9 Sep 2026.
+better-auth#11208 moved Open → Merged. Snapshot now **3 open / 2 merged / 1 closed / 9 pipeline**.
+
+- First merge: [biomejs/biome#11667](https://github.com/biomejs/biome/pull/11667), [@dyc3](https://github.com/dyc3), 8 Sep 2026
+- Latest: [better-auth/better-auth#11208](https://github.com/better-auth/better-auth/pull/11208), [@bytaesu](https://github.com/bytaesu), 9 Sep 2026
 
 ---
 
@@ -75,8 +78,10 @@ Files for #11174: `packages/vitest/src/node/plugins/testConfig.ts`, `test/e2e/fi
 
 | Repo | PR | What | Status | Opened |
 | --- | --- | --- | --- | --- |
-| [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#11208](https://github.com/better-auth/better-auth/pull/11208) | Regression test: `/phone-number/verify` OpenAPI `requestBody` stays present after the `.and(z.record())` intersection (closes #8122). Generator already fixed on `main`; this locks the reported endpoint. +58/−0, 1 file (`open-api.test.ts`). No changeset (tests only). | **Merged** by [@bytaesu](https://github.com/bytaesu) on 9 Sep 2026. LGTM, then merge queue into `main`. | 8 Sep 2026 |
+| [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#11208](https://github.com/better-auth/better-auth/pull/11208) | Regression test: `/phone-number/verify` OpenAPI `requestBody` stays present after the `.and(z.record())` intersection (closes #8122). Generator already fixed on `main`; this locks the reported endpoint. +53/−0, 1 file (`packages/better-auth/src/plugins/open-api/open-api.test.ts`). No changeset (tests only). | **Merged** by [@bytaesu](https://github.com/bytaesu) on 9 Sep 2026 ([`874752f`](https://github.com/better-auth/better-auth/commit/874752f4fd2ba3117cf6a360c29b5be5d10d230d)). LGTM, then merge queue into `main`. | 8 Sep 2026 |
 | [biomejs/biome](https://github.com/biomejs/biome) | [#11667](https://github.com/biomejs/biome/pull/11667) | Nursery port of [unicorn/better-dom-traversing](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/better-dom-traversing.md). Prefer `.firstChild` / `.firstElementChild` / `.closest()` / merged `.querySelector()` over positional DOM walks. `props.children` ignored. Fixes unsafe. Closes #11641. +1972/−0, 17 files, 7 commits. Patch changeset for `@biomejs/biome` (13 packages). | **Merged** by [@dyc3](https://github.com/dyc3) on 8 Sep 2026 ([`e997900`](https://github.com/biomejs/biome/commit/e997900c3eaf9d5efaf1ca12a067a962e1a04d0b)). First-time-contributor CI was waiting maintainer approval; Carson approved the review, then merged to `main`. | 8 Sep 2026 |
+
+Files for #11208: `packages/better-auth/src/plugins/open-api/open-api.test.ts`.
 
 Files for #11667: `.changeset/better-dom-traversing.md`, `crates/biome_js_analyze/src/lint/nursery/use_better_dom_traversing.rs`, `crates/biome_js_analyze/tests/specs/nursery/useBetterDomTraversing/{invalid.js,valid.js,valid.jsx}` + snaps, `crates/biome_rule_options/src/use_better_dom_traversing.rs`, `crates/biome_rule_options/src/lib.rs`, `crates/biome_configuration/src/analyzer/linter/rules.rs`, `crates/biome_configuration/src/generated/linter_options_check.rs`, `crates/biome_diagnostics_categories/src/categories.rs`, `crates/biome_cli/src/execute/migrate/eslint_any_rule_to_biome.rs`, `packages/@biomejs/backend-jsonrpc/src/workspace.ts`, `packages/@biomejs/biome/configuration_schema.json`, plus `AnyJsExpression::is_optional_chain` in the JS syntax crate.
 
