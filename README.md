@@ -4,7 +4,7 @@ Public ledger of **upstream** non-Web3 pull requests by [@devtechedge](https://g
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-library%20fixes-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![Open PRs](https://img.shields.io/badge/open%20PRs-15-black)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Aopen)
+[![Open PRs](https://img.shields.io/badge/open%20PRs-14-black)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Aopen)
 [![Merged](https://img.shields.io/badge/merged-2-brightgreen)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Amerged)
 [![PRs](https://img.shields.io/github/issues-pr/devtechedge/non-web3-oss-contributions?label=tracker%20PRs)](https://github.com/devtechedge/non-web3-oss-contributions)
 
@@ -16,14 +16,14 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 
 ## Status
 
-**16 external PRs** as of 10 Sep 2026 (IST): **15 open**, **2 closed (not merged)**, **2 merged**. Plus **9 pipeline / skip** rows.
+**16 external PRs** as of 10 Sep 2026 (IST): **14 open**, **3 closed (not merged)**, **2 merged**. Plus **9 pipeline / skip** rows.
 
 > **This README is the product.** There is no separate app or Vercel alias. Counts are a snapshot, not a live API.
 
 **10 Sep day scoreboard: 10 upstream PRs opened** (serial). One of those ([typescript-eslint#12855](https://github.com/typescript-eslint/typescript-eslint/pull/12855)) was auto-closed by AgentScan ~28s after open - same class of automation flag as vitest #11174. Do not refile that issue from this account.
 
 - First merge: [biomejs/biome#11667](https://github.com/biomejs/biome/pull/11667), [@dyc3](https://github.com/dyc3), 8 Sep 2026
-- Latest open: [pallets/jinja#2268](https://github.com/pallets/jinja/pull/2268), 10 Sep 2026
+- Latest open: [nodejs/undici#5796](https://github.com/nodejs/undici/pull/5796), 10 Sep 2026
 - Preference: prefer **tier-2 / tier-3** reputable mid-size repos when mega-repo queues are crowded
 
 ---
@@ -44,7 +44,6 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 | Repo | PR | What | Status | Opened |
 | --- | --- | --- | --- | --- |
 | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | [#7361](https://github.com/crewAIInc/crewAI/pull/7361) | Async `CancelledError` in `_aexecute_core()` now emits `TaskFailedEvent` before re-raise so `EventListener.execution_spans` is popped and retained Task/Agent/Crew graphs can GC. Closes #7351. +132/−1, 2 files. Regression tests for span cleanup + event emission. Asked maintainers to apply required `llm-generated` label (no self-label permission). | Open; `require-issue` green; waiting maintainer `llm-generated` label | 10 Sep 2026 |
-| [pallets/jinja](https://github.com/pallets/jinja) | [#2268](https://github.com/pallets/jinja/pull/2268) | `indent(..., first=True)` honors `blank=False` on an empty first line (including empty input), so empty filter blocks render `""` instead of spaces. Closes #2176. | Open; just filed | 10 Sep 2026 |
 | [nodejs/undici](https://github.com/nodejs/undici) | [#5796](https://github.com/nodejs/undici/pull/5796) | When `redirect: 'follow'`, discard large 3xx redirect body chunks without pausing so a connection-limited Agent can reuse the socket (`willFollow` like `controller.dump`). Closes #5728. Regression `test/issue-5728.js`. | Open; just filed | 10 Sep 2026 |
 | [SQLMesh/sqlmesh](https://github.com/SQLMesh/sqlmesh) | [#6040](https://github.com/SQLMesh/sqlmesh/pull/6040) | Create `ModelTest` instances on the main thread before the concurrent pool so `create_test`/`to_datetime` no longer races with another worker's `time_machine` freeze when `execution_time` is set. Closes #6039. | Open; just filed | 10 Sep 2026 |
 | [brianc/node-postgres](https://github.com/brianc/node-postgres) | [#3772](https://github.com/brianc/node-postgres/pull/3772) | `Connection.sync()` no longer sets `_ending` (extended-query Sync is not disconnect), so later `ECONNRESET`/`EPIPE` are not swallowed for the connection lifetime. Closes #3769. Unit regressions; 284 pg unit tests green. | Open; just filed; unit suite green | 10 Sep 2026 |
@@ -83,6 +82,7 @@ See [10 Sep scan](docs/scan-2026-09-10.md) and [9 Sep scan](docs/scan-2026-09-09
 
 | Repo | PR | What | Status | Opened |
 | --- | --- | --- | --- | --- |
+| [pallets/jinja](https://github.com/pallets/jinja) | [#2268](https://github.com/pallets/jinja/pull/2268) | `indent(..., first=True)` honor `blank=False` on empty first line. Aimed at #2176. | Closed not merged by [@ThiefMaster](https://github.com/ThiefMaster); title marked **Rejected AI junk**. Do not refile #2176 from this account without a clear maintainer-welcome signal. | 10 Sep 2026 |
 | [vitest-dev/vitest](https://github.com/vitest-dev/vitest) | [#11174](https://github.com/vitest-dev/vitest/pull/11174) | Browser-mode `define` double-stringify. Parse via `deleteDefineConfig` clone so `FOO: JSON.stringify("BAR")` is `'BAR'` not `'"BAR"'`. Vite `config.define` left intact. Closes #11164. +17/−3, 4 files. | Closed ~28s after open by github-actions. AgentScan `bot` label; account flagged as likely LLM/agent. **Not merged.** Issue #11164 still open. Do not refile from this account. Do not reply to the auto-close comment from an agent. | 8 Sep 2026 |
 | [typescript-eslint/typescript-eslint](https://github.com/typescript-eslint/typescript-eslint) | [#12855](https://github.com/typescript-eslint/typescript-eslint/pull/12855) | `no-meaningless-void-operator` skip AssignmentExpression (`void (x = 1)`). Aimed at #12852. | Closed ~28s after open by github-actions. AgentScan automation signal; **not merged.** Do not refile #12852 from this account. Do not reply to the auto-close from an agent. | 10 Sep 2026 |
 
