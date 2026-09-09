@@ -59,7 +59,7 @@ Files for #7361: `lib/crewai/src/crewai/task.py`, `lib/crewai/tests/telemetry/te
 
 Deep non-Web3 scan refreshed on 10 Sep 2026. CrewAI #7351 moved Open PR → [#7361](https://github.com/crewAIInc/crewAI/pull/7361). Remaining short queue:
 
-1. **GO after policy check:** [vercel/next.js#98417](https://github.com/vercel/next.js/issues/98417) — stop `@next/codemod upgrade` from jumping a compatible ESLint 9 project to ESLint 10; confirm the version-selection rule before coding.
+1. **GO after policy check (comment posted):** [vercel/next.js#98417](https://github.com/vercel/next.js/issues/98417) — proposed: keep existing `eslint` when it already satisfies `eslint-config-next` peer; only bump when below range; prefer lowest satisfying major. Waiting on maintainer confirmation before coding. Comment: https://github.com/vercel/next.js/issues/98417#issuecomment-5608267483
 2. **GO after design:** [better-auth/better-auth#11160](https://github.com/better-auth/better-auth/issues/11160) — coalesce `$sessionSignal` bursts so `fetchSession` does not cancel in-flight `/get-session` work; confirm coalescing approach with maintainers first.
 
 See the full [10 Sep scan](docs/scan-2026-09-10.md) (and prior [9 Sep scan](docs/scan-2026-09-09.md)). Research rows do not change the contribution counts above until a PR is opened.
