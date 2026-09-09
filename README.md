@@ -52,6 +52,15 @@ Files for #6258: `drizzle-kit/src/cli/commands/pull-common.ts`, `drizzle-kit/src
 
 Files for #8285: `packages/start-server-core/src/server-functions-handler.ts`, `packages/start-server-core/tests/server-functions-handler-invalid-json.test.ts`, `.changeset/clear-json-payload-400.md`.
 
+## Next contribution scan
+
+Deep non-Web3 scan completed across 21 established OSS repositories on 9 Sep 2026. The evidence-backed next queue is deliberately short:
+
+1. **GO:** [crewAIInc/crewAI#7351](https://github.com/crewAIInc/crewAI/issues/7351) — clean up async task telemetry state on `CancelledError`; claim first and apply CrewAI's required `llm-generated` label/disclosure.
+2. **GO after policy check:** [vercel/next.js#98417](https://github.com/vercel/next.js/issues/98417) — stop `@next/codemod upgrade` from jumping a compatible ESLint 9 project to ESLint 10; confirm the version-selection rule before coding.
+
+See the full [scan, source verification, validation queue, and explicit skip ledger](docs/scan-2026-09-09.md). These research rows do not change the contribution counts above until a PR is opened.
+
 ## Closed (not merged)
 
 | Repo | PR | What | Status | Opened |
