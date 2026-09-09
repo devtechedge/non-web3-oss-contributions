@@ -4,7 +4,7 @@ Public ledger of **upstream** non-Web3 pull requests by [@devtechedge](https://g
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-library%20fixes-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![Open PRs](https://img.shields.io/badge/open%20PRs-12-black)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Aopen)
+[![Open PRs](https://img.shields.io/badge/open%20PRs-13-black)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Aopen)
 [![Merged](https://img.shields.io/badge/merged-2-brightgreen)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Amerged)
 [![PRs](https://img.shields.io/github/issues-pr/devtechedge/non-web3-oss-contributions?label=tracker%20PRs)](https://github.com/devtechedge/non-web3-oss-contributions)
 
@@ -16,14 +16,14 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 
 ## Status
 
-**16 external PRs** as of 10 Sep 2026 (IST): **12 open**, **2 closed (not merged)**, **2 merged**. Plus **9 pipeline / skip** rows.
+**16 external PRs** as of 10 Sep 2026 (IST): **13 open**, **2 closed (not merged)**, **2 merged**. Plus **9 pipeline / skip** rows.
 
 > **This README is the product.** There is no separate app or Vercel alias. Counts are a snapshot, not a live API.
 
 **10 Sep day scoreboard: 10 upstream PRs opened** (serial). One of those ([typescript-eslint#12855](https://github.com/typescript-eslint/typescript-eslint/pull/12855)) was auto-closed by AgentScan ~28s after open - same class of automation flag as vitest #11174. Do not refile that issue from this account.
 
 - First merge: [biomejs/biome#11667](https://github.com/biomejs/biome/pull/11667), [@dyc3](https://github.com/dyc3), 8 Sep 2026
-- Latest open: [brianc/node-postgres#3772](https://github.com/brianc/node-postgres/pull/3772), 10 Sep 2026
+- Latest open: [SQLMesh/sqlmesh#6040](https://github.com/SQLMesh/sqlmesh/pull/6040), 10 Sep 2026
 - Preference: prefer **tier-2 / tier-3** reputable mid-size repos when mega-repo queues are crowded
 
 ---
@@ -44,6 +44,7 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 | Repo | PR | What | Status | Opened |
 | --- | --- | --- | --- | --- |
 | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | [#7361](https://github.com/crewAIInc/crewAI/pull/7361) | Async `CancelledError` in `_aexecute_core()` now emits `TaskFailedEvent` before re-raise so `EventListener.execution_spans` is popped and retained Task/Agent/Crew graphs can GC. Closes #7351. +132/−1, 2 files. Regression tests for span cleanup + event emission. Asked maintainers to apply required `llm-generated` label (no self-label permission). | Open; `require-issue` green; waiting maintainer `llm-generated` label | 10 Sep 2026 |
+| [SQLMesh/sqlmesh](https://github.com/SQLMesh/sqlmesh) | [#6040](https://github.com/SQLMesh/sqlmesh/pull/6040) | Create `ModelTest` instances on the main thread before the concurrent pool so `create_test`/`to_datetime` no longer races with another worker's `time_machine` freeze when `execution_time` is set. Closes #6039. | Open; just filed | 10 Sep 2026 |
 | [brianc/node-postgres](https://github.com/brianc/node-postgres) | [#3772](https://github.com/brianc/node-postgres/pull/3772) | `Connection.sync()` no longer sets `_ending` (extended-query Sync is not disconnect), so later `ECONNRESET`/`EPIPE` are not swallowed for the connection lifetime. Closes #3769. Unit regressions; 284 pg unit tests green. | Open; just filed; unit suite green | 10 Sep 2026 |
 | [livekit/agents](https://github.com/livekit/agents) | [#7201](https://github.com/livekit/agents/pull/7201) | Public `SpeechHandle.hold_interruptions()` context manager + demote realtime uninterruptible `input_speech_started` log to debug. Closes #7191. Unit tests included. | Open; CLA signed | 10 Sep 2026 |
 | [livekit/agents](https://github.com/livekit/agents) | [#7199](https://github.com/livekit/agents/pull/7199) | Cancel false-interruption resume timer on non-empty interim/preflight STT while paused (VAD end_of_speech race). Re-arm only when not speaking. Closes #7198. +3 regressions; 12/12 in file. | Open; CLA signed; Devin Review clean | 10 Sep 2026 |
