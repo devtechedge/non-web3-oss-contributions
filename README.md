@@ -4,7 +4,7 @@ Public ledger of **upstream** non-Web3 pull requests by [@devtechedge](https://g
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-library%20fixes-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![Open PRs](https://img.shields.io/badge/open%20PRs-3-black)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Aopen)
+[![Open PRs](https://img.shields.io/badge/open%20PRs-4-black)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Aopen)
 [![Merged](https://img.shields.io/badge/merged-2-brightgreen)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Amerged)
 [![PRs](https://img.shields.io/github/issues-pr/devtechedge/non-web3-oss-contributions?label=tracker%20PRs)](https://github.com/devtechedge/non-web3-oss-contributions)
 
@@ -16,14 +16,14 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 
 ## Status
 
-**15 external items** as of 9 Sep 2026: **3 open PRs**, **1 closed**, **2 merged**, **9 pipeline / skip**.
+**16 external items** as of 10 Sep 2026: **4 open PRs**, **1 closed**, **2 merged**, **9 pipeline / skip**.
 
 > **This README is the product.** There is no separate app or Vercel alias. Counts are a snapshot, not a live API.
 
-better-auth#11208 moved Open → Merged. Snapshot now **3 open / 2 merged / 1 closed / 9 pipeline**.
+crewAIInc/crewAI#7361 opened for #7351. Snapshot now **4 open / 2 merged / 1 closed / 9 pipeline**.
 
 - First merge: [biomejs/biome#11667](https://github.com/biomejs/biome/pull/11667), [@dyc3](https://github.com/dyc3), 8 Sep 2026
-- Latest: [better-auth/better-auth#11208](https://github.com/better-auth/better-auth/pull/11208), [@bytaesu](https://github.com/bytaesu), 9 Sep 2026
+- Latest open: [crewAIInc/crewAI#7361](https://github.com/crewAIInc/crewAI/pull/7361), 10 Sep 2026
 
 ---
 
@@ -42,6 +42,7 @@ better-auth#11208 moved Open → Merged. Snapshot now **3 open / 2 merged / 1 cl
 
 | Repo | PR | What | Status | Opened |
 | --- | --- | --- | --- | --- |
+| [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | [#7361](https://github.com/crewAIInc/crewAI/pull/7361) | Async `CancelledError` in `_aexecute_core()` now emits `TaskFailedEvent` before re-raise so `EventListener.execution_spans` is popped and retained Task/Agent/Crew graphs can GC. Closes #7351. +132/−1, 2 files. Regression tests for span cleanup + event emission. Asked maintainers to apply required `llm-generated` label (no self-label permission). | Open; `require-issue` green; CodeRabbit pending; label request posted | 10 Sep 2026 |
 | [langchain-ai/langgraphjs](https://github.com/langchain-ai/langgraphjs) | [#2803](https://github.com/langchain-ai/langgraphjs/pull/2803) | JS port of CVE-2026-71433. `search(["tenant","acme"])` no longer leaks sibling `acme-corp`. Exact-or-descendant match; empty prefix still returns everything on InMemoryStore; `:` rejected in labels. Postgres `= path OR LIKE path:%` plus segment-aware `listNamespaces`. Closes #2721. +337/−62, 8 files. Patch changeset for checkpoint + checkpoint-postgres. | Open; PR title lint + Socket Security green; CI lint/format/build in progress; changeset-bot will bump 10 packages | 8 Sep 2026 |
 | [drizzle-team/drizzle-orm](https://github.com/drizzle-team/drizzle-orm) | [#6258](https://github.com/drizzle-team/drizzle-orm/pull/6258) | `drizzle-kit pull` no longer treats two-FK domain tables as M2M junctions. Junction only if every column is an FK column (pure join table still `through`). SQLite/Cockroach now pass `columns` into `SchemaForPull`. Closes #6253. +212/−6, 7 files. Targets `rc5`. Changelog line in `1.0.0-rc.5.md`. | Open; no labels; no CI checks yet; issue #6253 still open | 8 Sep 2026 |
 | [TanStack/router](https://github.com/TanStack/router) | [#8285](https://github.com/TanStack/router/pull/8285) | `handleServerAction` returns **400** for malformed JSON on GET `?payload=` and JSON POST bodies (`SyntaxError`), instead of an unhandled 500. Action is not invoked. Patch changeset for `@tanstack/start-server-core`. Unit tests for both shapes. +114/−4, 3 files. Covers Shape 2 of #8237 (Shape 1 is already in #8220). | Open; CodeRabbit clean; first-time-contributor CI waiting on maintainer | 7 Sep 2026 |
@@ -52,14 +53,16 @@ Files for #6258: `drizzle-kit/src/cli/commands/pull-common.ts`, `drizzle-kit/src
 
 Files for #8285: `packages/start-server-core/src/server-functions-handler.ts`, `packages/start-server-core/tests/server-functions-handler-invalid-json.test.ts`, `.changeset/clear-json-payload-400.md`.
 
+Files for #7361: `lib/crewai/src/crewai/task.py`, `lib/crewai/tests/telemetry/test_task_cancellation_span_cleanup.py`.
+
 ## Next contribution scan
 
-Deep non-Web3 scan completed across 21 established OSS repositories on 9 Sep 2026. The evidence-backed next queue is deliberately short:
+Deep non-Web3 scan refreshed on 10 Sep 2026. CrewAI #7351 moved Open PR → [#7361](https://github.com/crewAIInc/crewAI/pull/7361). Remaining short queue:
 
-1. **GO:** [crewAIInc/crewAI#7351](https://github.com/crewAIInc/crewAI/issues/7351) — clean up async task telemetry state on `CancelledError`; claim first and apply CrewAI's required `llm-generated` label/disclosure.
-2. **GO after policy check:** [vercel/next.js#98417](https://github.com/vercel/next.js/issues/98417) — stop `@next/codemod upgrade` from jumping a compatible ESLint 9 project to ESLint 10; confirm the version-selection rule before coding.
+1. **GO after policy check:** [vercel/next.js#98417](https://github.com/vercel/next.js/issues/98417) — stop `@next/codemod upgrade` from jumping a compatible ESLint 9 project to ESLint 10; confirm the version-selection rule before coding.
+2. **GO after design:** [better-auth/better-auth#11160](https://github.com/better-auth/better-auth/issues/11160) — coalesce `$sessionSignal` bursts so `fetchSession` does not cancel in-flight `/get-session` work; confirm coalescing approach with maintainers first.
 
-See the full [scan, source verification, validation queue, and explicit skip ledger](docs/scan-2026-09-09.md). These research rows do not change the contribution counts above until a PR is opened.
+See the full [10 Sep scan](docs/scan-2026-09-10.md) (and prior [9 Sep scan](docs/scan-2026-09-09.md)). Research rows do not change the contribution counts above until a PR is opened.
 
 ## Closed (not merged)
 
@@ -112,7 +115,7 @@ Files for #11667: `.changeset/better-dom-traversing.md`, `crates/biome_js_analyz
 | Layer | What |
 | --- | --- |
 | Surface | This GitHub README |
-| Scope | TypeScript / Rust library bugs outside Web3 (TanStack Start, Router, Query, Form, Virtual, Vitest, Vite, Zod, better-auth, drizzle-kit, langgraphjs, Biome) |
+| Scope | TypeScript / Python / Rust library bugs outside Web3 (TanStack Start, Router, Query, Form, Virtual, Vitest, Vite, Zod, better-auth, drizzle-kit, langgraphjs, Biome, CrewAI) |
 | Process | Search open PRs first. Skip if claimed. Fork + PR when the issue is free. |
 | Sibling | [web3-oss-contributions](https://github.com/devtechedge/web3-oss-contributions) |
 
@@ -124,4 +127,4 @@ MIT. See [LICENSE](LICENSE).
 
 ---
 
-Last updated: 9 Sep 2026
+Last updated: 10 Sep 2026
