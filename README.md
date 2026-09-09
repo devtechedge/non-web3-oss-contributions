@@ -4,8 +4,8 @@ Public ledger of **upstream** non-Web3 pull requests by [@devtechedge](https://g
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-library%20fixes-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![Open PRs](https://img.shields.io/badge/open%20PRs-4-black)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Aopen)
-[![Merged](https://img.shields.io/badge/merged-1-brightgreen)](https://github.com/biomejs/biome/pull/11667)
+[![Open PRs](https://img.shields.io/badge/open%20PRs-3-black)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Aopen)
+[![Merged](https://img.shields.io/badge/merged-2-brightgreen)](https://github.com/better-auth/better-auth/pull/11208)
 [![PRs](https://img.shields.io/github/issues-pr/devtechedge/non-web3-oss-contributions?label=tracker%20PRs)](https://github.com/devtechedge/non-web3-oss-contributions)
 
 Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge)
@@ -16,11 +16,11 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 
 ## Status
 
-**15 external items** as of 8 Sep 2026: **4 open PRs**, **1 closed**, **1 merged**, **9 pipeline / skip**.
+**15 external items** as of 9 Sep 2026: **3 open PRs**, **1 closed**, **2 merged**, **9 pipeline / skip**.
 
 > **This README is the product.** There is no separate app or Vercel alias. Counts are a snapshot, not a live API.
 
-First upstream merge: [biomejs/biome#11667](https://github.com/biomejs/biome/pull/11667), merged by [@dyc3](https://github.com/dyc3) on 8 Sep 2026.
+First upstream merge: [biomejs/biome#11667](https://github.com/biomejs/biome/pull/11667), merged by [@dyc3](https://github.com/dyc3) on 8 Sep 2026. Latest: [better-auth/better-auth#11208](https://github.com/better-auth/better-auth/pull/11208), merged by [@bytaesu](https://github.com/bytaesu) on 9 Sep 2026.
 
 ---
 
@@ -41,7 +41,6 @@ First upstream merge: [biomejs/biome#11667](https://github.com/biomejs/biome/pul
 | --- | --- | --- | --- | --- |
 | [langchain-ai/langgraphjs](https://github.com/langchain-ai/langgraphjs) | [#2803](https://github.com/langchain-ai/langgraphjs/pull/2803) | JS port of CVE-2026-71433. `search(["tenant","acme"])` no longer leaks sibling `acme-corp`. Exact-or-descendant match; empty prefix still returns everything on InMemoryStore; `:` rejected in labels. Postgres `= path OR LIKE path:%` plus segment-aware `listNamespaces`. Closes #2721. +337/−62, 8 files. Patch changeset for checkpoint + checkpoint-postgres. | Open; PR title lint + Socket Security green; CI lint/format/build in progress; changeset-bot will bump 10 packages | 8 Sep 2026 |
 | [drizzle-team/drizzle-orm](https://github.com/drizzle-team/drizzle-orm) | [#6258](https://github.com/drizzle-team/drizzle-orm/pull/6258) | `drizzle-kit pull` no longer treats two-FK domain tables as M2M junctions. Junction only if every column is an FK column (pure join table still `through`). SQLite/Cockroach now pass `columns` into `SchemaForPull`. Closes #6253. +212/−6, 7 files. Targets `rc5`. Changelog line in `1.0.0-rc.5.md`. | Open; no labels; no CI checks yet; issue #6253 still open | 8 Sep 2026 |
-| [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#11208](https://github.com/better-auth/better-auth/pull/11208) | Regression test: `/phone-number/verify` OpenAPI `requestBody` stays present after the `.and(z.record())` intersection (closes #8122). Generator already fixed on `main`; this locks the reported endpoint. +58/−0, 1 file (`open-api.test.ts`). No changeset (tests only). | Open; title + `devtools` label ok; CI/E2E/changeset workflows waiting first-time-contributor approval; review requested from Bekacru | 8 Sep 2026 |
 | [TanStack/router](https://github.com/TanStack/router) | [#8285](https://github.com/TanStack/router/pull/8285) | `handleServerAction` returns **400** for malformed JSON on GET `?payload=` and JSON POST bodies (`SyntaxError`), instead of an unhandled 500. Action is not invoked. Patch changeset for `@tanstack/start-server-core`. Unit tests for both shapes. +114/−4, 3 files. Covers Shape 2 of #8237 (Shape 1 is already in #8220). | Open; CodeRabbit clean; first-time-contributor CI waiting on maintainer | 7 Sep 2026 |
 
 Files for #2803: `libs/checkpoint/src/store/base.ts`, `libs/checkpoint/src/store/memory.ts`, `libs/checkpoint/src/tests/namespace.test.ts`, `libs/checkpoint-postgres/src/store/index.ts`, `libs/checkpoint-postgres/src/store/modules/search-operations.ts`, `libs/checkpoint-postgres/src/store/modules/utils.ts`, `libs/checkpoint-postgres/src/store/modules/utils.test.ts`, `.changeset/namespace-segment-boundary.md`.
@@ -76,6 +75,7 @@ Files for #11174: `packages/vitest/src/node/plugins/testConfig.ts`, `test/e2e/fi
 
 | Repo | PR | What | Status | Opened |
 | --- | --- | --- | --- | --- |
+| [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#11208](https://github.com/better-auth/better-auth/pull/11208) | Regression test: `/phone-number/verify` OpenAPI `requestBody` stays present after the `.and(z.record())` intersection (closes #8122). Generator already fixed on `main`; this locks the reported endpoint. +58/−0, 1 file (`open-api.test.ts`). No changeset (tests only). | **Merged** by [@bytaesu](https://github.com/bytaesu) on 9 Sep 2026. LGTM, then merge queue into `main`. | 8 Sep 2026 |
 | [biomejs/biome](https://github.com/biomejs/biome) | [#11667](https://github.com/biomejs/biome/pull/11667) | Nursery port of [unicorn/better-dom-traversing](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/better-dom-traversing.md). Prefer `.firstChild` / `.firstElementChild` / `.closest()` / merged `.querySelector()` over positional DOM walks. `props.children` ignored. Fixes unsafe. Closes #11641. +1972/−0, 17 files, 7 commits. Patch changeset for `@biomejs/biome` (13 packages). | **Merged** by [@dyc3](https://github.com/dyc3) on 8 Sep 2026 ([`e997900`](https://github.com/biomejs/biome/commit/e997900c3eaf9d5efaf1ca12a067a962e1a04d0b)). First-time-contributor CI was waiting maintainer approval; Carson approved the review, then merged to `main`. | 8 Sep 2026 |
 
 Files for #11667: `.changeset/better-dom-traversing.md`, `crates/biome_js_analyze/src/lint/nursery/use_better_dom_traversing.rs`, `crates/biome_js_analyze/tests/specs/nursery/useBetterDomTraversing/{invalid.js,valid.js,valid.jsx}` + snaps, `crates/biome_rule_options/src/use_better_dom_traversing.rs`, `crates/biome_rule_options/src/lib.rs`, `crates/biome_configuration/src/analyzer/linter/rules.rs`, `crates/biome_configuration/src/generated/linter_options_check.rs`, `crates/biome_diagnostics_categories/src/categories.rs`, `crates/biome_cli/src/execute/migrate/eslint_any_rule_to_biome.rs`, `packages/@biomejs/backend-jsonrpc/src/workspace.ts`, `packages/@biomejs/biome/configuration_schema.json`, plus `AnyJsExpression::is_optional_chain` in the JS syntax crate.
@@ -110,4 +110,4 @@ MIT. See [LICENSE](LICENSE).
 
 ---
 
-Last updated: 8 Sep 2026
+Last updated: 9 Sep 2026
