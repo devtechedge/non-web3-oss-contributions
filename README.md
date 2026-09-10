@@ -5,7 +5,7 @@ Public ledger of **upstream** non-Web3 pull requests by [@devtechedge](https://g
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-library%20fixes-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Open PRs](https://img.shields.io/badge/open%20PRs-9-black)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Aopen)
-[![Merged](https://img.shields.io/badge/merged-5-brightgreen)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Amerged)
+[![Merged](https://img.shields.io/badge/merged-6-brightgreen)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Amerged)
 [![PRs](https://img.shields.io/github/issues-pr/devtechedge/non-web3-oss-contributions?label=tracker%20PRs)](https://github.com/devtechedge/non-web3-oss-contributions)
 
 Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge)
@@ -16,7 +16,7 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 
 ## Status
 
-**18 external PRs** as of 10 Sep 2026 (IST): **9 open**, **5 merged**, **4 closed (not merged)**. Plus **9 pipeline / skip** rows.
+**20 external PRs** as of 11 Sep 2026 (IST): **9 open**, **6 merged**, **5 closed (not merged)**. Plus **9 pipeline / skip** rows.
 
 > **This README is the product.** There is no separate app or Vercel alias. Counts are a snapshot, not a live API.
 
@@ -68,6 +68,7 @@ Files for #7361: `lib/crewai/src/crewai/task.py`, `lib/crewai/tests/telemetry/te
 | [pnpm/pnpm](https://github.com/pnpm/pnpm) | [#14756](https://github.com/pnpm/pnpm/pull/14756) | `pnpm update pkg@x.y.z` keeps the manifest's existing `^`/`~` operator and supported `npm:` / `jsr:` prefix behavior. Closes #14745. | **Merged** | 10 Sep 2026 10:11:49 UTC |
 | [pnpm/pnpm](https://github.com/pnpm/pnpm) | [#14754](https://github.com/pnpm/pnpm/pull/14754) | Non-recursive `pnpm run "/pattern/" --no-bail` no longer kills sibling scripts after the first failure. Closes #14718. | **Merged** | 10 Sep 2026 07:16:07 UTC |
 | [SQLMesh/sqlmesh](https://github.com/SQLMesh/sqlmesh) | [#6040](https://github.com/SQLMesh/sqlmesh/pull/6040) | Move `ModelTest.create_test()` to the calling thread before the concurrent pool so `execution_time` / `time_machine` use cannot race across workers; keep creation inside the engine-adapter cleanup scope. Closes #6039. 3 commits, +24/−23, 1 file. | **Merged** | 10 Sep 2026 00:40:59 UTC |
+| [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#11208](https://github.com/better-auth/better-auth/pull/11208) | `test(open-api): lock in requestBody for /phone-number/verify`. Regression test merged upstream. | **Merged** | 9 Sep 2026 08:19:43 UTC |
 | [biomejs/biome](https://github.com/biomejs/biome) | [#11667](https://github.com/biomejs/biome/pull/11667) | Add `useBetterDomTraversing` nursery rule ported from `eslint-plugin-unicorn`. Targeted tests passed. | **Merged** | 8 Sep 2026 16:58:53 UTC |
 
 ## Closed (not merged)
@@ -78,6 +79,7 @@ Files for #7361: `lib/crewai/src/crewai/task.py`, `lib/crewai/tests/telemetry/te
 | [pallets/jinja](https://github.com/pallets/jinja) | [#2268](https://github.com/pallets/jinja/pull/2268) | `indent(..., first=True)` honor `blank=False` on empty first line. Aimed at #2176. | Closed not merged by [@ThiefMaster](https://github.com/ThiefMaster); title marked **Rejected AI junk**. Do not refile #2176 from this account without a clear maintainer-welcome signal. | 10 Sep 2026 |
 | [vitest-dev/vitest](https://github.com/vitest-dev/vitest) | [#11174](https://github.com/vitest-dev/vitest/pull/11174) | Browser-mode `define` double-stringify. Parse via `deleteDefineConfig` clone so `FOO: JSON.stringify("BAR")` is `'BAR'` not `'"BAR"'`. Vite `config.define` left intact. Closes #11164. +17/−3, 4 files. | Closed ~28s after open by github-actions. AgentScan `bot` label; account flagged as likely LLM/agent. **Not merged.** Issue #11164 still open. Do not refile from this account. | 8 Sep 2026 |
 | [typescript-eslint/typescript-eslint](https://github.com/typescript-eslint/typescript-eslint) | [#12855](https://github.com/typescript-eslint/typescript-eslint/pull/12855) | `no-meaningless-void-operator` skip AssignmentExpression (`void (x = 1)`). Aimed at #12852. | Closed ~28s after open by github-actions. AgentScan automation signal; **not merged.** Do not refile #12852 from this account. | 10 Sep 2026 |
+| [Kludex/starlette](https://github.com/Kludex/starlette) | [#3533](https://github.com/Kludex/starlette/pull/3533) | `URL.include_query_params` stringified list/tuple values instead of emitting repeated params. | Closed by author (`devtechedge`): competing open PRs [#3529](https://github.com/Kludex/starlette/pull/3529) and [#3531](https://github.com/Kludex/starlette/pull/3531) already covered it. **Not merged.** | 9 Sep 2026 |
 
 Files for #11174: `packages/vitest/src/node/plugins/testConfig.ts`, `test/e2e/fixtures/config/browser-define/basic.test.ts`, `test/e2e/fixtures/config/browser-define/vitest.config.ts`, `test/e2e/test/config/browser-configs.test.ts`.
 
@@ -87,13 +89,13 @@ Files for #11174: `packages/vitest/src/node/plugins/testConfig.ts`, `test/e2e/fi
 | --- | --- | --- |
 | [TanStack/router](https://github.com/TanStack/router) | [#8280](https://github.com/TanStack/router/issues/8280) | Non-OK `application/json` server-fn responses resolve `undefined` on the client. Competing PR #8283 exists; do not compete. |
 | [TanStack/router](https://github.com/TanStack/router) | [#8237](https://github.com/TanStack/router/issues/8237) Shape 1 | Missing `x-tsr-serverFn` header returns unhandled 500. Already owned by #8220; #8285 covers Shape 2 only. |
-| [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#11208](https://github.com/better-auth/better-auth/pull/11208) | Regression test was merged upstream; retained as historical context. |
 | [WordPress/Requests](https://github.com/WordPress/Requests) | [#1084](https://github.com/WordPress/Requests/issues/1084) | Investigated; protocol-sensitive trim review did not justify a behavior-changing PR, and the upstream connection did not permit posting the verification comment. |
 | [pydantic/pydantic-ai](https://github.com/pydantic/pydantic-ai) | [#7771](https://github.com/pydantic/pydantic-ai/issues/7771) | Public `BaseDurabilityCapability` export was already fixed upstream; skip duplicate work. |
 | [requests-cache](https://github.com/requests-cache/requests-cache) | [#1177](https://github.com/requests-cache/requests-cache/issues/1177) | Explicitly skipped: issue context asked LLMs not to be involved; later PR #1188 was closed as not viable by the maintainer. |
 | [webpack/webpack](https://github.com/webpack/webpack) | [#22026](https://github.com/webpack/webpack/issues/22026) | Original ESM/contenthash reproduction is fixed on current main; no `devtechedge` PR was opened. |
 | [webpack/webpack](https://github.com/webpack/webpack) | [#22032](https://github.com/webpack/webpack/pull/22032) | Other contributor's open broader `RuntimeModule.updateHash` proposal; not a `devtechedge` contribution. |
 | [astral-sh/ruff](https://github.com/astral-sh/ruff) | [#27324](https://github.com/astral-sh/ruff/issues/27324) | Diagnostic-only patch prepared; publication pending a writable Ruff fork/branch. |
+| [prettier/prettier](https://github.com/prettier/prettier) | [#19985](https://github.com/prettier/prettier/issues/19985) | Liquid tag alone on a line reflowed into the neighbouring paragraph under `proseWrap: always`. Already fixed upstream by [fisker's #19838](https://github.com/prettier/prettier/pull/19838) (merged 15 Aug 2026) three weeks before the issue was filed; closed 10 Sep 2026 via test-only [#20020](https://github.com/prettier/prettier/pull/20020). Investigation comments only - no `devtechedge` PR. Do not chase. |
 
 ## Next contribution scan
 
