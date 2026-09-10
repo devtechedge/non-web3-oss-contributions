@@ -4,8 +4,8 @@ Public ledger of **upstream** non-Web3 pull requests by [@devtechedge](https://g
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-library%20fixes-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![Open PRs](https://img.shields.io/badge/open%20PRs-10-black)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Aopen)
-[![Merged](https://img.shields.io/badge/merged-4-brightgreen)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Amerged)
+[![Open PRs](https://img.shields.io/badge/open%20PRs-9-black)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Aopen)
+[![Merged](https://img.shields.io/badge/merged-5-brightgreen)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Amerged)
 [![PRs](https://img.shields.io/github/issues-pr/devtechedge/non-web3-oss-contributions?label=tracker%20PRs)](https://github.com/devtechedge/non-web3-oss-contributions)
 
 Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge)
@@ -16,15 +16,15 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 
 ## Status
 
-**18 external PRs** as of 10 Sep 2026 (IST): **10 open**, **4 merged**, **4 closed (not merged)**. Plus **9 pipeline / skip** rows.
+**18 external PRs** as of 10 Sep 2026 (IST): **9 open**, **5 merged**, **4 closed (not merged)**. Plus **9 pipeline / skip** rows.
 
 > **This README is the product.** There is no separate app or Vercel alias. Counts are a snapshot, not a live API.
 
 **10 Sep day scoreboard: 10 upstream PRs opened** (serial). One of those ([typescript-eslint#12855](https://github.com/typescript-eslint/typescript-eslint/pull/12855)) was auto-closed by AgentScan ~28s after open - same class of automation flag as vitest #11174. Do not refile that issue from this account.
 
 - First merge: [biomejs/biome#11667](https://github.com/biomejs/biome/pull/11667), 8 Sep 2026
-- Latest merge: [pnpm/pnpm#14756](https://github.com/pnpm/pnpm/pull/14756), 10 Sep 2026 at 10:11:49 UTC
-- Latest PR activity: [pnpm/pnpm#14753](https://github.com/pnpm/pnpm/pull/14753) remained open after reviewer follow-up, last updated 10 Sep 2026 at 10:43 UTC
+- Latest merge: [pnpm/pnpm#14753](https://github.com/pnpm/pnpm/pull/14753), 10 Sep 2026 at 11:29:39 UTC
+- Latest PR activity: [pnpm/pnpm#14753](https://github.com/pnpm/pnpm/pull/14753) merged at 11:29:39 UTC; final upstream update recorded at 11:30:04 UTC
 - Preference: prefer **tier-2 / tier-3** reputable mid-size repos when mega-repo queues are crowded
 
 ---
@@ -46,7 +46,6 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 | [brianc/node-postgres](https://github.com/brianc/node-postgres) | [#3772](https://github.com/brianc/node-postgres/pull/3772) | `Connection.sync()` no longer sets `_ending` (extended-query Sync is not disconnect), so later `ECONNRESET`/`EPIPE` are not swallowed for the connection lifetime. Closes #3769. Unit regressions; 284 pg unit tests green. | Open; unit suite green | 10 Sep 2026 |
 | [livekit/agents](https://github.com/livekit/agents) | [#7201](https://github.com/livekit/agents/pull/7201) | Public `SpeechHandle.hold_interruptions()` context manager + demote realtime uninterruptible `input_speech_started` log to debug. Closes #7191. Unit tests included. | Open; CLA signed | 10 Sep 2026 |
 | [livekit/agents](https://github.com/livekit/agents) | [#7199](https://github.com/livekit/agents/pull/7199) | Cancel false-interruption resume timer on non-empty interim/preflight STT while paused (VAD end_of_speech race). Re-arm only when not speaking. Closes #7198. +3 regressions; 12/12 in file. | Open; CLA signed; Devin Review clean | 10 Sep 2026 |
-| [pnpm/pnpm](https://github.com/pnpm/pnpm) | [#14753](https://github.com/pnpm/pnpm/pull/14753) | Honor `lockfile: false` when `devEngines.packageManager.onFail: download` (skip project env-lockfile sync; keep download/switch). Rust v12 + TS v11 + tests + changeset. Closes #14728. | Open; reviewer follow-up resolved; still awaiting maintainer | 10 Sep 2026 |
 | [TanStack/router](https://github.com/TanStack/router) | [#8314](https://github.com/TanStack/router/pull/8314) | Fix retain-then-strip search middleware so Link/`buildLocation` without `search` omits stripped defaults (active matching vs empty URL). Closes #8309. Regression tests + changeset. | Open; awaiting maintainer | 10 Sep 2026 |
 | [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#11235](https://github.com/better-auth/better-auth/pull/11235) | Coalesce `$sessionSignal` bursts so overlapping notifies do not cancel in-flight `/get-session` (leading + one trailing). Closes #11160. Focus/poll paths unchanged. Regression tests in `session-refresh.test.ts`. | Open; Greptile P1 addressed; Vercel deploy needs team authorize | 10 Sep 2026 |
 | [langchain-ai/langgraphjs](https://github.com/langchain-ai/langgraphjs) | [#2803](https://github.com/langchain-ai/langgraphjs/pull/2803) | JS port of CVE-2026-71433. `search(["tenant","acme"])` no longer leaks sibling `acme-corp`. Exact-or-descendant match; empty prefix still returns everything on InMemoryStore; `:` rejected in labels. Postgres `= path OR LIKE path:%` plus segment-aware `listNamespaces`. Closes #2721. +337/−62, 8 files. Patch changeset for checkpoint + checkpoint-postgres. | Open; PR title lint + Socket Security green; CI in progress; changeset-bot will bump 10 packages | 8 Sep 2026 |
@@ -65,6 +64,7 @@ Files for #7361: `lib/crewai/src/crewai/task.py`, `lib/crewai/tests/telemetry/te
 
 | Repo | PR | What | Status | Merged |
 | --- | --- | --- | --- | --- |
+| [pnpm/pnpm](https://github.com/pnpm/pnpm) | [#14753](https://github.com/pnpm/pnpm/pull/14753) | Honor `lockfile: false` when `devEngines.packageManager.onFail: download`: skip project env-lockfile sync, keep package-manager download/switch, use global persistence when required. Rust v12 + TypeScript v11 + regression/e2e tests + changeset. Closes #14728. 3 commits, +240/−18, 9 files. | **Merged** | 10 Sep 2026 11:29:39 UTC |
 | [pnpm/pnpm](https://github.com/pnpm/pnpm) | [#14756](https://github.com/pnpm/pnpm/pull/14756) | `pnpm update pkg@x.y.z` keeps the manifest's existing `^`/`~` operator and supported `npm:` / `jsr:` prefix behavior. Closes #14745. | **Merged** | 10 Sep 2026 10:11:49 UTC |
 | [pnpm/pnpm](https://github.com/pnpm/pnpm) | [#14754](https://github.com/pnpm/pnpm/pull/14754) | Non-recursive `pnpm run "/pattern/" --no-bail` no longer kills sibling scripts after the first failure. Closes #14718. | **Merged** | 10 Sep 2026 07:16:07 UTC |
 | [SQLMesh/sqlmesh](https://github.com/SQLMesh/sqlmesh) | [#6040](https://github.com/SQLMesh/sqlmesh/pull/6040) | Move `ModelTest.create_test()` to the calling thread before the concurrent pool so `execution_time` / `time_machine` use cannot race across workers; keep creation inside the engine-adapter cleanup scope. Closes #6039. 3 commits, +24/−23, 1 file. | **Merged** | 10 Sep 2026 00:40:59 UTC |
