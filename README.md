@@ -4,7 +4,7 @@ Public ledger of **upstream** non-Web3 pull requests by [@devtechedge](https://g
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-library%20fixes-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![Open PRs](https://img.shields.io/badge/open%20PRs-8-black)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Aopen)
+[![Open PRs](https://img.shields.io/badge/open%20PRs-9-black)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Aopen)
 [![Merged](https://img.shields.io/badge/merged-7-brightgreen)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Amerged)
 [![PRs](https://img.shields.io/github/issues-pr/devtechedge/non-web3-oss-contributions?label=tracker%20PRs)](https://github.com/devtechedge/non-web3-oss-contributions)
 
@@ -16,7 +16,7 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 
 ## Status
 
-**20 external PRs** as of 11 Sep 2026 (IST): **8 open**, **7 merged**, **5 closed (not merged)**. Plus **9 pipeline / skip** rows.
+**21 external PRs** as of 11 Sep 2026 (IST): **9 open**, **7 merged**, **5 closed (not merged)**. Plus **9 pipeline / skip** rows.
 
 > **This README is the product.** There is no separate app or Vercel alias. Counts are a snapshot, not a live API.
 
@@ -24,7 +24,7 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 
 - First merge: [biomejs/biome#11667](https://github.com/biomejs/biome/pull/11667), 8 Sep 2026
 - Latest merge: [brianc/node-postgres#3772](https://github.com/brianc/node-postgres/pull/3772), 11 Sep 2026 at 13:06:54 UTC
-- Latest PR activity: [brianc/node-postgres#3772](https://github.com/brianc/node-postgres/pull/3772) merged at 13:06:54 UTC; final upstream update recorded at 16:08:22 UTC
+- Latest PR activity: [better-auth/better-auth#11261](https://github.com/better-auth/better-auth/pull/11261) opened 11 Sep 2026; [brianc/node-postgres#3772](https://github.com/brianc/node-postgres/pull/3772) merged at 13:06:54 UTC the same day, final upstream update recorded at 16:08:22 UTC
 - Preference: prefer **tier-2 / tier-3** reputable mid-size repos when mega-repo queues are crowded
 
 ---
@@ -42,6 +42,7 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 
 | Repo | PR | What | Status | Opened |
 | --- | --- | --- | --- | --- |
+| [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#11261](https://github.com/better-auth/better-auth/pull/11261) | Email and deletion callbacks in the core options were typed with the base `User`, hiding `user.additionalFields` from callback params even though fields arrive at runtime. Widened `user` to `User & Record<string, any>` across `sendVerificationEmail`, `sendResetPassword`, `onPasswordReset`, `onExistingUserSignUp`, change-email and delete-account callbacks (existing file pattern; the literal's inferred field types cannot thread back into callbacks in the same options object). Closes #11192. Type-level regression in `types.test.ts`. Patch changeset. | Open; PR title lint + Socket green; typecheck and targeted suites green locally; Vercel authorize checks non-actionable; Greptile/cubic pending | 11 Sep 2026 |
 | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | [#7361](https://github.com/crewAIInc/crewAI/pull/7361) | Async `CancelledError` in `_aexecute_core()` now emits `TaskFailedEvent` before re-raise so `EventListener.execution_spans` is popped and retained Task/Agent/Crew graphs can GC. Closes #7351. +132/−1, 2 files. Regression tests for span cleanup + event emission. Asked maintainers to apply required `llm-generated` label (no self-label permission). | Open; `require-issue` green; waiting maintainer `llm-generated` label | 10 Sep 2026 |
 | [livekit/agents](https://github.com/livekit/agents) | [#7201](https://github.com/livekit/agents/pull/7201) | Public `SpeechHandle.hold_interruptions()` context manager + demote realtime uninterruptible `input_speech_started` log to debug. Closes #7191. Unit tests included. | Open; CLA signed | 10 Sep 2026 |
 | [livekit/agents](https://github.com/livekit/agents) | [#7199](https://github.com/livekit/agents/pull/7199) | Cancel false-interruption resume timer on non-empty interim/preflight STT while paused (VAD end_of_speech race). Re-arm only when not speaking. Closes #7198. +3 regressions; 12/12 in file. | Open; CLA signed; Devin Review clean | 10 Sep 2026 |
@@ -58,6 +59,8 @@ Files for #6258: `drizzle-kit/src/cli/commands/pull-common.ts`, `drizzle-kit/src
 Files for #8285: `packages/start-server-core/src/server-functions-handler.ts`, `packages/start-server-core/tests/server-functions-handler-invalid-json.test.ts`, `.changeset/clear-json-payload-400.md`.
 
 Files for #7361: `lib/crewai/src/crewai/task.py`, `lib/crewai/tests/telemetry/test_task_cancellation_span_cleanup.py`.
+
+Files for #11261: `packages/core/src/types/init-options.ts`, `packages/better-auth/src/types/types.test.ts`, `.changeset/soft-planets-listen.md`.
 
 ## Merged pull requests
 
