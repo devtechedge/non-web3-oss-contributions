@@ -4,12 +4,12 @@ Public ledger of **upstream** non-Web3 pull requests by [@devtechedge](https://g
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Languages](https://img.shields.io/badge/TypeScript%20%2B%20Python-library%20fixes-blue)](https://github.com/devtechedge)
-[![Open PRs](https://img.shields.io/badge/open%20PRs-10-black)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Aopen)
+[![Open PRs](https://img.shields.io/badge/open%20PRs-11-black)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Aopen)
 [![Merged](https://img.shields.io/badge/merged-7-brightgreen)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Amerged)
 
 ## Status
 
-**22 external upstream PRs** as of 12 Sep 2026, 5 closed without merge. First merge [biomejs/biome#11667](https://github.com/biomejs/biome/pull/11667) on 8 Sep; latest merge [brianc/node-postgres#3772](https://github.com/brianc/node-postgres/pull/3772) on 11 Sep.
+**23 external upstream PRs** as of 12 Sep 2026, 5 closed without merge. First merge [biomejs/biome#11667](https://github.com/biomejs/biome/pull/11667) on 8 Sep; latest merge [brianc/node-postgres#3772](https://github.com/brianc/node-postgres/pull/3772) on 11 Sep.
 
 ## Merged pull requests
 
@@ -27,6 +27,7 @@ Public ledger of **upstream** non-Web3 pull requests by [@devtechedge](https://g
 
 | Repo | PR | What | Opened |
 | --- | --- | --- | --- |
+| [vercel/next.js](https://github.com/vercel/next.js) | [#98593](https://github.com/vercel/next.js/pull/98593) | `@next/codemod upgrade` keeps the project's `eslint` specifier when it already satisfies the `eslint-config-next` peer range (`^9` stays `^9` instead of being pinned to 10.10.0); when a bump is required it pins the highest release of the lowest satisfying major. New `resolveEslintUpgradeTarget` helper + decision-table unit tests. Closes #98417. Competing PR #98556 implements the same semantics. | 12 Sep 2026 |
 | [astral-sh/ruff](https://github.com/astral-sh/ruff) | [#28542](https://github.com/astral-sh/ruff/pull/28542) | PYI002 diagnostic reworded to name the stub-file context so it no longer reads as a false claim about tests referencing neither target. Message-only; behavior unchanged. | 12 Sep 2026 |
 | [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#11261](https://github.com/better-auth/better-auth/pull/11261) | Widen email/deletion callback `user` typing to `User & Record<string, any>` so `user.additionalFields` is visible in callback params. Type-level regression + changeset. | 11 Sep 2026 |
 | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | [#7361](https://github.com/crewAIInc/crewAI/pull/7361) | Async `CancelledError` now emits `TaskFailedEvent` before re-raise so execution spans pop and retained Task/Agent/Crew graphs can GC. Regression tests. | 10 Sep 2026 |
@@ -55,7 +56,7 @@ Previously vetted and skipped so the same bug is not raced again (verified 12 Se
 ## Ongoing work
 
 - Current queue, gates, and skip ledger: [11 Sep scan](docs/scan-2026-09-11.md); earlier: [10 Sep](docs/scan-2026-09-10.md), [9 Sep](docs/scan-2026-09-09.md). Selection criteria and checklist: [methodology](docs/methodology.md).
-- Waiting on maintainer confirmation before coding: [vercel/next.js#98417](https://github.com/vercel/next.js/issues/98417); queue resumes at [mswjs/msw#2401](https://github.com/mswjs/msw/issues/2401).
+- Opened 12 Sep with an explicit override of the design gate: [vercel/next.js#98593](https://github.com/vercel/next.js/pull/98593) for [#98417](https://github.com/vercel/next.js/issues/98417) after the approach comment went unanswered; competing PR [#98556](https://github.com/vercel/next.js/pull/98556) implements the same semantics. Queue resumes at [mswjs/msw#2401](https://github.com/mswjs/msw/issues/2401).
 
 A contribution counts as merged only when the upstream repository reports the PR as merged. Issue comments and other contributors' PRs are not counted.
 
