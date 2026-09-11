@@ -16,7 +16,7 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 
 ## Status
 
-**21 external PRs** as of 12 Sep 2026 (IST): **9 open**, **7 merged**, **5 closed (not merged)**. Plus **9 pipeline / skip** rows.
+**22 external PRs** as of 12 Sep 2026 (IST): **10 open**, **7 merged**, **5 closed (not merged)**. Plus **8 pipeline / skip** rows.
 
 > **This README is the product.** There is no separate app or Vercel alias. Counts are a snapshot, not a live API.
 
@@ -24,7 +24,7 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 
 - First merge: [biomejs/biome#11667](https://github.com/biomejs/biome/pull/11667), 8 Sep 2026
 - Latest merge: [brianc/node-postgres#3772](https://github.com/brianc/node-postgres/pull/3772), 11 Sep 2026 at 13:06:54 UTC
-- Latest PR activity: [brianc/node-postgres#3772](https://github.com/brianc/node-postgres/pull/3772) merged 11 Sep at 13:06:54 UTC; [livekit/agents#7199](https://github.com/livekit/agents/pull/7199) maintainer reply on the semantics 11 Sep (author reply posted 18:45 UTC); [better-auth/better-auth#11261](https://github.com/better-auth/better-auth/pull/11261) Greptile review landed 11 Sep
+- Latest PR activity: [astral-sh/ruff#28542](https://github.com/astral-sh/ruff/pull/28542) opened 12 Sep; [brianc/node-postgres#3772](https://github.com/brianc/node-postgres/pull/3772) merged 11 Sep at 13:06:54 UTC; [livekit/agents#7199](https://github.com/livekit/agents/pull/7199) maintainer reply on the semantics 11 Sep (author reply posted 18:45 UTC)
 - Preference: prefer **tier-2 / tier-3** reputable mid-size repos when mega-repo queues are crowded
 
 ---
@@ -42,6 +42,7 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 
 | Repo | PR | What | Status | Opened |
 | --- | --- | --- | --- | --- |
+| [astral-sh/ruff](https://github.com/astral-sh/ruff) | [#28542](https://github.com/astral-sh/ruff/pull/28542) | PYI002 diagnostic reworded from "`if` test must be a simple comparison against `sys.platform` or `sys.version_info`" to name the stub-file context, so it no longer reads as a false claim about tests that reference neither target (the confusion in #27324). Message-only; behavior unchanged. `PYI002.pyi.snap` updated. | Open; awaiting CI / maintainer | 12 Sep 2026 |
 | [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#11261](https://github.com/better-auth/better-auth/pull/11261) | Email and deletion callbacks in the core options were typed with the base `User`, hiding `user.additionalFields` from callback params even though fields arrive at runtime. Widened `user` to `User & Record<string, any>` across `sendVerificationEmail`, `sendResetPassword`, `onPasswordReset`, `onExistingUserSignUp`, change-email and delete-account callbacks (existing file pattern; the literal's inferred field types cannot thread back into callbacks in the same options object). Closes #11192. Type-level regression in `types.test.ts`. Patch changeset. | Open; PR title lint + Socket green; typecheck and targeted suites green locally; Greptile reviewed with one low-severity test-coverage note; Vercel authorize checks non-actionable | 11 Sep 2026 |
 | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | [#7361](https://github.com/crewAIInc/crewAI/pull/7361) | Async `CancelledError` in `_aexecute_core()` now emits `TaskFailedEvent` before re-raise so `EventListener.execution_spans` is popped and retained Task/Agent/Crew graphs can GC. Closes #7351. +132/−1, 2 files. Regression tests for span cleanup + event emission. Asked maintainers to apply required `llm-generated` label (no self-label permission). | Open; `require-issue` green; waiting maintainer `llm-generated` label | 10 Sep 2026 |
 | [livekit/agents](https://github.com/livekit/agents) | [#7201](https://github.com/livekit/agents/pull/7201) | Public `SpeechHandle.hold_interruptions()` context manager + demote realtime uninterruptible `input_speech_started` log to debug. Closes #7191. Unit tests included. | Open; CLA signed | 10 Sep 2026 |
@@ -97,7 +98,6 @@ Files for #11174: `packages/vitest/src/node/plugins/testConfig.ts`, `test/e2e/fi
 | [requests-cache](https://github.com/requests-cache/requests-cache) | [#1177](https://github.com/requests-cache/requests-cache/issues/1177) | Explicitly skipped: issue context asked LLMs not to be involved; later PR #1188 was closed as not viable by the maintainer. |
 | [webpack/webpack](https://github.com/webpack/webpack) | [#22026](https://github.com/webpack/webpack/issues/22026) | Original ESM/contenthash reproduction is fixed on current main; no `devtechedge` PR was opened. |
 | [webpack/webpack](https://github.com/webpack/webpack) | [#22032](https://github.com/webpack/webpack/pull/22032) | Other contributor's open broader `RuntimeModule.updateHash` proposal; not a `devtechedge` contribution. |
-| [astral-sh/ruff](https://github.com/astral-sh/ruff) | [#27324](https://github.com/astral-sh/ruff/issues/27324) | Diagnostic-only patch prepared; publication pending a writable Ruff fork/branch. |
 | [prettier/prettier](https://github.com/prettier/prettier) | [#19985](https://github.com/prettier/prettier/issues/19985) | Liquid tag alone on a line reflowed into the neighbouring paragraph under `proseWrap: always`. Already fixed upstream by [fisker's #19838](https://github.com/prettier/prettier/pull/19838) (merged 15 Aug 2026) three weeks before the issue was filed; closed 10 Sep 2026 via test-only [#20020](https://github.com/prettier/prettier/pull/20020). Investigation comments only - no `devtechedge` PR. Do not chase. |
 
 ## Next contribution scan
