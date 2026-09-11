@@ -102,13 +102,15 @@ Files for #11174: `packages/vitest/src/node/plugins/testConfig.ts`, `test/e2e/fi
 
 ## Next contribution scan
 
-10 Sep day goal (**10/10 opens**) is done. Prefer **tier-2 / tier-3** reputable mid-size libraries for the next hunt when mega-repo queues are crowded.
+11 Sep scan complete: **16 GO / 9 WAIT** targets across tier-2 / tier-3 non-web3 repos, all live-verified the same day (state, assignee, comment-thread claims, cross-referenced PRs). Top of the queue: [anyio#1094](https://github.com/agronholm/anyio/issues/1094), [apscheduler#1083](https://github.com/agronholm/apscheduler/issues/1083), [apscheduler#1095](https://github.com/agronholm/apscheduler/issues/1095), [crawlee#2815](https://github.com/apify/crawlee/issues/2815), [msw#2748](https://github.com/mswjs/msw/issues/2748). See the [11 Sep scan](docs/scan-2026-09-11.md) for the full queue, gates, and skip ledger.
+
+Key finding: fresh bug clusters in typeorm and sqlalchemy are heavily PR-raced right now (every checked issue already had 1-2 open competing PRs), which reinforces the tier-2 / tier-3 preference. Bulk issue discovery should use the core `repos/{}/issues?labels=bug` endpoint; the search API trips its secondary rate limit after ~2 rapid calls.
 
 Still waiting (do not code yet):
 
 1. **GO after policy check (comment posted):** [vercel/next.js#98417](https://github.com/vercel/next.js/issues/98417) — keep existing `eslint` when it already satisfies `eslint-config-next` peer; only bump when below range; prefer lowest satisfying major. Waiting on maintainer confirmation. Comment: https://github.com/vercel/next.js/issues/98417#issuecomment-5608267483
 
-See [10 Sep scan](docs/scan-2026-09-10.md) and [9 Sep scan](docs/scan-2026-09-09.md). Research rows do not change contribution counts until a PR is opened.
+See [11 Sep scan](docs/scan-2026-09-11.md), [10 Sep scan](docs/scan-2026-09-10.md) and [9 Sep scan](docs/scan-2026-09-09.md). Research rows do not change contribution counts until a PR is opened.
 
 ## Counting policy
 
