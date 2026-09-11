@@ -16,7 +16,7 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 
 ## Status
 
-**22 external PRs** as of 12 Sep 2026 (IST): **10 open**, **7 merged**, **5 closed (not merged)**. Plus **8 pipeline / skip** rows.
+**22 external PRs** as of 12 Sep 2026 (IST): **10 open**, **7 merged**, **5 closed (not merged)**. **0 pipeline rows** - all 8 pipeline rows were discarded on 12 Sep 2026 (none are openable from this account).
 
 > **This README is the product.** There is no separate app or Vercel alias. Counts are a snapshot, not a live API.
 
@@ -33,7 +33,7 @@ Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is
 
 - Open PRs on other orgs, with one-line fix, diff size, and status
 - Closed-not-merged rows (author or maintainer close)
-- Pipeline / skip list so the same bug is not raced twice
+- Discarded / skip list so the same bug is not raced twice
 - Next-up row when a target is free (no competing PR)
 - Merged section for **upstream repos only**
 - Web3 work is tracked separately and not duplicated here
@@ -87,18 +87,20 @@ Files for #11261: `packages/core/src/types/init-options.ts`, `packages/better-au
 
 Files for #11174: `packages/vitest/src/node/plugins/testConfig.ts`, `test/e2e/fixtures/config/browser-define/basic.test.ts`, `test/e2e/fixtures/config/browser-define/vitest.config.ts`, `test/e2e/test/config/browser-configs.test.ts`.
 
-## Pipeline / not opened yet
+## Discarded pipeline rows
 
-| Repo | Target | Why waiting |
+The pipeline was emptied on 12 Sep 2026: none of its rows are openable from this account. Rows are kept here so the same bug is not raced again.
+
+| Repo | Target | Discarded because |
 | --- | --- | --- |
-| [TanStack/router](https://github.com/TanStack/router) | [#8280](https://github.com/TanStack/router/issues/8280) | Non-OK `application/json` server-fn responses resolve `undefined` on the client. Competing PR #8283 exists; do not compete. |
-| [TanStack/router](https://github.com/TanStack/router) | [#8237](https://github.com/TanStack/router/issues/8237) Shape 1 | Missing `x-tsr-serverFn` header returns unhandled 500. Already owned by #8220; #8285 covers Shape 2 only. |
-| [WordPress/Requests](https://github.com/WordPress/Requests) | [#1084](https://github.com/WordPress/Requests/issues/1084) | Investigated; protocol-sensitive trim review did not justify a behavior-changing PR, and the upstream connection did not permit posting the verification comment. |
-| [pydantic/pydantic-ai](https://github.com/pydantic/pydantic-ai) | [#7771](https://github.com/pydantic/pydantic-ai/issues/7771) | Public `BaseDurabilityCapability` export was already fixed upstream; skip duplicate work. |
+| [TanStack/router](https://github.com/TanStack/router) | [#8280](https://github.com/TanStack/router/issues/8280) | Competing open PR [#8283](https://github.com/TanStack/router/pull/8283) covers it (re-verified open 12 Sep 2026). Do not compete. |
+| [TanStack/router](https://github.com/TanStack/router) | [#8237](https://github.com/TanStack/router/issues/8237) Shape 1 | Owned by open PR [#8220](https://github.com/TanStack/router/pull/8220) (re-verified open 12 Sep 2026); #8285 covers Shape 2 only. |
+| [WordPress/Requests](https://github.com/WordPress/Requests) | [#1084](https://github.com/WordPress/Requests/issues/1084) | Investigation concluded a behavior-changing PR was not justified, and the upstream connection did not permit posting the verification comment. |
+| [pydantic/pydantic-ai](https://github.com/pydantic/pydantic-ai) | [#7771](https://github.com/pydantic/pydantic-ai/issues/7771) | Public `BaseDurabilityCapability` export already fixed upstream. |
 | [requests-cache](https://github.com/requests-cache/requests-cache) | [#1177](https://github.com/requests-cache/requests-cache/issues/1177) | Explicitly skipped: issue context asked LLMs not to be involved; later PR #1188 was closed as not viable by the maintainer. |
-| [webpack/webpack](https://github.com/webpack/webpack) | [#22026](https://github.com/webpack/webpack/issues/22026) | Original ESM/contenthash reproduction is fixed on current main; no `devtechedge` PR was opened. |
-| [webpack/webpack](https://github.com/webpack/webpack) | [#22032](https://github.com/webpack/webpack/pull/22032) | Other contributor's open broader `RuntimeModule.updateHash` proposal; not a `devtechedge` contribution. |
-| [prettier/prettier](https://github.com/prettier/prettier) | [#19985](https://github.com/prettier/prettier/issues/19985) | Liquid tag alone on a line reflowed into the neighbouring paragraph under `proseWrap: always`. Already fixed upstream by [fisker's #19838](https://github.com/prettier/prettier/pull/19838) (merged 15 Aug 2026) three weeks before the issue was filed; closed 10 Sep 2026 via test-only [#20020](https://github.com/prettier/prettier/pull/20020). Investigation comments only - no `devtechedge` PR. Do not chase. |
+| [webpack/webpack](https://github.com/webpack/webpack) | [#22026](https://github.com/webpack/webpack/issues/22026) | Original ESM/contenthash reproduction fixed on current main. |
+| [webpack/webpack](https://github.com/webpack/webpack) | [#22032](https://github.com/webpack/webpack/pull/22032) | Another contributor's open broader `RuntimeModule.updateHash` proposal; not a `devtechedge` contribution. |
+| [prettier/prettier](https://github.com/prettier/prettier) | [#19985](https://github.com/prettier/prettier/issues/19985) | Already fixed upstream by [fisker's #19838](https://github.com/prettier/prettier/pull/19838) (merged 15 Aug 2026) before the issue was filed; closed 10 Sep 2026 via test-only [#20020](https://github.com/prettier/prettier/pull/20020). Do not chase. |
 
 ## Next contribution scan
 
