@@ -7,11 +7,9 @@ Public ledger of **upstream** non-Web3 pull requests by [@devtechedge](https://g
 [![Open PRs](https://img.shields.io/badge/open%20PRs-10-black)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Aopen)
 [![Merged](https://img.shields.io/badge/merged-7-brightgreen)](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge+is%3Amerged)
 
-Live GitHub search: [PRs authored by @devtechedge](https://github.com/pulls?q=is%3Apr+author%3Adevtechedge)
-
 ## Status
 
-**22 external upstream PRs** as of 12 Sep 2026: **10 open**, **7 merged**, **5 closed**. First merge [biomejs/biome#11667](https://github.com/biomejs/biome/pull/11667) on 8 Sep; latest merge [brianc/node-postgres#3772](https://github.com/brianc/node-postgres/pull/3772) on 11 Sep.
+**22 external upstream PRs** as of 12 Sep 2026, 5 closed without merge. First merge [biomejs/biome#11667](https://github.com/biomejs/biome/pull/11667) on 8 Sep; latest merge [brianc/node-postgres#3772](https://github.com/brianc/node-postgres/pull/3772) on 11 Sep.
 
 ## Merged pull requests
 
@@ -56,9 +54,8 @@ Previously vetted and skipped so the same bug is not raced again (verified 12 Se
 
 ## Ongoing work
 
-- 11 Sep scan produced 16 GO / 9 WAIT targets across tier-2 / tier-3 repos: [docs/scan-2026-09-11.md](docs/scan-2026-09-11.md), plus the [10 Sep](docs/scan-2026-09-10.md) and [9 Sep](docs/scan-2026-09-09.md) scans.
-- Pipeline emptied 12 Sep (all 8 rows discarded); actionable queue starts at [mswjs/msw#2401](https://github.com/mswjs/msw/issues/2401).
-- Waiting on maintainer confirmation before coding: [vercel/next.js#98417](https://github.com/vercel/next.js/issues/98417).
+- Current queue, gates, and skip ledger: [11 Sep scan](docs/scan-2026-09-11.md); earlier: [10 Sep](docs/scan-2026-09-10.md), [9 Sep](docs/scan-2026-09-09.md). Selection criteria and checklist: [methodology](docs/methodology.md).
+- Waiting on maintainer confirmation before coding: [vercel/next.js#98417](https://github.com/vercel/next.js/issues/98417); queue resumes at [mswjs/msw#2401](https://github.com/mswjs/msw/issues/2401).
 
 A contribution counts as merged only when the upstream repository reports the PR as merged. Issue comments and other contributors' PRs are not counted.
 
