@@ -48,6 +48,7 @@ Upstream PR work is recorded on the ledger READMEs (section 9). Work in the user
 2. Run one agent session per PR lifecycle (hunt, ship, babysit) and retire it when the PR merges or closes after the ledger update. The SKILL.md playbook and the tracker files carry the persistent state, so every fresh session stays small and bounded. Use long-running threads only for meta-discussion, never for PR work.
 3. Keep GitHub API volume low; GitHub support warned the account about request volume (Sep 2026). One consolidated call over several narrow ones, reuse data already fetched instead of refetching, no `--paginate` on large collections, no parallel API fan-out, poll at most every 60 seconds while waiting on CI, and prefer event-driven watches (section 7). Check `gh api rate_limit` before heavy scans and stop well before the limit.
 4. On `resource_exhausted`: stop parallel work, wait, then resume serially. If GitHub is the blocker, check `gh api rate_limit` separately. Do not thrash retries.
+5. Stuck handling: if a step stays blocked for a long time - a hung command, a command that never returns, repeated identical failures, a wait that outlives any plausible runtime - assume something on the other end has failed: a dropped connection, a missing password, passphrase, or key, or a tool waiting on input that will never come. Stop hitting the wall. Report what is blocked and the evidence, then either move on to other queued work and revisit the blocker later, or ask the user a clarification question if only they can unblock it (credentials, auth, interactive prompts, account access). Do not burn the session looping on one blocking step.
 
 ## 5. Target selection and GO criteria
 
@@ -184,6 +185,7 @@ When the user asks for N more PRs:
 - Posting any comment without showing the draft for approval first, including after a general go-ahead like "work on this"
 - Heavy GitHub API usage: tight polling loops, parallel call fan-out, refetching data the session already has, or paginating large collections (GitHub support warned the account once)
 - Inventing metrics or claiming a merge that did not happen
+- Repeatedly retrying a step that stays blocked (hung command, credential or key prompt, dead connection) instead of stopping, moving on to other work, and revisiting later or asking the user for what only they can provide
 - Coding through a design or policy gate without confirmation
 - Leaving the web3 tracker un-updated after a PR attempt - open, no-go, merge, or close all require a same-turn tracker write (section 9, 12 Sep 2026 directive); skipping the non-web3 ledger after a non-web3 PR opens is likewise an anti-pattern
 - Leaving user-owned repo changes (ledger, README, docs) unwritten instead of landing them on GitHub in the same turn; cloning a user-owned repo for spot edits a direct API write would do faster
