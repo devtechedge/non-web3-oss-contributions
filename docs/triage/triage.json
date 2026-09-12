@@ -957,6 +957,15 @@
     3302
    ],
    "do_not_duplicate": true
+  },
+  {
+   "repo": "web-infra-dev/rspress",
+   "number": 3658,
+   "status": "candidate",
+   "attempted": false,
+   "related_prs": [],
+   "do_not_duplicate": true,
+   "note": "LocalProvider.init() does not await FlexSearch addAsync, so the first search query can show 'No matching results'. Verified 2026-09-13: fresh (2026-09-05), 0 comments, no assignee, no competing PR, reporter supplied exact fix (collect addAsync promises, await Promise.all in init). Recommended GO target handed to the user's GLM 5.3 Flash agent on 2026-09-13."
   }
  ],
  "closed_attempts": [
@@ -1076,6 +1085,34 @@
    "checked": "2026-09-13",
    "do_not_duplicate": true,
    "reason": "Pull requests are disabled repo-wide since 1 Apr 2026 (issue #3227): PR creation returns 404/FORBIDDEN while reads, forking, and fork pushes succeed; the account is not blocked. casey implements issue fixes himself and treats agent-coded PRs as a net negative. Recent merged 'external' PRs (#3705, #3706) are his own. Complete tested fix (always format single-value attributes with colon syntax) sits on fork branch fmt-preserve-attribute-syntax, commit db7e87c, usable only if #3227 is closed."
+  },
+  {
+   "repo": "pydantic/pydantic-settings",
+   "issue": 960,
+   "checked": "2026-09-13",
+   "do_not_duplicate": true,
+   "reason": "Nested secrets directory precedence changes with filename casing; two open competing PRs #967 and #969 plus maintainer comment by 2026-09-11."
+  },
+  {
+   "repo": "privatenumber/tsx",
+   "issue": 836,
+   "checked": "2026-09-13",
+   "do_not_duplicate": true,
+   "reason": "EPIPE crash when stdout closes early; open competing PR #840 since 2026-09-06."
+  },
+  {
+   "repo": "restic/restic",
+   "issue": 22050,
+   "checked": "2026-09-13",
+   "do_not_duplicate": true,
+   "reason": "ReadPassword data race; open PR #22062 cross-references it and a soft claim in comments."
+  },
+  {
+   "repo": "restic/restic",
+   "issue": 22051,
+   "checked": "2026-09-13",
+   "do_not_duplicate": true,
+   "reason": "Empty --repository-file falls back to cwd; open PR #22052 covers it."
   }
  ],
  "repositories": {
