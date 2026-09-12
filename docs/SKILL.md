@@ -7,7 +7,7 @@ description: Use when scanning, claiming, opening, babysitting, or tracker-updat
 
 # OSS PR Playbook
 
-One playbook for contributing pull requests to upstream open-source repositories. Work is handled through one unified OSS ledger and one operational queue covering both Web3 and non-Web3 projects. Never split a PR or scoreboard row by domain. Apply on every new PR unless the user overrides that turn.
+One playbook for contributing pull requests to upstream open-source repositories. Work is handled through one unified OSS ledger and one operational queue covering all upstream projects. Never split a PR or scoreboard row by domain. Apply on every new PR unless the user overrides that turn.
 
 Core goals, in priority order:
 
@@ -21,7 +21,7 @@ Learned patterns (scan triage, implementation gotchas, repo-specific no-gos) liv
 
 | | **Unified OSS ledger** |
 | --- | --- |
-| Scope | All upstream OSS work across Web3 and non-Web3 domains, including TS/JS/Python/Rust libraries, tooling, infrastructure, wallets, SDKs, blockchain software, frameworks, testing, concurrency, portability, security, and accessibility |
+| Scope | All upstream OSS work, including TS/JS/Python/Rust libraries, tooling, infrastructure, wallets, SDKs, blockchain software, frameworks, testing, concurrency, portability, security, and accessibility |
 | Ledger | `oss-contributions` |
 | Ledger writes | Update after every open, merge, no-go, closure, or other meaningful attempt outcome, same turn |
 | Targeting | Rank all candidates together using the same eligibility, fit, scope, maintainer, freshness, validation, and merge-potential criteria |
@@ -79,7 +79,7 @@ Sizing and tilt:
 
 - Always skip: contested issues, archived repositories, vague features needing design, and repeat AgentScan auto-close targets from the same account on the same issue.
 - Repo size: aim for small and mid-size repos; mega-repos are last-resort even when a target looks clean on paper. When two repos offer a comparable fix, pick the smaller one.
-- Domain tilt is informational only. Prefer reputable mid-size projects and bounded fixes, whether Web3 or non-Web3. Avoid crowded maintainer-only cores, repeated outsider closes, and invasive changes without maintainer direction.
+- Prefer reputable mid-size projects and bounded fixes. Avoid crowded maintainer-only cores, repeated outsider closes, and invasive changes without maintainer direction.
 - Saturation cap: before adding a target from a repo, count the open PRs the account already has there. 1: fine. 2-3: only exceptional fixes. 4+: skip that repo for the cycle and hunt in fresh repos. Current per-repo counts are recorded in the canonical triage tracker.
 
 Scan mechanics (when asked to scan for N targets):
@@ -132,11 +132,9 @@ The user's own unified ledger repo is `oss-contributions`; its README is the pub
 
 **Skill mirror:** the canonical playbook is `~/.agents/skills/oss/SKILL.md` plus its companion `PATTERNS.md`; never edit the copies in the ledger repo directly. The ledger repo carries mirrors at `docs/SKILL.md` and `docs/PATTERNS.md`, which exist for portable agent context.
 
-The archived `web3-oss-contributions` repository is historical only and is not an operational ledger. Its archival README/triage pointer may be updated only when needed to point to `https://github.com/devtechedge/oss-contributions`.
-
 ## 10. Unified ledger schema discipline
 
 - Canonical triage memory is `docs/triage/triage.json`.
-- Keep Web3 and non-Web3 records in the same arrays and schema. Do not create separate domain-specific queue files.
+- Keep all records in the same arrays and schema. Do not create separate domain-specific queue files.
 - Preserve existing field names and conventions. Update only affected records and keep dates/state accurate.
 - Historical portfolio documents are informational and must not override canonical triage state.
