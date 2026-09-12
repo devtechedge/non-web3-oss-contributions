@@ -5,8 +5,10 @@
   "agent_directive": {
     "read_first": true,
     "source_of_truth": true,
+    "canonicality_rule": "This file is the primary and authoritative source of truth for the non-Web3 OSS PR-hunt and implementation workflow. All future agents, including GLM 5.3 Flash and later agents, must read it first and use its current schema, section structure, field names, and conventions as the canonical format.",
     "before_action": "Read this file before proposing, claiming, implementing, or submitting a new upstream target.",
     "after_action": "Update this file after every meaningful outcome: new target, competing PR, maintainer feedback, review request, merge, closure, auto-close, rejection, or change in refile/duplicate eligibility.",
+    "update_rule": "When operational state changes, update triage.json itself in its existing format. Preserve the current schema, section structure, field names, and conventions; update only affected records; keep dates and current state accurate; do not create parallel memory files or leave the canonical record stale.",
     "hard_exclusions": [
       "Do not duplicate work already represented by an active or completed contribution unless upstream state has materially changed.",
       "Do not refile targets marked do_not_refile=true unless new upstream information explicitly changes that decision.",
