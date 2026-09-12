@@ -15,8 +15,8 @@
    "Do not target issues with visible owner/claim, reserved maintainer work, or a competing PR covering the same semantics.",
    "Do not submit work that repository policy or AI-assistance policy makes unsuitable.",
    "Do not compete with a PR that appeared after the current scan; refresh upstream state immediately before acting.",
-   "Do not create separate domain-specific operational queues; all OSS work belongs in this unified ledger.",
-   "Do not treat any former or archived ledger repository as a separate source of truth; this repository is the canonical unified ledger."
+   "Do not maintain separate domain-specific operational queues; all OSS work belongs in this unified ledger.",
+   "Do not treat historical ledger repositories as separate sources of truth; this repository is the canonical unified ledger."
   ],
   "freshness_rule": "Triage memory is historical/operational context, not a substitute for a live GitHub check. Re-check issue, PR, assignees, comments, reviews, CI, mergeability, and competing work before action.",
   "scan_output_rule": "Dated scan files should record only what is new on their date; carryover rows verified unchanged do not need to be repeated.",
@@ -44,7 +44,7 @@
   "Run the narrow test, formatter/linter/type checker, then the feasible package suite.",
   "Link the issue with the repository's required keyword and disclose AI assistance where required.",
   "Refresh competing-PR state immediately before submission; never knowingly compete with newer upstream work.",
-  "Use this unified ledger, not any separate domain ledger, for all future target selection."
+  "Use this unified ledger as the single queue and triage memory for all future target selection."
  ],
  "scan_mechanics": {
   "issue_discovery": "Bulk issue discovery should use repository-native issue discovery and avoid high-volume search fan-out. Cross-check candidate issues through timeline events before implementation.",
@@ -1069,6 +1069,13 @@
    "checked": "2026-09-12",
    "do_not_duplicate": true,
    "reason": "Solana SPL amount 1000x problem is in the application layer, not wallet-core; a library-side fix would be a new URI-parsing feature needing maintainer buy-in."
+  },
+  {
+   "repo": "casey/just",
+   "issue": 3702,
+   "checked": "2026-09-13",
+   "do_not_duplicate": true,
+   "reason": "Pull requests are disabled repo-wide since 1 Apr 2026 (issue #3227): PR creation returns 404/FORBIDDEN while reads, forking, and fork pushes succeed; the account is not blocked. casey implements issue fixes himself and treats agent-coded PRs as a net negative. Recent merged 'external' PRs (#3705, #3706) are his own. Complete tested fix (always format single-value attributes with colon syntax) sits on fork branch fmt-preserve-attribute-syntax, commit db7e87c, usable only if #3227 is closed."
   }
  ],
  "repositories": {
