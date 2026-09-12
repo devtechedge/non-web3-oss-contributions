@@ -24,7 +24,7 @@ This repository records substantive contributions to established open-source pro
 
 ## 🔀 Open pull requests
 
-The repository currently has a number of active upstream contributions across developer tooling, frameworks, infrastructure, testing, concurrency, portability, security, and reliability. These contributions are maintained directly in their respective upstream repositories; this ledger focuses on the substantive work rather than exposing detailed in-progress tracking.
+The repository currently has a number of active upstream contributions across developer tooling, frameworks, infrastructure, testing, concurrency, portability, security, and reliability. These contributions are maintained directly in their respective upstream repositories, and this ledger highlights the substantive work.
 
 ## 🧭 Engineering focus
 
