@@ -2,11 +2,11 @@
 
 Public ledger of **upstream** non-Web3 pull requests.
 
-![Total](https://img.shields.io/badge/upstream%20items-26-black?logo=git&logoColor=white) ![Open PRs](https://img.shields.io/badge/open%20PRs-14-blue?logo=git&logoColor=white) ![Merged](https://img.shields.io/badge/merged-7-brightgreen?logo=git&logoColor=white) ![Closed](https://img.shields.io/badge/closed%20not%20merged-5-red?logo=git&logoColor=white)
+![Total](https://img.shields.io/badge/upstream%20items-27-black?logo=git&logoColor=white) ![Open PRs](https://img.shields.io/badge/open%20PRs-15-blue?logo=git&logoColor=white) ![Merged](https://img.shields.io/badge/merged-7-brightgreen?logo=git&logoColor=white) ![Closed](https://img.shields.io/badge/closed%20not%20merged-5-red?logo=git&logoColor=white)
 
 ## 📊 Status
 
-**26 external upstream PRs** as of 12 Sep 2026
+**27 external upstream PRs** as of 12 Sep 2026
 
 ## ✅ Merged pull requests
 
@@ -24,6 +24,7 @@ Public ledger of **upstream** non-Web3 pull requests.
 
 | Repo | PR | What | Opened | Current status |
 | --- | --- | --- | --- | --- |
+| <img src="https://github.com/pnpm.png?size=40" width="18" /> [pnpm/pnpm](https://github.com/pnpm/pnpm) | [#14863](https://github.com/pnpm/pnpm/pull/14863) | `default_store_dir` treats every non-Windows platform as Unix, so the FreeBSD startup panic in the Rust config crate is gone and the store falls back to `~/.local/share/pnpm/store` like its sibling resolvers. Tests + changeset. Fixes #14859. | 12 Sep 2026 | 🟢 Open · mergeable |
 | <img src="https://github.com/ratatui.png?size=40" width="18" /> [ratatui/ratatui](https://github.com/ratatui/ratatui) | [#2771](https://github.com/ratatui/ratatui/pull/2771) | `portable-atomic` feature forwards to `ratatui-widgets`; the `Block` shadow now cfg-switches its `Arc` import to `portable_atomic_util`, so no_std targets without atomic pointers (thumbv6m / RP2040) compile with the documented feature. Fixes #2767. | 12 Sep 2026 | 🟢 Open · mergeable |
 | <img src="https://github.com/SQLMesh.png?size=40" width="18" /> [SQLMesh/sqlmesh](https://github.com/SQLMesh/sqlmesh) | [#6059](https://github.com/SQLMesh/sqlmesh/pull/6059) | `create_external_models` quotes column names whose unquoted form the dialect would case-fold (postgres `\"ID\"` was written as `ID` and loaded back as `id`), so the generated `external_models.yaml` describes the table again. Fixes #6058. | 12 Sep 2026 | 🟢 Open · mergeable |
 | <img src="https://github.com/project-akri.png?size=40" width="18" /> [project-akri/akri](https://github.com/project-akri/akri) | [#850](https://github.com/project-akri/akri/pull/850) | Config device plugin reports used virtual slots as `Unhealthy` from `ListAndWatch`, so kubelet no longer selects slots still held during the reclaim grace period and pod recreation no longer spams `UnexpectedAdmissionError` pods. Closes #849. | 12 Sep 2026 | 🟢 Open · mergeable |
