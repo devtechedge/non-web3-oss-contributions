@@ -4,7 +4,7 @@ Public ledger of **upstream** non-Web3 open-source contributions.
 
 This repository records substantive contributions to established open-source projects across TypeScript, JavaScript, Python, Rust, developer tooling, frameworks, infrastructure, testing, concurrency, portability, security, and reliability.
 
-![Total](https://img.shields.io/badge/upstream%20items-27-black?logo=git&logoColor=white) ![Open PRs](https://img.shields.io/badge/open%20PRs-15-blue?logo=git&logoColor=white) ![Merged](https://img.shields.io/badge/merged-7-brightgreen?logo=git&logoColor=white) ![Closed](https://img.shields.io/badge/closed%20not%20merged-5-red?logo=git&logoColor=white)
+![Total](https://img.shields.io/badge/upstream%20items-27-black?logo=git&logoColor=white) ![Open PRs](https://img.shields.io/badge/open%20PRs-15-blue?logo=git&logoColor=white) ![Merged](https://img.shields.io/badge/merged-7-brightgreen?logo=git&logoColor=white)
 
 ## 📊 Current snapshot
 
@@ -41,10 +41,6 @@ This repository records substantive contributions to established open-source pro
 | <img src="https://github.com/langchain-ai.png?size=40" width="18" /> [langchain-ai/langgraphjs](https://github.com/langchain-ai/langgraphjs) | [#2803](https://github.com/langchain-ai/langgraphjs/pull/2803) | JS port of CVE-2026-71433: prefix-scoped search no longer leaks sibling namespaces in memory and Postgres stores. Changeset. | 8 Sep 2026 |
 | <img src="https://github.com/drizzle-team.png?size=40" width="18" /> [drizzle-team/drizzle-orm](https://github.com/drizzle-team/drizzle-orm) | [#6258](https://github.com/drizzle-team/drizzle-orm/pull/6258) | `drizzle-kit pull` no longer treats two-FK domain tables as M2M junctions; junction only when every column is an FK column. | 8 Sep 2026 |
 | <img src="https://github.com/TanStack.png?size=40" width="18" /> [TanStack/router](https://github.com/TanStack/router) | [#8285](https://github.com/TanStack/router/pull/8285) | `handleServerAction` returns 400 for malformed JSON on GET/POST action payloads instead of an unhandled 500. Unit tests + changeset. | 7 Sep 2026 |
-
-## 🎯 Issue claims
-
-- **Opened 12 Sep with an explicit override of the design gate:** [vercel/next.js#98593](https://github.com/vercel/next.js/pull/98593) for [#98417](https://github.com/vercel/next.js/issues/98417). Competing PR [#98556](https://github.com/vercel/next.js/pull/98556) implements the same semantics.
 
 ## 🧭 Engineering focus
 
