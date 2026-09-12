@@ -47,6 +47,7 @@
     "live_state_required": true
   },
   "pull_requests": [
+    {"repo":"recharts/recharts","number":7805,"status":"open","mergeable":true,"opened":"2026-09-13","last_checked":"2026-09-13","issue":7799,"do_not_duplicate":true,"summary":"Z-index portal layer <g> elements no longer carry tabindex=\"-1\", preventing pointer focus on empty SVG layer groups and WebKit geometry-traced focus rings. Regression asserts rendered layer groups have no tabindex attribute."},
     {"repo":"brianc/node-postgres","number":3772,"status":"merged","mergeable":null,"merged":"2026-09-11","opened":null,"last_checked":"2026-09-13","issue":null,"do_not_duplicate":true,"summary":"Connection.sync() no longer sets _ending, so later ECONNRESET/EPIPE errors are not swallowed for the connection lifetime. Regression + integration tests."},
     {"repo":"pnpm/pnpm","number":14753,"status":"merged","mergeable":null,"merged":"2026-09-10","opened":null,"last_checked":"2026-09-13","issue":null,"do_not_duplicate":true,"summary":"Honor lockfile: false with devEngines.packageManager.onFail: download: skip project env-lockfile sync, keep package-manager download/switch. Rust + TypeScript + tests + changeset."},
     {"repo":"pnpm/pnpm","number":14756,"status":"merged","mergeable":null,"merged":"2026-09-10","opened":null,"last_checked":"2026-09-13","issue":null,"do_not_duplicate":true,"summary":"pnpm update pkg@x.y.z keeps the manifest's existing ^/~ operator and supported npm: / jsr: prefixes."},
@@ -75,6 +76,7 @@
     {"repo":"Kludex/starlette","number":3533,"status":"closed_not_merged","mergeable":null,"closed":null,"opened":null,"last_checked":"2026-09-13","issue":null,"do_not_refile":true,"summary":"URL.include_query_params stringified list/tuple values instead of repeated params.","outcome":"Closed by author: competing PRs already covered the issue."}
   ],
   "issues": [
+    {"repo":"recharts/recharts","number":7799,"status":"open","attempted":true,"related_prs":[7805],"do_not_duplicate":true,"note":"Pointer focus on z-index portal layer groups in WebKit; PR #7805 removes tabindex from portal <g> elements and adds a regression assertion."},
     {"repo":"vercel/next.js","number":98417,"status":"open","attempted":true,"related_prs":[98593,98556],"do_not_duplicate":true,"note":"Opened 2026-09-12 with an explicit override of the design gate; competing implementations address the same eslint-upgrade semantics."},
     {"repo":"ratatui/ratatui","number":2767,"status":"open","attempted":true,"related_prs":[2771],"do_not_duplicate":true},
     {"repo":"SQLMesh/sqlmesh","number":6058,"status":"open","attempted":true,"related_prs":[6059],"do_not_duplicate":true},
@@ -98,21 +100,22 @@
     {"repo":"Kludex/starlette","related_pr":3533,"do_not_refile":true,"reason":"Competing PRs already covered the issue."}
   ],
   "repositories": {
-    "ratatui/ratatui": {"contributions":[2771],"focus":"Rust terminal UI; portability/no_std and atomic support."},
-    "SQLMesh/sqlmesh": {"contributions":[6059,6040],"focus":"Python/SQL tooling; schema serialization and thread-safety."},
-    "project-akri/akri": {"contributions":[850],"focus":"Rust/Kubernetes device plugin behavior and lifecycle."},
-    "vercel/next.js": {"contributions":[98593],"focus":"TypeScript/JavaScript framework and codemod behavior.","competing_active_prs":[98556]},
-    "astral-sh/ruff": {"contributions":[28542],"focus":"Python linting/tooling."},
-    "better-auth/better-auth": {"contributions":[11261,11235,11208],"focus":"TypeScript authentication library; typing and concurrency fixes."},
-    "crewAIInc/crewAI": {"contributions":[7361],"focus":"Python multi-agent framework; async cancellation and telemetry cleanup."},
-    "livekit/agents": {"contributions":[7201,7199],"focus":"Realtime voice agents; interruption semantics and speech handling."},
-    "TanStack/router": {"contributions":[8314,8285],"focus":"TypeScript router; URL/search middleware and server-action error handling."},
-    "langchain-ai/langgraphjs": {"contributions":[2803],"focus":"JavaScript agent graph/checkpoint stores; namespace isolation/security."},
-    "drizzle-team/drizzle-orm": {"contributions":[6258],"focus":"TypeScript ORM; schema introspection and relation inference."},
-    "nodejs/undici": {"contributions":[5796],"focus":"Node.js HTTP client; redirect/connection lifecycle bug attempted."},
-    "pallets/jinja": {"contributions":[2268],"focus":"Python templating; prior attempt rejected by maintainer."},
-    "vitest-dev/vitest": {"contributions":[11174],"focus":"JavaScript testing; prior PR auto-closed after AgentScan flag."},
-    "typescript-eslint/typescript-eslint": {"contributions":[12855],"focus":"TypeScript ESLint tooling; prior PR auto-closed after AgentScan flag."},
-    "Kludex/starlette": {"contributions":[3533],"focus":"Python ASGI framework; prior PR closed due to competing coverage."}
+    "recharts/recharts":{"contributions":[7805],"focus":"React charting library; SVG accessibility and browser focus behavior."},
+    "ratatui/ratatui":{"contributions":[2771],"focus":"Rust terminal UI; portability/no_std and atomic support."},
+    "SQLMesh/sqlmesh":{"contributions":[6059,6040],"focus":"Python/SQL tooling; schema serialization and thread-safety."},
+    "project-akri/akri":{"contributions":[850],"focus":"Rust/Kubernetes device plugin behavior and lifecycle."},
+    "vercel/next.js":{"contributions":[98593],"focus":"TypeScript/JavaScript framework and codemod behavior.","competing_active_prs":[98556]},
+    "astral-sh/ruff":{"contributions":[28542],"focus":"Python linting/tooling."},
+    "better-auth/better-auth":{"contributions":[11261,11235,11208],"focus":"TypeScript authentication library; typing and concurrency fixes."},
+    "crewAIInc/crewAI":{"contributions":[7361],"focus":"Python multi-agent framework; async cancellation and telemetry cleanup."},
+    "livekit/agents":{"contributions":[7201,7199],"focus":"Realtime voice agents; interruption semantics and speech handling."},
+    "TanStack/router":{"contributions":[8314,8285],"focus":"TypeScript router; URL/search middleware and server-action error handling."},
+    "langchain-ai/langgraphjs":{"contributions":[2803],"focus":"JavaScript agent graph/checkpoint stores; namespace isolation/security."},
+    "drizzle-team/drizzle-orm":{"contributions":[6258],"focus":"TypeScript ORM; schema introspection and relation inference."},
+    "nodejs/undici":{"contributions":[5796],"focus":"Node.js HTTP client; redirect/connection lifecycle bug attempted."},
+    "pallets/jinja":{"contributions":[2268],"focus":"Python templating; prior attempt rejected by maintainer."},
+    "vitest-dev/vitest":{"contributions":[11174],"focus":"JavaScript testing; prior PR auto-closed after AgentScan flag."},
+    "typescript-eslint/typescript-eslint":{"contributions":[12855],"focus":"TypeScript ESLint tooling; prior PR auto-closed after AgentScan flag."},
+    "Kludex/starlette":{"contributions":[3533],"focus":"Python ASGI framework; prior PR closed due to competing coverage."}
   }
 }
