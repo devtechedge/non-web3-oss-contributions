@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "last_updated": "2026-09-13",
+  "issues": [
+    {"repo":"vercel/next.js","number":98417,"status":"open","attempted":true,"related_prs":[98593,98556],"do_not_duplicate":true,"note":"Competing implementations address the same eslint-upgrade semantics."},
+    {"repo":"ratatui/ratatui","number":2767,"status":"open","attempted":true,"related_prs":[2771],"do_not_duplicate":true},
+    {"repo":"SQLMesh/sqlmesh","number":6058,"status":"open","attempted":true,"related_prs":[6059],"do_not_duplicate":true},
+    {"repo":"project-akri/akri","number":849,"status":"open","attempted":true,"related_prs":[850],"do_not_duplicate":true},
+    {"repo":"astral-sh/ruff","number":27324,"status":"open","attempted":true,"related_prs":[28542],"do_not_duplicate":true},
+    {"repo":"better-auth/better-auth","number":11192,"status":"open","attempted":true,"related_prs":[11261],"do_not_duplicate":true},
+    {"repo":"crewAIInc/crewAI","number":7351,"status":"open","attempted":true,"related_prs":[7361],"do_not_duplicate":true},
+    {"repo":"livekit/agents","number":7191,"status":"open","attempted":true,"related_prs":[7201],"do_not_duplicate":true},
+    {"repo":"livekit/agents","number":7198,"status":"open","attempted":true,"related_prs":[7199],"do_not_duplicate":true,"note":"Maintainer semantics conflict noted; monitor before further action."},
+    {"repo":"TanStack/router","number":8309,"status":"open","attempted":true,"related_prs":[8314],"do_not_duplicate":true},
+    {"repo":"better-auth/better-auth","number":11160,"status":"open","attempted":true,"related_prs":[11235],"do_not_duplicate":true},
+    {"repo":"langchain-ai/langgraphjs","number":2721,"status":"open","attempted":true,"related_prs":[2803],"do_not_duplicate":true},
+    {"repo":"drizzle-team/drizzle-orm","number":6253,"status":"open","attempted":true,"related_prs":[6258],"do_not_duplicate":true},
+    {"repo":"TanStack/router","number":8237,"status":"open","attempted":true,"related_prs":[8285],"do_not_duplicate":true}
+  ],
+  "closed_do_not_refile": [
+    {"repo":"pallets/jinja","issue":2176,"related_pr":2268,"do_not_refile":true,"reason":"Prior PR rejected by maintainer."},
+    {"repo":"nodejs/undici","related_pr":5796,"do_not_refile":false,"note":"PR closed without exposed reason; investigate before retry."},
+    {"repo":"vitest-dev/vitest","related_pr":11174,"do_not_refile":true,"reason":"Auto-closed after AgentScan flag."},
+    {"repo":"typescript-eslint/typescript-eslint","related_pr":12855,"do_not_refile":true,"reason":"Auto-closed after AgentScan flag."},
+    {"repo":"Kludex/starlette","related_pr":3533,"do_not_refile":true,"reason":"Competing PRs already covered the issue."}
+  ]
+}
