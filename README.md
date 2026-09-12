@@ -4,11 +4,11 @@ Public ledger of **upstream** non-Web3 open-source contributions.
 
 This repository records substantive contributions to established open-source projects across TypeScript, JavaScript, Python, Rust, developer tooling, frameworks, infrastructure, testing, concurrency, portability, security, and reliability.
 
-![Total](https://img.shields.io/badge/upstream%20items-27-black?logo=git&logoColor=white) ![Merged](https://img.shields.io/badge/merged-7-brightgreen?logo=git&logoColor=white)
+![Merged](https://img.shields.io/badge/merged-7-brightgreen?logo=git&logoColor=white)
 
 ## 📊 Current snapshot
 
-**27 external upstream contributions** as of 13 Sep 2026
+**Latest update:** 13 Sep 2026
 
 ## ✅ Merged pull requests
 
