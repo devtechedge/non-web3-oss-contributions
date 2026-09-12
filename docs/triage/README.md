@@ -4,7 +4,7 @@ Canonical conversational gateway and operational memory for autonomous agents sc
 
 ## Single source of truth
 
-- `triage.json` is the canonical agent context for both formerly separate Web3 and non-Web3 workflows.
+- `triage.json` is the canonical agent context for all upstream OSS contribution workflows.
 - Read `triage.json` before proposing, claiming, implementing, or submitting a new target.
 - Use `do_not_duplicate` and `do_not_refile` as hard exclusion signals unless new upstream information materially changes the decision.
 - Re-check live GitHub state before acting because issue state, reviews, CI, mergeability, assignees, and competing work can change.
@@ -12,7 +12,7 @@ Canonical conversational gateway and operational memory for autonomous agents sc
 
 ## Unified queue
 
-Web3 and non-Web3 work are intentionally handled through the same queue and the same selection criteria. There is no separate operational lane.
+All upstream OSS work is intentionally handled through one queue and one set of selection criteria. Do not create separate domain-specific queues or ledgers.
 
 The goal is to reduce context switching and evaluate every OSS opportunity on the same dimensions: upstream eligibility, maintainer posture, competing work, reproducibility, scope, contributor fit, validation, and merge potential.
 
