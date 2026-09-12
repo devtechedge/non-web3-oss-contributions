@@ -1,17 +1,22 @@
 # Non-Web3 OSS Triage Memory
 
-Operational memory for evaluating future upstream non-Web3 OSS contribution opportunities.
+Canonical conversational gateway and operational memory for autonomous agents scanning, triaging, implementing, and tracking upstream non-Web3 OSS contributions.
 
-This directory is intentionally more detailed than the public-facing README. It records prior attempts, current PR state, competing work, maintainer feedback, and explicit refile/duplication guidance so coding agents can avoid repeating work and focus on fresh opportunities.
+## Single source of truth
 
-## Data file
+- `triage.json` is the canonical agent context.
+- Read `triage.json` before proposing, claiming, implementing, or submitting a new target.
+- Use `do_not_duplicate` and `do_not_refile` as hard exclusion signals unless new upstream information materially changes the situation.
+- Re-check live GitHub state before acting because issue state, reviews, CI, mergeability, assignees, and competing work can change.
+- Update `triage.json` after every meaningful outcome so future agents inherit the result.
 
-- `triage.json` — canonical operational memory containing pull-request history, issue-level history, repository-level targeting notes, competing work, and refile/duplication guidance.
+## What `triage.json` contains
 
-## Intended agent workflow
+- Agent operating rules and selection criteria.
+- Pre-flight checks and scan mechanics.
+- Complete pull-request history: merged, open, and closed-not-merged attempts.
+- Issue-level history and relationships to pull requests.
+- Refile and duplication exclusions.
+- Repository-level contribution history, focus areas, and competing work.
 
-1. Read the relevant `triage.json` records before proposing a new issue or PR.
-2. Treat `do_not_duplicate` and `do_not_refile` as hard exclusion signals unless new upstream information materially changes the situation.
-3. Re-check GitHub before acting because open PR state, mergeability, reviews, CI, and competing work can change.
-4. Update `triage.json` after every meaningful outcome so future agents inherit the result.
-5. Keep `triage.json` as the single source of truth; do not recreate separate PR, issue, or repository state files.
+This directory is intentionally operational rather than portfolio-facing. The root `README.md` remains the public contribution ledger.
