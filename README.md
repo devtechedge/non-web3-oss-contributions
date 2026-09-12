@@ -49,14 +49,10 @@ Public ledger of **upstream** non-Web3 pull requests by [@devtechedge](https://g
 | [typescript-eslint/typescript-eslint](https://github.com/typescript-eslint/typescript-eslint) | [#12855](https://github.com/typescript-eslint/typescript-eslint/pull/12855) | `no-meaningless-void-operator` skip AssignmentExpression. | Auto-closed ~28s after open (AgentScan flag); do not refile |
 | [Kludex/starlette](https://github.com/Kludex/starlette) | [#3533](https://github.com/Kludex/starlette/pull/3533) | `URL.include_query_params` stringified list/tuple values instead of repeated params. | Closed by author: competing PRs already covered it |
 
-## Skipped targets
+## Issue claims
 
-Previously vetted and skipped so the same bug is not raced again (verified 12 Sep 2026): [TanStack/router #8280](https://github.com/TanStack/router/issues/8280) and [#8237 Shape 1](https://github.com/TanStack/router/issues/8237) (covered by competing PRs), [WordPress/Requests #1084](https://github.com/WordPress/Requests/issues/1084), [pydantic-ai #7771](https://github.com/pydantic/pydantic-ai/issues/7771) and [prettier #19985](https://github.com/prettier/prettier/issues/19985) (already fixed upstream), [requests-cache #1177](https://github.com/requests-cache/requests-cache/issues/1177) (LLM-free request), [webpack #22026](https://github.com/webpack/webpack/issues/22026) (not reproducible on main) and [#22032](https://github.com/webpack/webpack/pull/22032) (another contributor's PR).
-
-## Ongoing work
-
-- Current queue, gates, and skip ledger: [11 Sep scan](docs/scan-2026-09-11.md); earlier: [10 Sep](docs/scan-2026-09-10.md), [9 Sep](docs/scan-2026-09-09.md). Selection criteria and checklist: [methodology](docs/methodology.md).
 - Opened 12 Sep with an explicit override of the design gate: [vercel/next.js#98593](https://github.com/vercel/next.js/pull/98593) for [#98417](https://github.com/vercel/next.js/issues/98417) after the approach comment went unanswered; competing PR [#98556](https://github.com/vercel/next.js/pull/98556) implements the same semantics. Queue resumes at [mswjs/msw#2401](https://github.com/mswjs/msw/issues/2401).
+- Selection criteria and checklist: [methodology](docs/methodology.md).
 
 A contribution counts as merged only when the upstream repository reports the PR as merged. Issue comments and other contributors' PRs are not counted.
 
