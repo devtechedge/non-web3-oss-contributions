@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "last_updated": "2026-09-13",
+  "prs": [
+    {"repo":"ratatui/ratatui","number":2771,"status":"open","mergeable":true,"opened":"2026-09-12","last_checked":"2026-09-13","issue":2767,"do_not_duplicate":true},
+    {"repo":"SQLMesh/sqlmesh","number":6059,"status":"open","mergeable":true,"opened":"2026-09-12","last_checked":"2026-09-13","issue":6058,"do_not_duplicate":true},
+    {"repo":"project-akri/akri","number":850,"status":"open","mergeable":true,"opened":"2026-09-12","last_checked":"2026-09-13","issue":849,"do_not_duplicate":true},
+    {"repo":"vercel/next.js","number":98593,"status":"open","mergeable":true,"opened":"2026-09-12","last_checked":"2026-09-13","issue":98417,"competing_prs":[98556],"do_not_duplicate":true},
+    {"repo":"astral-sh/ruff","number":28542,"status":"open","mergeable":false,"opened":"2026-09-12","last_checked":"2026-09-13","issue":27324,"requested_reviewers":["ntBre"],"do_not_duplicate":true},
+    {"repo":"better-auth/better-auth","number":11261,"status":"open","mergeable":true,"opened":"2026-09-11","last_checked":"2026-09-13","issue":11192,"requested_reviewers":["Bekacru"],"do_not_duplicate":true},
+    {"repo":"crewAIInc/crewAI","number":7361,"status":"open","mergeable":true,"opened":"2026-09-10","last_checked":"2026-09-13","issue":7351,"do_not_duplicate":true},
+    {"repo":"livekit/agents","number":7201,"status":"open","mergeable":false,"opened":"2026-09-10","last_checked":"2026-09-13","issue":7191,"do_not_duplicate":true},
+    {"repo":"livekit/agents","number":7199,"status":"open","mergeable":false,"opened":"2026-09-10","last_checked":"2026-09-13","issue":7198,"last_updated":"2026-09-11","do_not_duplicate":true},
+    {"repo":"TanStack/router","number":8314,"status":"open","mergeable":false,"opened":"2026-09-10","last_checked":"2026-09-13","issue":8309,"do_not_duplicate":true},
+    {"repo":"better-auth/better-auth","number":11235,"status":"open","mergeable":true,"opened":"2026-09-10","last_checked":"2026-09-13","issue":11160,"requested_reviewers":["Bekacru"],"do_not_duplicate":true},
+    {"repo":"langchain-ai/langgraphjs","number":2803,"status":"open","mergeable":false,"opened":"2026-09-08","last_checked":"2026-09-13","issue":2721,"do_not_duplicate":true},
+    {"repo":"drizzle-team/drizzle-orm","number":6258,"status":"open","mergeable":false,"opened":"2026-09-08","last_checked":"2026-09-13","issue":6253,"do_not_duplicate":true},
+    {"repo":"TanStack/router","number":8285,"status":"open","mergeable":false,"opened":"2026-09-07","last_checked":"2026-09-13","issue":8237,"do_not_duplicate":true}
+  ]
+}
