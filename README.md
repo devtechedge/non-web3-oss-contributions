@@ -4,11 +4,11 @@ Public ledger of **upstream** non-Web3 open-source contributions.
 
 This repository records substantive contributions to established open-source projects across TypeScript, JavaScript, Python, Rust, developer tooling, frameworks, infrastructure, testing, concurrency, portability, security, and reliability.
 
-![Total](https://img.shields.io/badge/upstream%20items-27-black?logo=git&logoColor=white) ![Open PRs](https://img.shields.io/badge/open%20PRs-15-blue?logo=git&logoColor=white) ![Merged](https://img.shields.io/badge/merged-7-brightgreen?logo=git&logoColor=white)
+![Total](https://img.shields.io/badge/upstream%20items-27-black?logo=git&logoColor=white) ![Merged](https://img.shields.io/badge/merged-7-brightgreen?logo=git&logoColor=white)
 
 ## 📊 Current snapshot
 
-**27 external upstream PRs** as of 13 Sep 2026
+**27 external upstream contributions** as of 13 Sep 2026
 
 ## ✅ Merged pull requests
 
@@ -24,23 +24,7 @@ This repository records substantive contributions to established open-source pro
 
 ## 🔀 Open pull requests
 
-| Repo | PR | What | Opened |
-| --- | --- | --- | --- |
-| <img src="https://github.com/recharts.png?size=40" width="18" /> [recharts/recharts](https://github.com/recharts/recharts) | [#7805](https://github.com/recharts/recharts/pull/7805) | Z-index portal layer `<g>` elements no longer carry `tabindex="-1"`, so clicking a chart cannot focus an empty layer group and paint a geometry-traced focus ring in WebKit. Fixes #7799. | 13 Sep 2026 |
-| <img src="https://github.com/ratatui.png?size=40" width="18" /> [ratatui/ratatui](https://github.com/ratatui/ratatui) | [#2771](https://github.com/ratatui/ratatui/pull/2771) | `portable-atomic` feature forwards to `ratatui-widgets`; the `Block` shadow now cfg-switches its `Arc` import to `portable_atomic_util`, so no_std targets without atomic pointers compile with the documented feature. Fixes #2767. | 12 Sep 2026 |
-| <img src="https://github.com/SQLMesh.png?size=40" width="18" /> [SQLMesh/sqlmesh](https://github.com/SQLMesh/sqlmesh) | [#6059](https://github.com/SQLMesh/sqlmesh/pull/6059) | `create_external_models` quotes column names whose unquoted form the dialect would case-fold, so generated `external_models.yaml` round-trips correctly. Fixes #6058. | 12 Sep 2026 |
-| <img src="https://github.com/project-akri.png?size=40" width="18" /> [project-akri/akri](https://github.com/project-akri/akri) | [#850](https://github.com/project-akri/akri/pull/850) | Config device plugin reports used virtual slots as `Unhealthy`, so kubelet avoids slots still held during the reclaim grace period. Closes #849. | 12 Sep 2026 |
-| <img src="https://github.com/vercel.png?size=40" width="18" /> [vercel/next.js](https://github.com/vercel/next.js) | [#98593](https://github.com/vercel/next.js/pull/98593) | `@next/codemod upgrade` keeps a satisfying `eslint` specifier and only bumps below-range specs to the highest release of the lowest satisfying major. Decision-table unit tests. Closes #98417. | 12 Sep 2026 |
-| <img src="https://github.com/astral-sh.png?size=40" width="18" /> [astral-sh/ruff](https://github.com/astral-sh/ruff) | [#28542](https://github.com/astral-sh/ruff/pull/28542) | PYI002 diagnostic reworded to name the stub-file context. Message-only; behavior unchanged. | 12 Sep 2026 |
-| <img src="https://github.com/better-auth.png?size=40" width="18" /> [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#11261](https://github.com/better-auth/better-auth/pull/11261) | Widen email/deletion callback `user` typing to `User & Record<string, any>` so `user.additionalFields` is visible in callback params. Type-level regression + changeset. | 11 Sep 2026 |
-| <img src="https://github.com/crewAIInc.png?size=40" width="18" /> [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | [#7361](https://github.com/crewAIInc/crewAI/pull/7361) | Async `CancelledError` now emits `TaskFailedEvent` before re-raise so execution spans pop and retained Task/Agent/Crew graphs can GC. Regression tests. | 10 Sep 2026 |
-| <img src="https://github.com/livekit.png?size=40" width="18" /> [livekit/agents](https://github.com/livekit/agents) | [#7201](https://github.com/livekit/agents/pull/7201) | Public `SpeechHandle.hold_interruptions()` context manager plus a less severe realtime uninterruptible log path. Unit tests. | 10 Sep 2026 |
-| <img src="https://github.com/livekit.png?size=40" width="18" /> [livekit/agents](https://github.com/livekit/agents) | [#7199](https://github.com/livekit/agents/pull/7199) | Cancel a false-interruption resume timer when non-empty interim/preflight STT arrives while paused. | 10 Sep 2026 |
-| <img src="https://github.com/TanStack.png?size=40" width="18" /> [TanStack/router](https://github.com/TanStack/router) | [#8314](https://github.com/TanStack/router/pull/8314) | Fix retain-then-strip search middleware so Link/`buildLocation` without `search` omits stripped defaults. Regression tests + changeset. | 10 Sep 2026 |
-| <img src="https://github.com/better-auth.png?size=40" width="18" /> [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#11235](https://github.com/better-auth/better-auth/pull/11235) | Coalesce `$sessionSignal` bursts so overlapping notifies do not cancel in-flight `/get-session`. Regression tests. | 10 Sep 2026 |
-| <img src="https://github.com/langchain-ai.png?size=40" width="18" /> [langchain-ai/langgraphjs](https://github.com/langchain-ai/langgraphjs) | [#2803](https://github.com/langchain-ai/langgraphjs/pull/2803) | JS port of CVE-2026-71433: prefix-scoped search no longer leaks sibling namespaces in memory and Postgres stores. Changeset. | 8 Sep 2026 |
-| <img src="https://github.com/drizzle-team.png?size=40" width="18" /> [drizzle-team/drizzle-orm](https://github.com/drizzle-team/drizzle-orm) | [#6258](https://github.com/drizzle-team/drizzle-orm/pull/6258) | `drizzle-kit pull` no longer treats two-FK domain tables as M2M junctions; junction only when every column is an FK column. | 8 Sep 2026 |
-| <img src="https://github.com/TanStack.png?size=40" width="18" /> [TanStack/router](https://github.com/TanStack/router) | [#8285](https://github.com/TanStack/router/pull/8285) | `handleServerAction` returns 400 for malformed JSON on GET/POST action payloads instead of an unhandled 500. Unit tests + changeset. | 7 Sep 2026 |
+The repository currently has a number of active upstream contributions across developer tooling, frameworks, infrastructure, testing, concurrency, portability, security, and reliability. These contributions are maintained directly in their respective upstream repositories; this ledger focuses on the substantive work rather than exposing detailed in-progress tracking.
 
 ## 🧭 Engineering focus
 
