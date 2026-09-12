@@ -1,12 +1,12 @@
 # ⚙️ Non-Web3 OSS contributions
 
-Public ledger of **upstream** non-Web3 pull requests by [@devtechedge](https://github.com/devtechedge). Web3 work lives in [web3-oss-contributions](https://github.com/devtechedge/web3-oss-contributions).
+Public ledger of **upstream** non-Web3 pull request by [@devtechedge](https://github.com/devtechedge). Web3 work lives in [web3-oss-contributions](https://github.com/devtechedge/web3-oss-contributions).
 
 ![Total](https://img.shields.io/badge/upstream%20items-26-black?logo=git&logoColor=white) ![Open PRs](https://img.shields.io/badge/open%20PRs-14-blue?logo=github&logoColor=white) ![Merged](https://img.shields.io/badge/merged-7-brightgreen?logo=git&logoColor=white) ![Closed](https://img.shields.io/badge/closed%20not%20merged-5-red?logo=git&logoColor=white)
 
 ## 📊 Status
 
-**26 external upstream PRs** as of 12 Sep 2026, 5 closed without merge. First merge [biomejs/biome#11667](https://github.com/biomejs/biome/pull/11667) on 8 Sep; latest merge [brianc/node-postgres#3772](https://github.com/brianc/node-postgres/pull/3772) on 11 Sep.
+**26 external upstream PRs** as of 12 Sep 2026
 
 ## ✅ Merged pull requests
 
@@ -51,7 +51,7 @@ Public ledger of **upstream** non-Web3 pull requests by [@devtechedge](https://g
 
 ## 🎯 Issue claims
 
-- Opened 12 Sep with an explicit override of the design gate: [vercel/next.js#98593](https://github.com/vercel/next.js/pull/98593) for [#98417](https://github.com/vercel/next.js/issues/98417) after the approach comment went unanswered; competing PR [#98556](https://github.com/vercel/next.js/pull/98556) implements the same semantics. Queue resumes at [mswjs/msw#2401](https://github.com/mswjs/msw/issues/2401).
+- Opened 12 Sep with an explicit override of the design gate: [vercel/next.js#98593](https://github.com/vercel/next.js/pull/98593) for [#98417](https://github.com/vercel/next.js/issues/98417) after the approach comment went unanswered; competing PR [#98556](https://github.com/vercel/next.js/pull/98556) implements the same semantics.
 
 ## 📄 License
 
