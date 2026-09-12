@@ -1,8 +1,8 @@
 # ⚙️ Non-Web3 OSS contributions
 
-Public ledger of **upstream** non-Web3 pull request by [@devtechedge](https://github.com/devtechedge). Web3 work lives in [web3-oss-contributions](https://github.com/devtechedge/web3-oss-contributions).
+Public ledger of **upstream** non-Web3 pull requests.
 
-![Total](https://img.shields.io/badge/upstream%20items-26-black?logo=git&logoColor=white) ![Open PRs](https://img.shields.io/badge/open%20PRs-14-blue?logo=github&logoColor=white) ![Merged](https://img.shields.io/badge/merged-7-brightgreen?logo=git&logoColor=white) ![Closed](https://img.shields.io/badge/closed%20not%20merged-5-red?logo=git&logoColor=white)
+![Total](https://img.shields.io/badge/upstream%20items-26-black?logo=git&logoColor=white) ![Open PRs](https://img.shields.io/badge/open%20PRs-14-blue?logo=git&logoColor=white) ![Merged](https://img.shields.io/badge/merged-7-brightgreen?logo=git&logoColor=white) ![Closed](https://img.shields.io/badge/closed%20not%20merged-5-red?logo=git&logoColor=white)
 
 ## 📊 Status
 
@@ -46,7 +46,7 @@ Public ledger of **upstream** non-Web3 pull request by [@devtechedge](https://gi
 | <img src="https://github.com/nodejs.png?size=40" width="18" /> [nodejs/undici](https://github.com/nodejs/undici) | [#5796](https://github.com/nodejs/undici/pull/5796) | Fix `fetch({ redirect: 'follow' })` hanging when a large 3xx redirect body pins the only keep-alive socket. | Closed 10 Sep 2026, no reason exposed |
 | <img src="https://github.com/pallets.png?size=40" width="18" /> [pallets/jinja](https://github.com/pallets/jinja) | [#2268](https://github.com/pallets/jinja/pull/2268) | `indent(..., first=True)` honor `blank=False` on empty first line. | Rejected by maintainer as AI junk; do not refile #2176 |
 | <img src="https://github.com/vitest-dev.png?size=40" width="18" /> [vitest-dev/vitest](https://github.com/vitest-dev/vitest) | [#11174](https://github.com/vitest-dev/vitest/pull/11174) | Browser-mode `define` double-stringify fix. | Auto-closed ~28s after open (AgentScan flag); do not refile |
-| <img src="https://github.com/typescript-eslint.png?size=40" width="18" /> [typescript-eslint/typescript-eslint](https://github.com/typescript-eslint/typescript-eslint) | [#12855](https://github.com/typescript-eslint/typescript-eslint/pull/12855) | `no-meaningless-void-operator` skip AssignmentExpression. | Auto-closed ~28s after open (AgentScan flag); do not refile |
+| <img src="https://github.com/typescript-eslint.png?size=40" width="18" /> [typescript-eslint/typescript-eslint](https://github.com/typescript-eslint/typescript-eslint/pull/12855) | [#12855](https://github.com/typescript-eslint/typescript-eslint/pull/12855) | `no-meaningless-void-operator` skip AssignmentExpression. | Auto-closed ~28s after open (AgentScan flag); do not refile |
 | <img src="https://github.com/Kludex.png?size=40" width="18" /> [Kludex/starlette](https://github.com/Kludex/starlette) | [#3533](https://github.com/Kludex/starlette/pull/3533) | `URL.include_query_params` stringified list/tuple values instead of repeated params. | Closed by author: competing PRs already covered it |
 
 ## 🎯 Issue claims
