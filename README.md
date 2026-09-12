@@ -38,13 +38,6 @@ TypeScript · JavaScript · Python · Rust · frameworks · developer tooling ·
 
 There is now one queue, one canonical triage record, and one contribution ledger for all OSS targets. Selection is based on upstream quality, contribution eligibility, fit, bounded scope, reproducibility, maintainer posture, and merge potential.
 
-## 🗄️ History
-
-The former separate Web3 and non-Web3 ledgers were consolidated into this repository in September 2026. Historical archive commits from the retired Web3 repository, preserved here as provenance:
-
-- `6cd492a568d75d724013003ff9b714a9296a3482` - docs: archive Web3 ledger into unified OSS ledger
-- `8eee58c1305949362c7cf7529e5b5ee873fe3b53` - docs: archive Web3 triage into unified ledger
-
 ## 📄 License
 
 MIT
