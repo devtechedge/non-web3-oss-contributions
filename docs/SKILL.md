@@ -66,6 +66,7 @@ Hard gates:
 - Reproducible or source-verifiable on the current default branch, and not already fixed on main even if the issue is still open.
 - Bounded patch: small file count, plus tests where the repo has them.
 - Outside contributions allowed: the repo must accept PRs from external contributors outright. If its CONTRIBUTING.md (or observed maintainer behavior) reserves PRs for maintainer-invited contributors - "open a PR only when a maintainer invites you", "help wanted" + approved approach, members-only, etc. - the repo is off-limits until such an invite exists on a specific issue. Do not code first and hope; leave at the scan stage.
+- Submission path open (verify before any heavy implementation work - 13 Sep 2026 casey/just lesson): the maintainer or issue author may have blocked the account, or applied hard filters (PRs disabled repo-wide, collaborator-only PRs, interaction limits) that silently stop PR creation and comments, while reads, forking, and pushing to the fork still succeed. These restrictions fail with misleading REST 404 / GraphQL FORBIDDEN on PR creation and do not appear in CONTRIBUTING.md. Before the heavy lifting: search the repo for "pull requests are disabled" issues and maintainer statements about PRs or AI contributions, and confirm the repo still merges outside authors (`author_association` OWNER/MEMBER on all recent merged PRs means the repo is effectively maintainer-only). Then probe: as soon as the core fix compiles, push a working branch to the fork and attempt actual PR creation. 404/FORBIDDEN on creation means the submission path is closed - stop, record the no-go in triage, preserve the branch, and report. Do not polish tests, run full suites, or draft PR copy for a PR that cannot be opened.
 - Stellar org default no-go: stellar/* repos are no-go unless an explicit maintainer invite exists on that specific issue. Only exception: stellar/stellar-docs, whose CONTRIBUTING.md accepts direct outside PRs for small fixes (typos, broken links, copy corrections) without an invite - re-verify its policy each cycle before relying on the exception. stellar/js-stellar-sdk remains invite-gated.
 - Contribution policy satisfied: CLA, signed commits, required labels, repo accepting PRs.
 - No design or policy gate pending. If semantics need maintainer agreement, comment the proposed approach and wait. Never code through the gate.
@@ -95,15 +96,16 @@ Scan mechanics (when asked to scan for N targets):
 ## 6. Shipping steps
 
 1. Default to fork, branch, and PR via `gh` when Cloud Agents are unavailable.
-2. Minimal root-cause fix matching repo style. No drive-by refactors.
-3. Add a focused regression that fails before and passes after, when tests exist.
-4. Add a changeset when the repo uses changesets.
-5. Use distinct branch names when multiple PRs target the same repo.
-6. Sign commits per repo policy (DCO and/or cryptographic signature) before pushing. DCO sign-off (`-s`) needs no key; a passphrase-protected GPG/SSH key hangs background commits - if the hang happens, either retry with `-c commit.gpgsign=false` where the repo policy and history accept unsigned commits (own ledger repos), or prepare the branch and hand it to the user to sign and push (upstream repos requiring signatures). Only the user can enter the passphrase.
-7. Fix actionable bot review findings on your own code (e.g. Greptile P1) on the same branch. Ignore noise.
-8. Leave non-actionable checks alone: Vercel "authorize deploy", team-only checks, and first-contribution `action_required` workflow approvals.
-9. All GitHub Actions and CI checks must be green before a PR is reported done. After each push, wait for checks to settle and confirm every check passes (or is non-actionable per step 8). A red check caused by your own change is actionable: read the failed job log, fix, push, confirm green. Never report a PR as done without confirming its checks passed; when a maintainer must manually approve the workflow run (`action_required`), say so explicitly instead of claiming green.
-10. Report the PR URL, plus the scoreboard when batching.
+2. Probe the submission path before the heavy implementation work (see the submission-path hard gate in section 5): confirm the maintainer has not blocked the account and the repo has no hard filter (PRs disabled repo-wide, collaborator-only PRs, interaction limits) that would stop committing or PR/issue comments. Cheap checks first - search the repo for "pull requests are disabled" issues, check recent merged PRs for outside authors - then the definitive probe: push the working branch early and attempt PR creation once the fix compiles. A 404/FORBIDDEN on creation means stop: record the no-go, keep the branch, report. Never discover this after the full test-and-polish cycle (casey/just #3227).
+3. Minimal root-cause fix matching repo style. No drive-by refactors.
+4. Add a focused regression that fails before and passes after, when tests exist.
+5. Add a changeset when the repo uses changesets.
+6. Use distinct branch names when multiple PRs target the same repo.
+7. Sign commits per repo policy (DCO and/or cryptographic signature) before pushing. DCO sign-off (`-s`) needs no key; a passphrase-protected GPG/SSH key hangs background commits - if the hang happens, either retry with `-c commit.gpgsign=false` where the repo policy and history accept unsigned commits (own ledger repos), or prepare the branch and hand it to the user to sign and push (upstream repos requiring signatures). Only the user can enter the passphrase.
+8. Fix actionable bot review findings on your own code (e.g. Greptile P1) on the same branch. Ignore noise.
+9. Leave non-actionable checks alone: Vercel "authorize deploy", team-only checks, and first-contribution `action_required` workflow approvals.
+10. All GitHub Actions and CI checks must be green before a PR is reported done. After each push, wait for checks to settle and confirm every check passes (or is non-actionable per step 9). A red check caused by your own change is actionable: read the failed job log, fix, push, confirm green. Never report a PR as done without confirming its checks passed; when a maintainer must manually approve the workflow run (`action_required`), say so explicitly instead of claiming green.
+11. Report the PR URL, plus the scoreboard when batching.
 
 ## 7. Babysitting and auto-close (maintainer responses only)
 
