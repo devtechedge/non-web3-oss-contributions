@@ -92,7 +92,8 @@
     {"repo":"better-auth/better-auth","number":11160,"status":"open","attempted":true,"related_prs":[11235],"do_not_duplicate":true},
     {"repo":"langchain-ai/langgraphjs","number":2721,"status":"open","attempted":true,"related_prs":[2803],"do_not_duplicate":true},
     {"repo":"drizzle-team/drizzle-orm","number":6253,"status":"open","attempted":true,"related_prs":[6258],"do_not_duplicate":true},
-    {"repo":"TanStack/router","number":8237,"status":"open","attempted":true,"related_prs":[8285],"do_not_duplicate":true}
+    {"repo":"TanStack/router","number":8237,"status":"open","attempted":true,"related_prs":[8285],"do_not_duplicate":true},
+    {"repo":"mswjs/interceptors","number":835,"status":"closed","attempted":true,"related_prs":[],"do_not_duplicate":true,"do_not_refile":true,"closed":"2026-09-12","note":"Maintainer closed the issue after stating the problem should be addressed with React Native rather than Interceptors because Interceptors relies on the standard Response.body property. The maintainer also stated that dropping the FetchResponse wrapper would break response cloning behavior and is reconsidering React Native support. Do not pursue or refile unless upstream project direction materially changes."}
   ],
   "closed_attempts": [
     {"repo":"pallets/jinja","issue":2176,"related_pr":2268,"do_not_refile":true,"reason":"Prior PR rejected by maintainer."},
