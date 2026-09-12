@@ -46,10 +46,6 @@ This repository records substantive contributions to established open-source pro
 
 TypeScript · JavaScript · Python · Rust · developer tooling · frameworks · concurrency · portability · security · testing
 
-## 🤖 Agent-assisted workflow
-
-This repository is maintained with an AI-native engineering workflow. Operational scan history, targeting rules, prior attempts, competing work, and refile/duplication safeguards are maintained separately from this public contribution ledger.
-
 ## 📄 License
 
 MIT
