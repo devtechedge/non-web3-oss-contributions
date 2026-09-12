@@ -1,6 +1,51 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "last_updated": "2026-09-13",
+  "purpose": "Canonical conversational gateway and operational memory for autonomous agents scanning, triaging, implementing, and tracking upstream non-Web3 OSS contributions.",
+  "agent_directive": {
+    "read_first": true,
+    "source_of_truth": true,
+    "before_action": "Read this file before proposing, claiming, implementing, or submitting a new upstream target.",
+    "after_action": "Update this file after every meaningful outcome: new target, competing PR, maintainer feedback, review request, merge, closure, auto-close, rejection, or change in refile/duplicate eligibility.",
+    "hard_exclusions": [
+      "Do not duplicate work already represented by an active or completed contribution unless upstream state has materially changed.",
+      "Do not refile targets marked do_not_refile=true unless new upstream information explicitly changes that decision.",
+      "Do not target issues with visible owner/claim, reserved maintainer work, or a competing PR covering the same semantics.",
+      "Do not submit work that repository policy or AI-assistance policy makes unsuitable.",
+      "Do not compete with a PR that appeared after the current scan; refresh upstream state immediately before acting.",
+      "Web3/crypto work is excluded from this ledger and belongs in the separate Web3 workflow."
+    ],
+    "freshness_rule": "Triage memory is historical/operational context, not a substitute for a live GitHub check. Re-check issue, PR, assignees, comments, reviews, CI, mergeability, and competing work before action.",
+    "scan_output_rule": "Dated scan files should record only what is new on their date; carryover rows verified unchanged do not need to be repeated.",
+    "implementation_rule": "Prefer bounded, reproducible patches with regression tests where the repository has an applicable test suite; validate against the exact upstream default branch before claiming correctness."
+  },
+  "selection_criteria": [
+    "Issue/behavior is reproducible or source-verifiable.",
+    "Target fits the contributor's practical stack.",
+    "Patch scope is bounded and locally testable.",
+    "No visible owner, reserved work, or competing pull request covers the same work.",
+    "Expected behavior is sufficiently clear to implement without speculative design.",
+    "Fix is not already present on current upstream main/default branch.",
+    "Work is not Web3/crypto.",
+    "Work is not mainly churn, documentation trivia, or difficult to validate locally.",
+    "Target does not refile work previously auto-closed, rejected, or otherwise excluded in this ledger."
+  ],
+  "preflight_checklist": [
+    "Refresh issue state, assignees, comments, and cross-referenced PRs via the core GitHub API.",
+    "Read the relevant triage records in this file, including prior attempts, competing PRs, maintainer feedback, and exclusion flags.",
+    "Re-read the target repository's contribution and AI-assistance policy.",
+    "Reproduce on the exact upstream default branch, not only the latest release.",
+    "Post a concise, human-reviewed claim/approach comment only where repository etiquette calls for it.",
+    "Keep the patch bounded and add a failing-first regression where tests exist.",
+    "Run the narrow test, formatter/linter/type checker, then the feasible package suite.",
+    "Link the issue with the repository's required keyword and disclose AI assistance where required.",
+    "Refresh competing-PR state immediately before submission; never knowingly compete with newer upstream work."
+  ],
+  "scan_mechanics": {
+    "issue_discovery": "Bulk issue discovery uses the core repos/{owner}/{repo}/issues?labels=bug endpoint rather than the search API because rapid search calls can trigger GitHub's secondary rate limit.",
+    "competing_pr_detection": "Use per-issue timeline cross-referenced events and resolve referenced URLs as PRs. A foreign-repo cross-reference that cannot be resolved as a PR is noise, not an open competitor.",
+    "live_state_required": true
+  },
   "pull_requests": [
     {"repo":"brianc/node-postgres","number":3772,"status":"merged","mergeable":null,"merged":"2026-09-11","opened":null,"last_checked":"2026-09-13","issue":null,"do_not_duplicate":true,"summary":"Connection.sync() no longer sets _ending, so later ECONNRESET/EPIPE errors are not swallowed for the connection lifetime. Regression + integration tests."},
     {"repo":"pnpm/pnpm","number":14753,"status":"merged","mergeable":null,"merged":"2026-09-10","opened":null,"last_checked":"2026-09-13","issue":null,"do_not_duplicate":true,"summary":"Honor lockfile: false with devEngines.packageManager.onFail: download: skip project env-lockfile sync, keep package-manager download/switch. Rust + TypeScript + tests + changeset."},
