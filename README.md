@@ -49,9 +49,6 @@ Public ledger of **upstream** non-Web3 pull requests by [@devtechedge](https://g
 ## 🎯 Issue claims
 
 - Opened 12 Sep with an explicit override of the design gate: [vercel/next.js#98593](https://github.com/vercel/next.js/pull/98593) for [#98417](https://github.com/vercel/next.js/issues/98417) after the approach comment went unanswered; competing PR [#98556](https://github.com/vercel/next.js/pull/98556) implements the same semantics. Queue resumes at [mswjs/msw#2401](https://github.com/mswjs/msw/issues/2401).
-- Selection criteria and checklist: [methodology](docs/methodology.md).
-
-A contribution counts as merged only when the upstream repository reports the PR as merged. Issue comments and other contributors' PRs are not counted.
 
 ## 📄 License
 
