@@ -4,11 +4,11 @@ Public ledger of **upstream** non-Web3 open-source contributions.
 
 This repository records substantive contributions to established open-source projects across TypeScript, JavaScript, Python, Rust, developer tooling, frameworks, infrastructure, testing, concurrency, portability, security, and reliability.
 
-![Total](https://img.shields.io/badge/upstream%20items-26-black?logo=git&logoColor=white) ![Open PRs](https://img.shields.io/badge/open%20PRs-14-blue?logo=git&logoColor=white) ![Merged](https://img.shields.io/badge/merged-7-brightgreen?logo=git&logoColor=white) ![Closed](https://img.shields.io/badge/closed%20not%20merged-5-red?logo=git&logoColor=white)
+![Total](https://img.shields.io/badge/upstream%20items-27-black?logo=git&logoColor=white) ![Open PRs](https://img.shields.io/badge/open%20PRs-15-blue?logo=git&logoColor=white) ![Merged](https://img.shields.io/badge/merged-7-brightgreen?logo=git&logoColor=white) ![Closed](https://img.shields.io/badge/closed%20not%20merged-5-red?logo=git&logoColor=white)
 
 ## 📊 Current snapshot
 
-**26 external upstream PRs** as of 12 Sep 2026
+**27 external upstream PRs** as of 13 Sep 2026
 
 ## ✅ Merged pull requests
 
@@ -26,6 +26,7 @@ This repository records substantive contributions to established open-source pro
 
 | Repo | PR | What | Opened |
 | --- | --- | --- | --- |
+| <img src="https://github.com/recharts.png?size=40" width="18" /> [recharts/recharts](https://github.com/recharts/recharts) | [#7805](https://github.com/recharts/recharts/pull/7805) | Z-index portal layer `<g>` elements no longer carry `tabindex="-1"`, so clicking a chart cannot focus an empty layer group and paint a geometry-traced focus ring in WebKit. Fixes #7799. | 13 Sep 2026 |
 | <img src="https://github.com/ratatui.png?size=40" width="18" /> [ratatui/ratatui](https://github.com/ratatui/ratatui) | [#2771](https://github.com/ratatui/ratatui/pull/2771) | `portable-atomic` feature forwards to `ratatui-widgets`; the `Block` shadow now cfg-switches its `Arc` import to `portable_atomic_util`, so no_std targets without atomic pointers compile with the documented feature. Fixes #2767. | 12 Sep 2026 |
 | <img src="https://github.com/SQLMesh.png?size=40" width="18" /> [SQLMesh/sqlmesh](https://github.com/SQLMesh/sqlmesh) | [#6059](https://github.com/SQLMesh/sqlmesh/pull/6059) | `create_external_models` quotes column names whose unquoted form the dialect would case-fold, so generated `external_models.yaml` round-trips correctly. Fixes #6058. | 12 Sep 2026 |
 | <img src="https://github.com/project-akri.png?size=40" width="18" /> [project-akri/akri](https://github.com/project-akri/akri) | [#850](https://github.com/project-akri/akri/pull/850) | Config device plugin reports used virtual slots as `Unhealthy`, so kubelet avoids slots still held during the reclaim grace period. Closes #849. | 12 Sep 2026 |
