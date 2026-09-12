@@ -2,11 +2,11 @@
 
 Public ledger of **upstream** non-Web3 pull requests by [@devtechedge](https://github.com/devtechedge). Web3 work lives in [web3-oss-contributions](https://github.com/devtechedge/web3-oss-contributions).
 
-![Total](https://img.shields.io/badge/upstream%20items-24-black?logo=git&logoColor=white) ![Open PRs](https://img.shields.io/badge/open%20PRs-12-blue?logo=github&logoColor=white) ![Merged](https://img.shields.io/badge/merged-7-brightgreen?logo=git&logoColor=white) ![Closed](https://img.shields.io/badge/closed%20not%20merged-5-red?logo=git&logoColor=white)
+![Total](https://img.shields.io/badge/upstream%20items-25-black?logo=git&logoColor=white) ![Open PRs](https://img.shields.io/badge/open%20PRs-13-blue?logo=github&logoColor=white) ![Merged](https://img.shields.io/badge/merged-7-brightgreen?logo=git&logoColor=white) ![Closed](https://img.shields.io/badge/closed%20not%20merged-5-red?logo=git&logoColor=white)
 
 ## 📊 Status
 
-**24 external upstream PRs** as of 12 Sep 2026, 5 closed without merge. First merge [biomejs/biome#11667](https://github.com/biomejs/biome/pull/11667) on 8 Sep; latest merge [brianc/node-postgres#3772](https://github.com/brianc/node-postgres/pull/3772) on 11 Sep.
+**25 external upstream PRs** as of 12 Sep 2026, 5 closed without merge. First merge [biomejs/biome#11667](https://github.com/biomejs/biome/pull/11667) on 8 Sep; latest merge [brianc/node-postgres#3772](https://github.com/brianc/node-postgres/pull/3772) on 11 Sep.
 
 ## ✅ Merged pull requests
 
@@ -24,6 +24,7 @@ Public ledger of **upstream** non-Web3 pull requests by [@devtechedge](https://g
 
 | Repo | PR | What | Opened |
 | --- | --- | --- | --- |
+| <img src="https://github.com/SQLMesh.png?size=40" width="18" /> [SQLMesh/sqlmesh](https://github.com/SQLMesh/sqlmesh) | [#6059](https://github.com/SQLMesh/sqlmesh/pull/6059) | `create_external_models` quotes column names whose unquoted form the dialect would case-fold (postgres `"ID"` was written as `ID` and loaded back as `id`), so the generated `external_models.yaml` describes the table again. Fixes #6058. | 12 Sep 2026 |
 | <img src="https://github.com/project-akri.png?size=40" width="18" /> [project-akri/akri](https://github.com/project-akri/akri) | [#850](https://github.com/project-akri/akri/pull/850) | Config device plugin reports used virtual slots as `Unhealthy` from `ListAndWatch`, so kubelet no longer selects slots still held during the reclaim grace period and pod recreation no longer spams `UnexpectedAdmissionError` pods. Closes #849. | 12 Sep 2026 |
 | <img src="https://github.com/vercel.png?size=40" width="18" /> [vercel/next.js](https://github.com/vercel/next.js) | [#98593](https://github.com/vercel/next.js/pull/98593) | `@next/codemod upgrade` keeps the project's `eslint` specifier when it already satisfies the `eslint-config-next` peer range (`^9` stays `^9` instead of being pinned to 10.10.0); when a bump is required it pins the highest release of the lowest satisfying major. New `resolveEslintUpgradeTarget` helper + decision-table unit tests. Closes #98417. Competing PR #98556 implements the same semantics. | 12 Sep 2026 |
 | <img src="https://github.com/astral-sh.png?size=40" width="18" /> [astral-sh/ruff](https://github.com/astral-sh/ruff) | [#28542](https://github.com/astral-sh/ruff/pull/28542) | PYI002 diagnostic reworded to name the stub-file context so it no longer reads as a false claim about tests referencing neither target. Message-only; behavior unchanged. | 12 Sep 2026 |
