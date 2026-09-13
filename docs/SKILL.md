@@ -1,5 +1,3 @@
-<!-- Mirror of ~/.agents/skills/oss/SKILL.md (canonical). Edit the canonical file, then re-sync this copy. -->
-
 ---
 name: oss
 description: Use when scanning, claiming, opening, babysitting, or tracker-updating upstream OSS PRs, or when editing the user's own unified OSS ledger (README, badges, About). Covers serial shipping, shared voice, comment approval, commit signing, maintainer-only watches, and ledger upkeep.
@@ -49,7 +47,7 @@ Upstream PR work is recorded on the unified ledger README. Work in the user's ow
 ## 4. Cadence and API hygiene
 
 1. Open one new PR at a time. A second may run only with explicit user permission. Complete the full cycle per PR - claim, implement, test, open, ledger update, babysit - before hunting the next target. Follow-up pushes to an existing open PR (human review, actionable bot P1) are fine while the next hunt is queued.
-2. Run one agent session per PR lifecycle (hunt, ship, babysit) and retire it when the PR merges or closes after the ledger update. The SKILL.md playbook and tracker files carry the persistent state, so every fresh session stays small and bounded. Use long-running threads only for meta-discussion, never for PR work.
+2. Run one agent session per PR lifecycle (hunt, ship, babysit) and retire it when the PR merges or closes, after the ledger update and the post-run retrospective (section 8). The SKILL.md playbook and tracker files carry the persistent state, so every fresh session stays small and bounded. Use long-running threads only for meta-discussion, never for PR work.
 3. Keep GitHub API volume low; GitHub support warned the account about request volume (Sep 2026). One consolidated call over several narrow ones, reuse data already fetched instead of refetching, no `--paginate` on large collections, no parallel API fan-out, poll at most every 60 seconds while waiting on CI, and prefer event-driven watches (section 7). Check `gh api rate_limit` before heavy scans and stop well before the limit.
 4. On `resource_exhausted`: stop parallel work, wait, then resume serially. If GitHub is the blocker, check `gh api rate_limit` separately. Do not thrash retries.
 5. Stuck handling: if a step stays blocked for a long time - a hung command, a command that never returns, repeated identical failures, a wait that outlives any plausible runtime - assume something on the other end has failed: a dropped connection, a missing password, passphrase, or key, or a tool waiting on input that will never come. Stop hitting the wall. Report what is blocked and the evidence, then either move on to other queued work and revisit the blocker later, or ask the user a clarification question if only they can unblock it (credentials, auth, interactive prompts). Do not burn the session looping on one blocking step.
@@ -66,7 +64,7 @@ Hard gates:
 - Reproducible or source-verifiable on the current default branch, and not already fixed on main even if the issue is still open.
 - Bounded patch: small file count, plus tests where the repo has them.
 - Outside contributions allowed: the repo must accept PRs from external contributors outright. If its CONTRIBUTING.md (or observed maintainer behavior) reserves PRs for maintainer-invited contributors - "open a PR only when a maintainer invites you", "help wanted" + approved approach, members-only, etc. - the repo is off-limits until such an invite exists on a specific issue. Do not code first and hope; leave at the scan stage.
-- Submission path open (verify before any heavy implementation work - 13 Sep 2026 casey/just lesson): the maintainer or issue author may have blocked the account, or applied hard filters (PRs disabled repo-wide, collaborator-only PRs, interaction limits) that silently stop PR creation and comments, while reads, forking, and pushing to the fork still succeed. These restrictions fail with misleading REST 404 / GraphQL FORBIDDEN on PR creation and do not appear in CONTRIBUTING.md. Before the heavy lifting: search the repo for "pull requests are disabled" issues and maintainer statements about PRs or AI contributions, and confirm the repo still merges outside authors (`author_association` OWNER/MEMBER on all recent merged PRs means the repo is effectively maintainer-only). Then probe: as soon as the core fix compiles, push a working branch to the fork and attempt actual PR creation. 404/FORBIDDEN on creation means the submission path is closed - stop, record the no-go in triage, preserve the branch, and report. Do not polish tests, run full suites, or draft PR copy for a PR that cannot be opened.
+- Submission path open (verify before any heavy implementation work - 13 Sep 2026 casey/just lesson): the maintainer or issue author may have blocked the account, or applied hard filters (PRs disabled repo-wide, collaborator-only PRs, interaction limits) that silently stop PR creation and comments, while reads, forking, and pushing to the fork still succeed. These restrictions fail with misleading REST 404 / GraphQL FORBIDDEN on PR creation and do not appear in CONTRIBUTING.md. Before the heavy lifting: search the repo for "pull requests are disabled" issues and maintainer statements about PRs or AI contributions, and confirm the repo still merges outside authors (`author_association` OWNER/MEMBER on all recent merged PRs means the repo is effectively maintainer-only). Also read the repo's `.github/workflows/` for auto-close or claim-enforcement bots (13 Sep 2026 pydantic-ai lesson): a bot that closes PRs whose linked issue is unassigned to the PR author defeats every pre-open probe - fork push and even PR creation succeed - so issues that will never be assigned (bot-filed sweep issues) are not claimable; check how issues in the repo ever get assigned before investing. Then probe: as soon as the core fix compiles, push a working branch to the fork and attempt actual PR creation. 404/FORBIDDEN on creation means the submission path is closed - stop, record the no-go in triage, preserve the branch, and report. Do not polish tests, run full suites, or draft PR copy for a PR that cannot be opened.
 - Stellar org default no-go: stellar/* repos are no-go unless an explicit maintainer invite exists on that specific issue. Only exception: stellar/stellar-docs, whose CONTRIBUTING.md accepts direct outside PRs for small fixes (typos, broken links, copy corrections) without an invite - re-verify its policy each cycle before relying on the exception. stellar/js-stellar-sdk remains invite-gated.
 - Contribution policy satisfied: CLA, signed commits, required labels, repo accepting PRs.
 - No design or policy gate pending. If semantics need maintainer agreement, comment the proposed approach and wait. Never code through the gate.
@@ -118,7 +116,21 @@ Default for every new PR unless the user overrides. Prefer event-driven listener
 - "Please sign your commit" asks (e.g. Safe repos): check `gh api repos/OWNER/REPO/pulls/N/commits` for `.commit.verification`. If `verified: true` with reason `valid`, the ask is already satisfied; update the ledger status and wait for merge, no reply needed. If not signed, only the user can re-sign locally with their key; the agent prepares the branch, the user signs and pushes.
 - Auto-close: if a PR is auto-closed shortly after opening, mark it Closed (not merged) when writing the ledger, delete the babysit, never refile that issue from the same account, and never reply to the auto-close bot. Prefer quieter mid-size repositories when auto-closes keep happening.
 
-## 8. Email triage (OSS inbox)
+## 8. Post-run retrospective (mandatory before retiring a PR session)
+
+Every completed PR run - merged, closed, no-go, or abandoned - ends with a retrospective before the session retires (see section 4.2). Do not skip it on a bad outcome; a closed PR that yields no learned pattern is a wasted run.
+
+1. Revisit the full run end to end: the scan/claim decision, the gates you checked, the implementation, test and lint loop, the submission path, PR copy, and the terminal outcome. Walk the actual commands and outputs, not your memory of the plan.
+2. Extract what generalized. A finding is worth recording when it would change behavior on a future PR in a different repo, not just this one: a new hard gate, a repo-policy surprise that dodged the existing checks, a toolchain or typechecker pitfall, a faster fail-before loop, a repo convention worth mirroring. Anything repo-specific and point-in-time goes to the triage tracker instead.
+3. Write the findings the same turn:
+   - Generalizable lessons go to `PATTERNS.md` (next to this file), under the matching heading (scan-time, implementation, or a new one), written as a caution a fresh session can apply without this run's context.
+   - If a lesson invalidates or tightens a hard gate in section 5 or a shipping step in section 6, edit this SKILL.md too - the gate text should name the failure mode it encodes.
+   - Repo-specific facts (no-gos, saturation, gate evidence, branch names worth preserving) go to the canonical `docs/triage/triage.json` in the ledger repo, never to PATTERNS.md.
+   - Keep entries terse and dated where rot is possible; every pattern is a hypothesis to re-verify, not a permanent truth.
+4. Sync the ledger mirrors: after editing SKILL.md or PATTERNS.md, push the updated copies to `docs/SKILL.md` / `docs/PATTERNS.md` in `oss-contributions` (see section 10) so portable agent context stays accurate.
+5. Only then retire the session. The next PR run starts from the updated playbook.
+
+## 9. Email triage (OSS inbox)
 
 - Confirm with the user whether flagged mail is actionable before acting.
 - CLA emails: the user signs in the browser. Confirm only after the `license/cla` check succeeds. A passing recheck alone does not sign.
@@ -126,7 +138,7 @@ Default for every new PR unless the user overrides. Prefer event-driven listener
 - Discard or ignore: bot-only noise such as Copilot, Vercel authorize, Changeset, CodeRabbit, Qodo "paused for this user" notices (usually the repository's Qodo plan, not a GitHub ban), surveys, and sales.
 - Use the correct existing Gmail labels for the OSS accounts. Never invent vague labels.
 
-## 9. Ledger and own-repo writes
+## 10. Ledger and own-repo writes
 
 The user's own unified ledger repo is `oss-contributions`; its README is the public product. Everything in this section lands on GitHub in the same turn it is decided - never leave such changes unwritten, and pushing needs no separate confirmation.
 
@@ -134,7 +146,7 @@ The user's own unified ledger repo is `oss-contributions`; its README is the pub
 
 **Skill mirror:** the canonical playbook is `~/.agents/skills/oss/SKILL.md` plus its companion `PATTERNS.md`; never edit the copies in the ledger repo directly. The ledger repo carries mirrors at `docs/SKILL.md` and `docs/PATTERNS.md`, which exist for portable agent context.
 
-## 10. Unified ledger schema discipline
+## 11. Unified ledger schema discipline
 
 - Canonical triage memory is `docs/triage/triage.json`.
 - Keep all records in the same arrays and schema. Do not create separate domain-specific queue files.
