@@ -4,8 +4,6 @@ Public ledger of **upstream open-source contributions** by [@devtechedge](https:
 
 ![Merged](https://img.shields.io/badge/merged-9-brightgreen?logo=git&logoColor=white) ![License](https://img.shields.io/github/license/devtechedge/oss-contributions) ![Last commit](https://img.shields.io/github/last-commit/devtechedge/oss-contributions) ![Commit activity](https://img.shields.io/github/commit-activity/y/devtechedge/oss-contributions) ![Contributors](https://img.shields.io/github/contributors/devtechedge/oss-contributions) ![Repository size](https://img.shields.io/github/repo-size/devtechedge/oss-contributions) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![TanStack](https://img.shields.io/badge/TanStack-FF4154?logo=tanstack&logoColor=white)
 
-## 📊 Current snapshot
-
 **Latest update:** 13 Sep 2026
 
 This repository serves as the canonical record of upstream contribution activity: identifying worthwhile issues, tracking claims and active pull requests, preserving implementation and review outcomes, and maintaining an auditable history of merged, closed, and declined work.
