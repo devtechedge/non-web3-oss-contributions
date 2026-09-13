@@ -34,10 +34,6 @@ The repository currently tracks active upstream contributions across application
 
 TypeScript · JavaScript · Python · Rust · frameworks · developer tooling · infrastructure · concurrency · portability · security · accessibility · testing · wallets · SDKs · blockchain infrastructure
 
-## 📚 Unified workflow
-
-There is now one queue, one canonical triage record, and one contribution ledger for all OSS targets. Selection is based on upstream quality, contribution eligibility, fit, bounded scope, reproducibility, maintainer posture, and merge potential.
-
 ## 📄 License
 
 MIT
