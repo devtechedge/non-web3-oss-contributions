@@ -2,7 +2,7 @@
 
 Public ledger of **upstream open-source contributions** by [@devtechedge](https://github.com/devtechedge).
 
-![Merged](https://img.shields.io/badge/merged-9-brightgreen?logo=git&logoColor=white)
+![Merged](https://img.shields.io/badge/merged-9-brightgreen?logo=git&logoColor=white) ![License](https://img.shields.io/github/license/devtechedge/oss-contributions) ![Last commit](https://img.shields.io/github/last-commit/devtechedge/oss-contributions) ![Commit activity](https://img.shields.io/github/commit-activity/y/devtechedge/oss-contributions) ![Contributors](https://img.shields.io/github/contributors/devtechedge/oss-contributions) ![GitHub stars](https://img.shields.io/github/stars/devtechedge/oss-contributions) ![GitHub forks](https://img.shields.io/github/forks/devtechedge/oss-contributions) ![Repository size](https://img.shields.io/github/repo-size/devtechedge/oss-contributions)
 
 ## 📊 Current snapshot
 
