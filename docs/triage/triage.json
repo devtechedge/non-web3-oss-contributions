@@ -1057,6 +1057,12 @@
       "related_pr": 3881,
       "do_not_refile": true,
       "reason": "Duplicate of #3882."
+    },
+    {
+      "repo": "pydantic/pydantic-ai",
+      "related_pr": 8308,
+      "do_not_refile": true,
+      "reason": "Auto-closed by the repo's github-actions bot: it requires the linked issue to be assigned before opening a PR. Issue #8292 is bot-filed (roundtrip-sweep) and unassigned, so there is no assignment path for an outside contributor. PR was otherwise healthy: 50 checks passed including quality checks, Macroscope approved."
     }
   ],
   "no_go": [
@@ -1115,6 +1121,13 @@
       "checked": "2026-09-13",
       "do_not_duplicate": true,
       "reason": "Empty --repository-file falls back to cwd; open PR #22052 covers it."
+    },
+    {
+      "repo": "pydantic/pydantic-ai",
+      "issue": 8292,
+      "checked": "2026-09-13",
+      "do_not_duplicate": true,
+      "reason": "Assignment-gated repository: github-actions bot auto-closes any PR whose linked issue is not assigned to the PR author. Bot-filed issues like #8292 cannot be claimed. PR #8308 (ToolSearchMatch extra='allow' roundtrip fix) was closed within an hour despite green checks. Do not refile this issue or similar bot-filed roundtrip-sweep issues in this repo."
     }
   ],
   "repositories": {
