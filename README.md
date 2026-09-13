@@ -2,7 +2,7 @@
 
 Public ledger of **upstream open-source contributions** by [@devtechedge](https://github.com/devtechedge).
 
-![Upstream PRs](https://img.shields.io/badge/upstream%20PRs-70-black?logo=git&logoColor=white) ![Open PRs](https://img.shields.io/badge/open%20PRs-56-blue?logo=github) ![Merged](https://img.shields.io/badge/merged-9-brightgreen?logo=git&logoColor=white) ![Closed not merged](https://img.shields.io/badge/closed%20not%20merged-5-red?logo=github&logoColor=white)
+![Merged](https://img.shields.io/badge/merged-9-brightgreen?logo=git&logoColor=white)
 
 ## 📊 Current snapshot
 
